@@ -31,3 +31,11 @@ body {
     text-wrap: balance;
   }
 }
+
+.activeLink {
+  color: #000; /* Change color as desired */
+  padding-bottom: 4px; /* Add padding as desired */
+  border-bottom: 3px solid #F3A20C
+
+  ; /* Add underline style */
+}
