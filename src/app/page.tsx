@@ -43,11 +43,11 @@ export default function Home() {
     }
   ]
   return (
-    <main className="flex container-fluid min-h-screen flex-col items-center justify-between pt-20">
-      <div className="container-fluid">
+    <main className="flex container-fluid min-h-screen w-screen flex-col items-center justify-between pt-20">
+      <div className="w-full">
         {/* /assets/images/mainbg1.jpg */}
         <div
-          className="w-full container-fluid"
+          className="w-full "
           style={{
             backgroundImage: `url('/assets/images/mainbg1.jpg')`,
             padding: "40px",
@@ -86,7 +86,7 @@ export default function Home() {
           <div className="w-1/2"></div>
           </div>
         </div>
-        <div className="bg-lightBlue  w-screen flex items-center justify-center">
+        <div className="bg-lightBlue  w-full flex items-center justify-center">
           <div className="container flex">
             <div className="w-1/2 flex flex-col gap-4 py-12">
               <span className="text-5xl font-playfair w-1/2">
