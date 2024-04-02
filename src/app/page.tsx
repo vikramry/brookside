@@ -43,7 +43,7 @@ export default function Home() {
     }
   ]
   return (
-    <main className="flex container-fluid min-h-screen w-screen flex-col items-center justify-between pt-20">
+    <main className="flex container-fluid min-h-screen w-screen flex-col items-center justify-between">
       <div className="w-full">
         {/* /assets/images/mainbg1.jpg */}
         <div
