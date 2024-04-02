@@ -1,6 +1,16 @@
+"use client"
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+
+interface FormValues {
+  grade: string;
+  childName: string;
+  parentName: string;
+  email: string;
+  mobileNumber: string;
+  city: string;
+}
 
 const validationSchema = Yup.object().shape({
   grade: Yup.string().required('Grade is required'),
@@ -11,7 +21,7 @@ const validationSchema = Yup.object().shape({
   city: Yup.string().required('City is required'),
 });
 
-const initialValues = {
+const initialValues: FormValues = {
   grade: '',
   childName: '',
   parentName: '',
@@ -19,16 +29,16 @@ const initialValues = {
   mobileNumber: '',
   city: '',
 };
-//@ts-ignore
-const onSubmit = (values, actions) => {
+
+const onSubmit = (values: FormValues, actions: any) => {
   // Submit logic goes here
   console.log(values);
   actions.setSubmitting(false);
 };
 
-const AdmissionEnquiryForm = () => (
-  <div style={{ backgroundColor: 'white', padding: '20px', boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)' }}>
-    <h2>Admission Enquiry</h2>
+const AdmissionEnquiryForm: React.FC = () => (
+  <div className="bg-white p-8 shadow-md">
+    <h2 className="text-2xl font-bold mb-4">Admission Enquiry</h2>
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
@@ -36,43 +46,43 @@ const AdmissionEnquiryForm = () => (
     >
       {({ isSubmitting }) => (
         <Form>
-          <div>
-            <label htmlFor="grade">Select Grade*</label>
-            <Field type="text" name="grade" />
+          <div className="mb-4">
+            <Field as="select" name="grade" className="border border-black p-2 rounded-md" placeholder="Select Grade">
+              <option value="" disabled>Select Grade</option>
+              <option value="Grade 1">Grade 1</option>
+              <option value="Grade 2">Grade 2</option>
+              <option value="Grade 3">Grade 3</option>
+              {/* Add more grade options as needed */}
+            </Field>
             <ErrorMessage name="grade" component="div" />
           </div>
 
-          <div>
-            <label htmlFor="childName">Child Name</label>
-            <Field type="text" name="childName" />
+          <div className="mb-4">
+            <Field type="text" name="childName" placeholder="Child Name" className="border border-black p-2 rounded-md" />
             <ErrorMessage name="childName" component="div" />
           </div>
 
-          <div>
-            <label htmlFor="parentName">Parent Name</label>
-            <Field type="text" name="parentName" />
+          <div className="mb-4">
+            <Field type="text" name="parentName" placeholder="Parent Name" className="border border-black p-2 rounded-md" />
             <ErrorMessage name="parentName" component="div" />
           </div>
 
-          <div>
-            <label htmlFor="email">Email Address</label>
-            <Field type="email" name="email" />
+          <div className="mb-4">
+            <Field type="email" name="email" placeholder="Email Address" className="border border-black p-2 rounded-md" />
             <ErrorMessage name="email" component="div" />
           </div>
 
-          <div>
-            <label htmlFor="mobileNumber">Mobile Number</label>
-            <Field type="tel" name="mobileNumber" />
+          <div className="mb-4">
+            <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border border-black p-2 rounded-md" />
             <ErrorMessage name="mobileNumber" component="div" />
           </div>
 
-          <div>
-            <label htmlFor="city">City</label>
-            <Field type="text" name="city" />
+          <div className="mb-4">
+            <Field type="text" name="city" placeholder="City" className="border border-black p-2 rounded-md" />
             <ErrorMessage name="city" component="div" />
           </div>
 
-          <button type="submit" disabled={isSubmitting}>Submit</button>
+          <button className='bg-orangeMain text-white px-4 py-2 rounded text-xs font-bold' type="submit" disabled={isSubmitting}>Submit</button>
         </Form>
       )}
     </Formik>

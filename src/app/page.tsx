@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import React from 'react';
 import Image from "next/image";
 import Bgimage from "../../public/assets/images/mainbg1.jpg";
 import curve from "../../public/assets/images/curve.png";
@@ -42,11 +43,11 @@ export default function Home() {
     }
   ]
   return (
-    <main className="flex  min-h-screen flex-col items-center justify-between pt-20">
-      <div>
+    <main className="flex container-fluid min-h-screen flex-col items-center justify-between pt-20">
+      <div className="container-fluid">
         {/* /assets/images/mainbg1.jpg */}
         <div
-          className="w-screen"
+          className="w-full container-fluid"
           style={{
             backgroundImage: `url('/assets/images/mainbg1.jpg')`,
             padding: "40px",
@@ -111,7 +112,7 @@ export default function Home() {
              ))}
             </div>
             <div className="w-1/2 ">
-              form
+            <AdmissionEnquiryForm/>
             </div>
           </div>
         </div>
