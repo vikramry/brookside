@@ -32,6 +32,15 @@ const config: Config = {
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
       },
+      borderRadius: {
+        'none': '0',
+        "99": "99px",
+        "10em":"10em",
+      },
+      width:{
+        "36em":"36em",
+        "25em":"25em",
+      }
     },
   },
   plugins: [],
