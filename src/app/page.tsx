@@ -66,7 +66,7 @@ export default function Home() {
                 <span className="font-playfair text-7xl font-bold text-orMain">
                   future
                 </span>
-                <Image className="w-fit" src={curve} alt="curve" />
+                {/* <img  className="w-fit h-3" src={curve.src} alt="curve" /> */}
               </span>
             </div>
             <span className="text-2xl w-4/5">
