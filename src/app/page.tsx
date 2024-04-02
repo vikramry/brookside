@@ -65,13 +65,14 @@ export default function Home() {
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
-          className="w-full "
+          className="w-full flex items-center "
           style={{
             backgroundImage: `url('/assets/images/mainbg1.jpg')`,
             padding: "40px",
             border: "1px solid",
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
+            height:"70vh"
           }}
         >
           <div className="container">
