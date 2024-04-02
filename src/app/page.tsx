@@ -111,7 +111,7 @@ export default function Home() {
              ))}
             </div>
             <div className="w-1/2 ">
-              <AdmissionEnquiryForm/>
+              form
             </div>
           </div>
         </div>
