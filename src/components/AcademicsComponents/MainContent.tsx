@@ -2,7 +2,7 @@ import React from 'react'
 
 const MainContent = () => {
     return (
-        <div className='flex justify-center items-center bg-white pb-10'>
+        <div className='flex justify-center items-center bg-white pb-10 md:px-5 lg:px-0'>
             <div className='md:max-w-[900px] py-16 flex flex-col justify-center items-center gap-4 text-center px-6 md:px-0 text-base'>
                 <h5 className='font-bold md:text-2xl text-lg'>Our Curriculum Overview</h5>
                 <h1 className='font-bold md:text-5xl text-2xl text-[#F3A20C]'>A Commitment to Excellence</h1>
