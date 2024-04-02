@@ -1,3 +1,4 @@
+import AboutGlance from "@/components/AboutGlance";
 import React from "react";
 
 const page = () => {
@@ -158,6 +159,7 @@ const page = () => {
             </div>
                      
         </div>
+      <AboutGlance />
     </div>
   );
 };

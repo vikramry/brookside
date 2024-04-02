@@ -19,6 +19,7 @@ const config: Config = {
         'white': '#ffffff',
         'orMain':'#F3A20C',
         'dGrey':'#2E2B4F',
+        'purpleMain':'#2E2B4F',
         'paraText':'#333333',
         'brownBorder':"#B28664",
         'lightBlue':'#D2EAF1',
