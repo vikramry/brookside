@@ -1,3 +1,4 @@
+import ContactSection from "@/components/AcademicsComponents/ContactSection"
 import ActivityCard from "@/components/activityCard"
 
 const data=[
@@ -83,6 +84,8 @@ const page = () => {
             )
         })}
         </div>
+        <ContactSection />
+
       </div>
 
     </div>
