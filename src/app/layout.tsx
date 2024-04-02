@@ -18,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header/>
-        {children}
-        </body>
+        <Header />
+        <div className="w-full mt-[80px]">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
