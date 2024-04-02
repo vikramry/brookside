@@ -1,3 +1,5 @@
+import ContactCards from "@/components/contactPaceCards"
+
 const page = () => {
     return (
         <div className="bg-white">
@@ -9,7 +11,7 @@ const page = () => {
             <div className="md:p-20 bg-white">
                 <div className="shadow-xl bg-white md:p-20 p-10 rounded-2xl flex flex-row flex-wrap md:gap-28 gap-10 justify-center ">
                     <div className="flex flex-col gap-y-5" >
-                        <h1 className="text-[40px] font-semibold">We’d love to hear from you</h1>
+                        <h1 className="md:text-[40px] text-[20px] font-semibold">We’d love to hear from you</h1>
                         <input type="text" placeholder="Your name*" className="border-2 bg-gray-50 p-2 rounded" />
                         <input type="number" placeholder="Phone*" className="border-2 bg-gray-50 p-2 rounded" />
                         <input type="email" placeholder="Your email*" className="border-2 bg-gray-50 p-2 rounded" />
@@ -27,6 +29,7 @@ const page = () => {
 
                 </div>
             </div>
+            <ContactCards/>
             </div>
 
         </div>
