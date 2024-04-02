@@ -3,8 +3,8 @@ import Image from "next/image";
 import Bgimage from "../../public/assets/images/mainbg1.jpg";
 import curve from "../../public/assets/images/curve.png";
 import { FaCirclePlay } from "react-icons/fa6";
-import goldShield from '../../public/assets/images/goldshield.png'
-import greyShield from '../../public/assets/images/greyshield.png'
+import goldShield from '../../public/assets/images/goldShield.png'
+import greyShield from '../../public/assets/images/greyShield.png'
 import AdmissionEnquiryForm from "@/components/admissionEnquiryForm";
 
 export default function Home() {
