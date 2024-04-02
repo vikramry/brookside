@@ -19,7 +19,7 @@ const initialValues = {
   mobileNumber: '',
   city: '',
 };
-
+//@ts-ignore
 const onSubmit = (values, actions) => {
   // Submit logic goes here
   console.log(values);

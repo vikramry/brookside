@@ -3,8 +3,9 @@ import Image from "next/image";
 import Bgimage from "../../public/assets/images/mainbg1.jpg";
 import curve from "../../public/assets/images/curve.png";
 import { FaCirclePlay } from "react-icons/fa6";
-import goldShield from '../..//public/assets/images/goldshield.png'
-import greyShield from '../..//public/assets/images/greyshield.png'
+import goldShield from '../../public/assets/images/goldshield.png'
+import greyShield from '../../public/assets/images/greyshield.png'
+import AdmissionEnquiryForm from "@/components/admissionEnquiryForm";
 
 export default function Home() {
 
@@ -109,7 +110,9 @@ export default function Home() {
               </div>
              ))}
             </div>
-            <div className="w-1/2 ">form</div>
+            <div className="w-1/2 ">
+              <AdmissionEnquiryForm/>
+            </div>
           </div>
         </div>
       </div>
