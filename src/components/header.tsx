@@ -26,7 +26,7 @@ const Header = () => {
     },
     {
       id: 4,
-      link: "Activities",
+      link: "activities",
     },
     {
       id: 5,
@@ -44,18 +44,16 @@ const Header = () => {
   ];
 
   return (
-    <div className="flex container-fluid justify-between items-center w-full h-20 px-4 text-black bg-white fixed nav">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-black bg-white fixed top-0">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
-          <a
+          <Link
             className="link-underline link-underline-black"
-            href=""
-            target="_blank"
-            rel="noreferrer"
+            href="/"
           >
-            <Image className="w-auto" src={logo} alt="logo"/>
-          </a>
+            <Image className="" width={173} height={44} src={logo} alt="logo"/>
+          </Link>
         </h1>
       </div>
 
