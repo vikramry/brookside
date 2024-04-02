@@ -85,8 +85,8 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-lightBlue  w-screen flex items-center justify-center">
-          <div className="container">
-            <div className="w-1/2 flex flex-col">
+          <div className="container flex">
+            <div className="w-1/2 flex flex-col gap-4 py-12">
               <span className="text-5xl font-playfair w-1/2">
                 Learning Begins With Us
               </span>
