@@ -5,6 +5,9 @@ import React from 'react'
 const page = () => {
     return (
         <div>
+            <div>
+                <img src="/assets/images/galleryBanner.png" />
+            </div>
             <Gallery />
             <ContactSection />
         </div>

@@ -28,7 +28,7 @@ export default function Gallery() {
     return (
         <>
             {photos.length > 0 ?
-                <PhotoAlbum photos={photos} layout="masonry" spacing={10} targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
+                <PhotoAlbum photos={photos} layout="columns" spacing={10} targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
                 :
                 <div className="flex justify-center items-center" style={{
                     height: "calc(100vh - 80px)"
