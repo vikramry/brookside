@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <>
             <div className="max-w-full max-h-fit bg-[#e4e4e4] shadow-2xl">
-                <div className="flex flex-row justify-between flex-wrap p-20 gap-10">
+                <div className="flex flex-row justify-between flex-wrap px-20 py-16 gap-10">
                     <div>
                         <img
                             src={logo.src}
@@ -61,7 +61,7 @@ const Footer = () => {
                                     </Link>
                                 </li> */}
                                 <li>
-                                    <Link href="/Gallery">
+                                    <Link href="/gallery">
                                         Gallery
                                     </Link>
                                 </li>
