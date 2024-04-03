@@ -194,7 +194,7 @@ export default function Home() {
                 Ages We meet kids where they are
               </span>
             </div>
-            <div className="flex gap-12">
+            <div className="flex gap-12 w-full">
               <Card2
                 img={b1}
                 grade="IK1-IK3"
