@@ -37,7 +37,7 @@ const onSubmit = (values: FormValues, actions: any) => {
 };
 
 const AdmissionEnquiryForm: React.FC = () => (
-  <div className="bg-white p-8 shadow-md">
+  <div className="bg-white p-8 shadow-md rounded-xl">
     <h2 className="text-2xl font-bold mb-4">Admission Enquiry</h2>
     <Formik
       initialValues={initialValues}
@@ -47,7 +47,7 @@ const AdmissionEnquiryForm: React.FC = () => (
       {({ isSubmitting }) => (
         <Form>
           <div className="mb-4">
-            <Field as="select" name="grade" className="border border-black p-2 rounded-md" placeholder="Select Grade">
+            <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md" placeholder="Select Grade">
               <option value="" disabled>Select Grade</option>
               <option value="Grade 1">Grade 1</option>
               <option value="Grade 2">Grade 2</option>
@@ -58,31 +58,31 @@ const AdmissionEnquiryForm: React.FC = () => (
           </div>
 
           <div className="mb-4">
-            <Field type="text" name="childName" placeholder="Child Name" className="border border-black p-2 rounded-md" />
+            <Field type="text" name="childName" placeholder="Child Name" className="border w-full border-black p-2 rounded-md" />
             <ErrorMessage name="childName" component="div" />
           </div>
 
           <div className="mb-4">
-            <Field type="text" name="parentName" placeholder="Parent Name" className="border border-black p-2 rounded-md" />
+            <Field type="text" name="parentName" placeholder="Parent Name" className="border w-full border-black p-2 rounded-md" />
             <ErrorMessage name="parentName" component="div" />
           </div>
 
           <div className="mb-4">
-            <Field type="email" name="email" placeholder="Email Address" className="border border-black p-2 rounded-md" />
+            <Field type="email" name="email" placeholder="Email Address" className="border w-full border-black p-2 rounded-md" />
             <ErrorMessage name="email" component="div" />
           </div>
 
           <div className="mb-4">
-            <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border border-black p-2 rounded-md" />
+            <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border w-full border-black p-2 rounded-md" />
             <ErrorMessage name="mobileNumber" component="div" />
           </div>
 
           <div className="mb-4">
-            <Field type="text" name="city" placeholder="City" className="border border-black p-2 rounded-md" />
+            <Field type="text" name="city" placeholder="City" className="border w-full border-black p-2 rounded-md" />
             <ErrorMessage name="city" component="div" />
           </div>
 
-          <button className='bg-orangeMain text-white px-4 py-2 rounded text-xs font-bold' type="submit" disabled={isSubmitting}>Submit</button>
+          <button className='bg-orMain text-white px-4 py-2 rounded text-xs w-full font-bold' type="submit" disabled={isSubmitting}>Submit</button>
         </Form>
       )}
     </Formik>
