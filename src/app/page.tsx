@@ -61,15 +61,14 @@ export default function Home() {
     },
   ];
   return (
-    <main className="flex container-fluid min-h-screen bg-white w-screen flex-col items-center justify-between ">
+    <main className="flex container-fluid min-h-screen bg-white w-full flex-col items-center justify-between ">
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
           className="w-full flex items-center "
           style={{
-            backgroundImage: `url('/assets/images/mainbg1.jpg')`,
+            backgroundImage: `url('/assets/images/schoolbnr.png')`,
             padding: "40px",
-            border: "1px solid",
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             height:"70vh"
@@ -147,13 +146,18 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-12 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24">
+            <div>
+            </div>
+            <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-8 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24">
+              <span className="text-6xl font-bold text-orMain" style={{lineHeight:"0 !important"}}>“</span>
+              <div className="flex items-center justify-center">
               <div className="w-3/5 flex flex-col items-baseline gap-8">
                 <span>
                   We aim at inspiring our students to dream more, learn more, do
                   more, and become more in their respective journeys of life.
                 </span>
                 <span className="text-sm ">- Director, Brookside</span>
+              </div>
               </div>
             </div>
           </div>
