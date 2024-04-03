@@ -94,32 +94,32 @@ const AdmissionEnquiryForm: React.FC = () => {
                 <option value="Grade 3">Grade 3</option>
                 {/* Add more grade options as needed */}
               </Field>
-              <ErrorMessage name="grade" component="div" />
+              <ErrorMessage name="grade" component="div" className='text-xs text-red-600' />
             </div>
 
             <div className="mb-4">
               <Field type="text" name="childName" placeholder="Child Name" className="border w-full border-black p-2 rounded-md" />
-              <ErrorMessage name="childName" component="div" />
+              <ErrorMessage name="childName" component="div" className='text-xs text-red-600'/>
             </div>
 
             <div className="mb-4">
               <Field type="text" name="parentName" placeholder="Parent Name" className="border w-full border-black p-2 rounded-md" />
-              <ErrorMessage name="parentName" component="div" />
+              <ErrorMessage name="parentName" component="div" className='text-xs text-red-600' />
             </div>
 
             <div className="mb-4">
               <Field type="email" name="email" placeholder="Email Address" className="border w-full border-black p-2 rounded-md" />
-              <ErrorMessage name="email" component="div" />
+              <ErrorMessage name="email" component="div" className='text-xs text-red-600'/>
             </div>
 
             <div className="mb-4">
               <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border w-full border-black p-2 rounded-md" />
-              <ErrorMessage name="mobileNumber" component="div" />
+              <ErrorMessage name="mobileNumber" component="div" className='text-xs text-red-600' />
             </div>
 
             <div className="mb-4">
               <Field type="text" name="city" placeholder="City" className="border w-full border-black p-2 rounded-md" />
-              <ErrorMessage name="city" component="div" />
+              <ErrorMessage name="city" component="div" className='text-xs text-red-600' />
             </div>
 
             <button className='bg-orMain text-white px-4 py-2 rounded text-xs w-full font-bold' type="submit" disabled={isSubmitting}>
