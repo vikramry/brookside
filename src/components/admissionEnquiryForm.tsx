@@ -1,7 +1,10 @@
 "use client"
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { AdmissionMail } from '@/action';
+import toast, { Toaster } from 'react-hot-toast';
+import { ClipLoader } from 'react-spinners';
 
 interface FormValues {
   grade: string;
@@ -30,63 +33,122 @@ const initialValues: FormValues = {
   city: '',
 };
 
-const onSubmit = (values: FormValues, actions: any) => {
-  // Submit logic goes here
-  console.log(values);
-  actions.setSubmitting(false);
-};
 
-const AdmissionEnquiryForm: React.FC = () => (
-  <div className="bg-white p-8 shadow-md rounded-xl">
-    <h2 className="text-2xl font-bold mb-4">Admission Enquiry</h2>
-    <Formik
-      initialValues={initialValues}
-      validationSchema={validationSchema}
-      onSubmit={onSubmit}
-    >
-      {({ isSubmitting }) => (
-        <Form>
-          <div className="mb-4">
-            <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md" placeholder="Select Grade">
-              <option value="" disabled>Select Grade</option>
-              <option value="Grade 1">Grade 1</option>
-              <option value="Grade 2">Grade 2</option>
-              <option value="Grade 3">Grade 3</option>
-              {/* Add more grade options as needed */}
-            </Field>
-            <ErrorMessage name="grade" component="div" />
-          </div>
 
-          <div className="mb-4">
-            <Field type="text" name="childName" placeholder="Child Name" className="border w-full border-black p-2 rounded-md" />
-            <ErrorMessage name="childName" component="div" />
-          </div>
+const AdmissionEnquiryForm: React.FC = () => {
+  const [loading, setLoading] = useState(false)
+  return (
+    <div className="bg-white p-8 shadow-md rounded-xl">
+      <h2 className="text-2xl font-bold mb-4">Admission Enquiry</h2>
+      <Formik
+        initialValues={initialValues}
+        validationSchema={validationSchema}
+        onSubmit={async (values: FormValues, { resetForm }) => {
+          console.log(values, "values")
+          try {
+            setLoading(true);
+            const formData = new FormData();
+            formData.set("grade", values.grade);
+            formData.set("childName", values.childName);
+            formData.set("parentName", values.parentName);
+            formData.set("email", values.email);
+            formData.set("mobileNumber", values.mobileNumber);
+            formData.set("city", values.city);
 
-          <div className="mb-4">
-            <Field type="text" name="parentName" placeholder="Parent Name" className="border w-full border-black p-2 rounded-md" />
-            <ErrorMessage name="parentName" component="div" />
-          </div>
 
-          <div className="mb-4">
-            <Field type="email" name="email" placeholder="Email Address" className="border w-full border-black p-2 rounded-md" />
-            <ErrorMessage name="email" component="div" />
-          </div>
 
-          <div className="mb-4">
-            <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border w-full border-black p-2 rounded-md" />
-            <ErrorMessage name="mobileNumber" component="div" />
-          </div>
+            const response = await AdmissionMail(formData);
+            if (response.error) {
+              throw new Error(response.error);
+            } else {
+              toast.success("Successfully submited!")
+              resetForm({
+                values: {
+                  grade: '',
+                  childName: '',
+                  parentName: '',
+                  email: '',
+                  mobileNumber: '',
+                  city: ''
 
-          <div className="mb-4">
-            <Field type="text" name="city" placeholder="City" className="border w-full border-black p-2 rounded-md" />
-            <ErrorMessage name="city" component="div" />
-          </div>
+                },
+              });
+            }
+          } catch (error) {
+            console.log(error, "error");
+            toast.error("Something went wrong,please try again")
+          } finally {
+            setLoading(false);
 
-          <button className='bg-orMain text-white px-4 py-2 rounded text-xs w-full font-bold' type="submit" disabled={isSubmitting}>Submit</button>
-        </Form>
-      )}
-    </Formik>
-  </div>
-);
+            // resetForm();
+          }
+        }}
+      >
+        {({ isSubmitting }) => (
+          <Form>
+            <div className="mb-4">
+              <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md" placeholder="Select Grade">
+                <option value="" disabled>Select Grade</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                {/* Add more grade options as needed */}
+              </Field>
+              <ErrorMessage name="grade" component="div" />
+            </div>
+
+            <div className="mb-4">
+              <Field type="text" name="childName" placeholder="Child Name" className="border w-full border-black p-2 rounded-md" />
+              <ErrorMessage name="childName" component="div" />
+            </div>
+
+            <div className="mb-4">
+              <Field type="text" name="parentName" placeholder="Parent Name" className="border w-full border-black p-2 rounded-md" />
+              <ErrorMessage name="parentName" component="div" />
+            </div>
+
+            <div className="mb-4">
+              <Field type="email" name="email" placeholder="Email Address" className="border w-full border-black p-2 rounded-md" />
+              <ErrorMessage name="email" component="div" />
+            </div>
+
+            <div className="mb-4">
+              <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border w-full border-black p-2 rounded-md" />
+              <ErrorMessage name="mobileNumber" component="div" />
+            </div>
+
+            <div className="mb-4">
+              <Field type="text" name="city" placeholder="City" className="border w-full border-black p-2 rounded-md" />
+              <ErrorMessage name="city" component="div" />
+            </div>
+
+            <button className='bg-orMain text-white px-4 py-2 rounded text-xs w-full font-bold' type="submit" disabled={isSubmitting}>
+              {loading ? (
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                >
+                  <ClipLoader size={20} color="#000" />
+                </div>
+              ) : (
+                "Submit"
+              )}
+            </button>
+          </Form>
+        )}
+      </Formik>
+      <Toaster toastOptions={{
+        style: {
+          maxWidth: 500,
+          fontSize: "14px"
+        }
+      }} />
+    </div>
+  )
+}
+
 
 export default AdmissionEnquiryForm;

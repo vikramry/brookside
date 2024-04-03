@@ -45,7 +45,7 @@ const page = () => {
                                 validationSchema={SignupSchema}
                                 enableReinitialize={true}
                                 onSubmit={async (values, { resetForm }) => {
-                                    console.log(values,"values")
+                                    console.log(values, "values")
                                     try {
                                         setLoading(true);
                                         const formData = new FormData();
@@ -86,23 +86,23 @@ const page = () => {
                                         <div className="flex flex-col gap-y-5">
                                             <Field name="name">
                                                 {({ field, form: { touched, errors }, meta }: any) => (
-                                                    <input {...field} type="text" placeholder="Your name*" className="border-2 bg-gray-50 p-2 rounded" style = {{
+                                                    <input {...field} type="text" placeholder="Your name*" className="border-2 bg-gray-50 p-2 rounded" style={{
                                                         border: `${meta.touched && meta.error
                                                             ? "2px solid red"
                                                             : "1px solid gray"
                                                             }`,
-                                                      }}/>
+                                                    }} />
 
                                                 )}
                                             </Field>
                                             <Field name="email">
                                                 {({ field, form: { touched, errors }, meta }: any) => (
-                                                    <input {...field} type="email" placeholder="Your email*" className="border-2 bg-gray-50 p-2 rounded" style = {{
+                                                    <input {...field} type="email" placeholder="Your email*" className="border-2 bg-gray-50 p-2 rounded" style={{
                                                         border: `${meta.touched && meta.error
                                                             ? "2px solid red"
                                                             : "1px solid gray"
                                                             }`,
-                                                      }}/>
+                                                    }} />
 
                                                 )}
                                             </Field>
@@ -110,24 +110,24 @@ const page = () => {
                                             <Field name="phone">
                                                 {({ field, form: { touched, errors }, meta }: any) => (
 
-                                                    <input {...field} type="number" placeholder="Phone*" className="border-2 bg-gray-50 p-2 rounded" style = {{
+                                                    <input {...field} type="number" placeholder="Phone*" className="border-2 bg-gray-50 p-2 rounded" style={{
                                                         border: `${meta.touched && meta.error
                                                             ? "2px solid red"
                                                             : "1px solid gray"
                                                             }`,
-                                                      }}/>
+                                                    }} />
 
                                                 )}
                                             </Field>
 
                                             <Field name="subject">
                                                 {({ field, form: { touched, errors }, meta }: any) => (
-                                                    <input {...field} type="text" placeholder="Your subject" className="border-2 bg-gray-50 p-2 rounded" style = {{
+                                                    <input {...field} type="text" placeholder="Your subject" className="border-2 bg-gray-50 p-2 rounded" style={{
                                                         border: `${meta.touched && meta.error
                                                             ? "2px solid red"
                                                             : "1px solid gray"
                                                             }`,
-                                                      }}/>
+                                                    }} />
 
                                                 )}
                                             </Field>
@@ -135,30 +135,30 @@ const page = () => {
                                                 {({ field, form: { touched, errors }, meta }: any) => (
                                                     <textarea {...field} className="border-2 bg-gray-50 p-2 rounded h-[140px]"
                                                         placeholder="Write your message..."
-                                                        style = {{
+                                                        style={{
                                                             resize: 'vertical',
                                                             border: `${meta.touched && meta.error
                                                                 ? "2px solid red"
                                                                 : "1px solid gray"
                                                                 }`,
-                                                          }}
+                                                        }}
                                                     />
                                                 )}
                                             </Field>
 
-                                        <button type="submit" className="bg-[#F3A20C] rounded-md p-2"> {loading ? (
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      >
-                        <ClipLoader size={20} color="#000" />
-                      </div>
-                    ) : (
-                      "SEND YOUR MESSAGE"
-                    )}</button>
+                                            <button type="submit" className="bg-[#F3A20C] rounded-md p-2 text-white font-bold text-sm h-12"> {loading ? (
+                                                <div
+                                                    style={{
+                                                        display: "flex",
+                                                        justifyContent: "center",
+                                                        alignItems: "center",
+                                                    }}
+                                                >
+                                                    <ClipLoader size={20} color="#000" />
+                                                </div>
+                                            ) : (
+                                                "SEND YOUR MESSAGE"
+                                            )}</button>
                                         </div>
 
                                     </Form>
@@ -184,11 +184,11 @@ const page = () => {
                 <ContactCards />
             </div>
             <Toaster toastOptions={{
-        style: {
-          maxWidth: 500,
-          fontSize: "14px"
-        }
-      }} />        </div>
+                style: {
+                    maxWidth: 500,
+                    fontSize: "14px"
+                }
+            }} />        </div>
     )
 }
 
