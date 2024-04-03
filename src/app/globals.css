@@ -59,3 +59,23 @@ body {
 .swiper-wrapper{
   gap: 12em;
 }
+
+
+@media (prefers-color-scheme: dark) {
+
+  /* apply if browser set to dark mode */
+  body {
+    background-color: white !important;
+    color: black !important;
+    /* text color */
+  }
+}
+
+@media (not (prefers-color-scheme: dark)) {
+
+  /* apply if browser set to light mode.  Also default. */
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}
