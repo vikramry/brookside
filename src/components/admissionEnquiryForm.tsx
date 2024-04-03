@@ -38,8 +38,8 @@ const initialValues: FormValues = {
 const AdmissionEnquiryForm: React.FC = () => {
   const [loading, setLoading] = useState(false)
   return (
-    <div className="bg-white p-8 shadow-md rounded-xl">
-      <h2 className="text-2xl font-bold mb-4">Admission Enquiry</h2>
+    <div className="bg-white p-8 shadow-md rounded-xl flex flex-col items-center ">
+      <h2 className="text-2xl font-bold mb-4 text-orMain">Admission Enquiry</h2>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -85,7 +85,7 @@ const AdmissionEnquiryForm: React.FC = () => {
         }}
       >
         {({ isSubmitting }) => (
-          <Form>
+          <Form className=' w-full'>
             <div className="mb-4">
               <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md" placeholder="Select Grade">
                 <option value="" disabled>Select Grade</option>
