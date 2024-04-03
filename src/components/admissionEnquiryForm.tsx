@@ -122,7 +122,7 @@ const AdmissionEnquiryForm: React.FC = () => {
               <ErrorMessage name="city" component="div" className='text-xs text-red-600' />
             </div>
 
-            <button className='bg-orMain text-white px-4 py-2 rounded text-xs w-full font-bold' type="submit" disabled={isSubmitting}>
+            <button className='bg-orMain text-white px-4 py-2 rounded text-xl w-full font-bold' type="submit" disabled={isSubmitting}>
               {loading ? (
                 <div
                   style={{
