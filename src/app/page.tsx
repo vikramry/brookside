@@ -59,7 +59,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="flex container-fluid min-h-screen bg-white w-full flex-col items-center justify-between ">
+    <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between ">
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
