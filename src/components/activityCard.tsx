@@ -11,8 +11,8 @@ function ActivityCard({heading,content,imgURL,isReverse}:{heading:string,content
                 </div>
                 <p className='text-[16px] font-normal'>{content}</p>
             </div>
-            <div className='w-[288px] h-[318px]'>
-                <img src={imgURL} alt='img'/>
+            <div className='w-[288px]'>
+                <img src={imgURL} alt='img' className='w-[288px] h-auto max-h-96 object-fill'/>
             </div>
         </div>
     </div>
