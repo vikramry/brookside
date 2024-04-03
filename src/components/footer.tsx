@@ -15,7 +15,7 @@ const Footer = () => {
                             alt="img-blur-shadow"
                             className="w-[251px] h-[64px]"
                         />
-                        <div className="mt-[50px]">
+                        <div className="mt-[30px]">
                             <p>
                                 Copyright © Brookside Global School 2024 | All Rights Reserved
                             </p>
@@ -55,11 +55,11 @@ const Footer = () => {
                                         Activities
                                     </Link>
                                 </li>
-                                <li>
+                                {/* <li>
                                     <Link href="/Blog">
                                         Blog
                                     </Link>
-                                </li>
+                                </li> */}
                                 <li>
                                     <Link href="/Gallery">
                                         Gallery
