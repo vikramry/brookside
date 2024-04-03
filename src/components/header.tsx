@@ -9,7 +9,6 @@ import Image from "next/image";
 const Header = () => {
   const [nav, setNav] = useState(false);
   const pathname = usePathname();
-  console.log("🚀 ~ Header ~ pathname:", pathname);
 
   const links = [
     {
@@ -28,10 +27,10 @@ const Header = () => {
       id: 4,
       link: "activities",
     },
-    {
-      id: 5,
-      link: "Blog",
-    },
+    // {
+    //   id: 5,
+    //   link: "Blog",
+    // },
     {
       id: 6,
       link: "Gallery",
