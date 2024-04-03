@@ -11,7 +11,7 @@ const data = [
     }, {
         content: 'Our Art and Craft corner where creativity knows no bounds is a place where students can explore their imagination and develop their artistic skills in a fun and engaging way.',
         heading: 'Language Lab',
-        imgURL: "/assets/images/activitycard2.png",
+        imgURL: "/assets/images/starimg.png",
         isReverse: true
 
     },

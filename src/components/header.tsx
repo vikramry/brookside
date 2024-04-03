@@ -51,7 +51,7 @@ const Header = () => {
             className="link-underline link-underline-black"
             href="/"
           >
-            <Image className="" width={173} height={44} src={logo} alt="logo"/>
+            <Image className="" width={173} height={44} src={logo} alt="logo" />
           </Link>
         </h1>
       </div>
@@ -60,13 +60,12 @@ const Header = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className={`nav-links mx-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-black duration-200 link-underline  ${
-              pathname == `/${link.toLowerCase()}` ? "activeLink" : ""
-            }
+            className={`nav-links mx-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-black duration-200 link-underline  ${pathname == `/${link.toLowerCase()}` ? "activeLink" : ""
+              }
             ${pathname == "/" && link == "home" ? "activeLink" : ""}
             `
-          
-        }
+
+            }
           >
             <Link href={link == "home" ? "/" : link}>{link}</Link>
           </li>
@@ -85,11 +84,10 @@ const Header = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className={`px-4 cursor-pointer capitalize py-6 text-4xl ${
-                pathname == `/${link.toLowerCase()}` ? "activeLink" : ""
-              }`}
+              className={`px-4 cursor-pointer capitalize py-6 text-4xl ${pathname == `/${link.toLowerCase()}` ? "activeLink" : ""
+                }`}
             >
-              <Link onClick={() => setNav(!nav)} href={link}>
+              <Link onClick={() => setNav(!nav)} href={link === "home" ? "/" : link}>
                 {link}
               </Link>
             </li>

@@ -24,6 +24,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import ContactSection from "@/components/AcademicsComponents/ContactSection";
 
 export default function Home() {
   const data = [
@@ -131,9 +132,8 @@ export default function Home() {
                       alt="goldshield"
                     />
                     <span
-                      className={`text-base ${
-                        item.color == "gold" ? "text-orMain" : "text-purpleMain"
-                      }`}
+                      className={`text-base ${item.color == "gold" ? "text-orMain" : "text-purpleMain"
+                        }`}
                     >
                       {item.title}
                     </span>
@@ -148,22 +148,22 @@ export default function Home() {
             </div>
             <div></div>
             <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-8 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24">
-            
+
               <div className="flex items-center justify-center">
 
                 <div className="w-3/5 flex flex-col items-baseline gap-8">
                   <div className="flex flex-col">
-                <span
-                className="text-6xl w-fit font-bold text-orMain relative " style={{left:"-1em"}}
-               
-              >
-                “
-              </span>
-                  <span>
-                    We aim at inspiring our students to dream more, learn more,
-                    do more, and become more in their respective journeys of
-                    life.
-                  </span>
+                    <span
+                      className="text-6xl w-fit font-bold text-orMain relative " style={{ left: "-1em" }}
+
+                    >
+                      “
+                    </span>
+                    <span>
+                      We aim at inspiring our students to dream more, learn more,
+                      do more, and become more in their respective journeys of
+                      life.
+                    </span>
                   </div>
                   <span className="text-sm ">- Director, Brookside</span>
                 </div>
@@ -269,87 +269,8 @@ export default function Home() {
                 <FaArrowRight className="text-base" />
               </button>
             </div>
-            <div className="bg-white w-full py-20 flex gap-12">
-              <div className="w-2/6 flex flex-col items-baseline p-16 gap-8 bg-[#F6EFDD]">
-                <div className="flex w-full justify-center">
-                  <span className="text-purpleMain text-xl font-bold">
-                    Brookside Global School
-                  </span>
-                </div>
-                <div className="flex gap-4">
-                  <span className="text-xl text-orMain">
-                    <FaLocationDot />
-                  </span>
-                  <span>
-                    Plot No 9, Situated at Silpa Valley, Near My Home Mangala,
-                    Kondapur, Telangana 500084
-                  </span>
-                </div>
-                <div className="flex gap-4">
-                  <span className="text-xl text-orMain">
-                    <FaPhone />
-                  </span>
-                  <span className="flex flex-col">
-                    <span className="text-base font-semibold">
-                      040 4917 1111
-                    </span>
-                    <span className="text-sm font-light">
-                      9:00 AM to 5:00 PM IST
-                    </span>
-                  </span>
-                </div>
-                <div className="flex gap-4">
-                  <span className="text-xl text-orMain">
-                    <FaEnvelope />
-                  </span>
-                  <span className="flex flex-col">
-                    <span className="text-base font-semibold">
-                      info@brooksideschool.in
-                    </span>
-                    <span className="text-sm font-light">For Admissions</span>
-                  </span>
-                </div>
-              </div>
-              <div className="w-4/6 flex items-center p-16 gap-6 bg-[#F6EFDD]">
-                <div className="flex flex-col gap-8">
-                  <span className="flex gap-2 items-center">
-                    <span className="text-base">
-                      <FaInstagram />
-                    </span>
-
-                    <span className="text-base">instagram</span>
-                  </span>
-                  <span className="flex gap-2 items-center">
-                    <span className="text-base">
-                      <FaFacebookSquare />
-                    </span>
-
-                    <span className="text-base">facebook</span>
-                  </span>
-                  <span className="flex gap-2 items-center">
-                    <span className="text-base">
-                      <FaTwitter />
-                    </span>
-
-                    <span className="text-base">twitter</span>
-                  </span>
-                  <span className="flex gap-2 items-center">
-                    <span className="text-base">
-                      <FaYoutube />
-                    </span>
-
-                    <span className="text-base">youtube</span>
-                  </span>
-
-                  {/* <span>facebook</span>
-                  <span>twitter</span>
-                  <span>youtube</span> */}
-                </div>
-                <img className="w-44" src={k1.src} alt="k1" />
-                <img className="w-44" src={k2.src} alt="k2" />
-                <img className="w-44" src={k3.src} alt="k3" />
-              </div>
-            </div>
+            <ContactSection />
+            
           </div>
         </div>
       </div>
