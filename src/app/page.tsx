@@ -148,19 +148,23 @@ export default function Home() {
             </div>
             <div></div>
             <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-8 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24">
-              <span
-                className="text-6xl font-bold text-orMain"
-                style={{ lineHeight: "0 !important" }}
+            
+              <div className="flex items-center justify-center">
+
+                <div className="w-3/5 flex flex-col items-baseline gap-8">
+                  <div className="flex flex-col">
+                <span
+                className="text-6xl w-fit font-bold text-orMain relative " style={{left:"-1em"}}
+               
               >
                 “
               </span>
-              <div className="flex items-center justify-center">
-                <div className="w-3/5 flex flex-col items-baseline gap-8">
                   <span>
                     We aim at inspiring our students to dream more, learn more,
                     do more, and become more in their respective journeys of
                     life.
                   </span>
+                  </div>
                   <span className="text-sm ">- Director, Brookside</span>
                 </div>
               </div>
