@@ -16,7 +16,7 @@ const Footer = () => {
                             className="w-[251px] h-[64px]"
                         />
                         <div className="mt-[30px]">
-                            <p>
+                            <p className="text-[13px]">
                                 Copyright © Brookside Global School 2024 | All Rights Reserved
                             </p>
                         </div>
