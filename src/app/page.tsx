@@ -214,7 +214,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center py-20">
-          <div className="container w-full flex items-center flex-col justify-center">
+          <div className=" w-full flex items-center flex-col justify-center">
             <div className="flex gap-2 items-baseline">
               <span className="text-orMain text-7xl font-bold">ILC’s -</span>
               <span className="text-purpleMain text-4xl font-bold">
@@ -263,7 +263,7 @@ export default function Home() {
                 <img src={allMix.src} alt="allmix" />
               </div>
             </div>
-            <div className="w-screen flex items-center justify-center bg-lightBlue h-40 ">
+            <div className="w-full flex items-center justify-center bg-lightBlue h-40 ">
               <button className="bg-purpleMain text-white px-4  py-2 h-fit rounded text-base font-bold flex items-center gap-4 ">
                 <a href="/activities">Explore all activities</a>
                 <FaArrowRight className="text-base" />
