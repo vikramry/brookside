@@ -155,9 +155,9 @@ export async function AdmissionMail(data: any) {
 }
 
 
-export const getGalleryImagesFromCloudinary = async () => {
+export const getGalleryImagesFromCloudinary = async (folder: string) => {
   const cloudName = process.env.CLOUDINARY_CLOUD_NAME
-  const cloudinaryEndpoint = `https://api.cloudinary.com/v1_1/${cloudName}/resources/image?asset_folder=brookside-gallery&max_results=100`;
+  const cloudinaryEndpoint = `https://api.cloudinary.com/v1_1/${cloudName}/resources/image?asset_folder=brookside-gallery&max_results=500`;
 
   const apiKey = process.env.CLOUDINARY_API_KEY;
   const apiSecret = process.env.CLOUDINARY_API_SECRET;
@@ -173,6 +173,30 @@ export const getGalleryImagesFromCloudinary = async () => {
     }
   })
   const data = await respone.json();
-  
-  return JSON.stringify(data?.resources?.filter((resource: any) => resource?.folder === "brookside-gallery"));
+  const photos = data?.resources?.filter((resource: any) => folder === "ALL" ? resource?.folder.includes("brookside-gallery") : resource?.folder === `brookside-gallery/${folder.charAt(0) + folder.slice(1).toLowerCase()}`)
+  return JSON.stringify(photos);
+}
+
+
+export const getAllFoldersFromCloudinary = async () => {
+  const cloudName = process.env.CLOUDINARY_CLOUD_NAME
+  const cloudinaryEndpoint = `https://api.cloudinary.com/v1_1/${cloudName}/folders/brookside-gallery`;
+
+  const apiKey = process.env.CLOUDINARY_API_KEY;
+  const apiSecret = process.env.CLOUDINARY_API_SECRET;
+
+  const credentials = `${apiKey}:${apiSecret}`;
+  const encodedCredentials = btoa(credentials);
+  const authorizationHeader = `Basic ${encodedCredentials}`;
+
+  const respone = await fetch(cloudinaryEndpoint, {
+    method: "GET",
+    headers: {
+      'Authorization': authorizationHeader
+    }
+  })
+  const data = await respone.json();
+  const tabs = data?.folders?.map((fold: any) => { return { label: fold?.name, value: fold?.name?.toUpperCase() } });
+  return JSON.stringify([{ label: "All", value: "ALL" }, ...tabs]);
+
 }
