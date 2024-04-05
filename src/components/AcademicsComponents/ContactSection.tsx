@@ -38,8 +38,8 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap'>
-                <div className='flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F]'>
+            <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap sm:p-10 sm:gap-8'>
+                <div className='flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4'>
                     <Link href={'https://instagram.com'} target='_blank'>
                         <p className='flex justify-start items-center gap-2'>
                             <IoLogoInstagram />

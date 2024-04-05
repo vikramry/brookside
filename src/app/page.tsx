@@ -188,13 +188,13 @@ export default function Home() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="container  flex flex-col gap-12 items-center justify-center sm:gap-6">
+          <div className="container  flex flex-col gap-12 items-center justify-center">
             <div className="flex flex-col justify-center items-center">
-              <span className="text-purpleMain text-3xl font-bold sm:text-base">
+              <span className="text-purpleMain text-3xl font-bold sm:text-xl">
                 Ages We meet kids where they are
               </span>
             </div>
-            <div className="flex gap-12 w-full sm:gap-6">
+            <div className="flex gap-12 w-full sm:gap-6 sm:flex-col">
               <Card2
                 img={b1}
                 grade="IK1-IK3"
