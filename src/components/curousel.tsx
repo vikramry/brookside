@@ -61,7 +61,7 @@ export default function CurouselComponent() {
         navigation={true}
         // navigation
         modules={[Pagination,  Navigation,Autoplay]}
-        className="mySwiper !py-8"
+        className="mySwiper !py-8 sm:!p-8 sm:!w-5/6"
       >
         {cardData.map((item, index) => {
           return (
