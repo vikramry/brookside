@@ -225,20 +225,20 @@ export default function Home() {
             <div className="w-full container pt-16 flex sm:pt-8 sm:flex-col">
               <div className=" w-1/3 flex flex-col gap-16 sm:gap-4 sm:w-full sm:pl-16">
                 <div className="flex flex-col gap-8 sm:gap-4">
-                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-xl">
+                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
                     Art & Craft Corner
                   </span>
-                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify">
+                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-xs">
                     Our Art and Craft Corner where creativity knows no bounds is
                     a place where students can explore their imagination and
                     develop their artistic skills in a fun and engaging way.
                   </span>
                 </div>
                 <div className="flex flex-col gap-8 sm:gap-4">
-                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-xl">
+                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
                     Role Play Area
                   </span>
-                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify">
+                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-xs">
                     Our Role Play area provides a dynamic and immersive learning
                     experience for our students. By assuming different roles and
                     scenarios, our students develop important social and
@@ -247,10 +247,10 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="flex flex-col gap-8 sm:gap-4">
-                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-xl">
+                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
                     Dance & Drama Studio
                   </span>
-                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify">
+                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-xs">
                     Our Dance and Drama studio provides a vibrant and creative
                     space for our students to explore the world of performing
                     arts. Through dance and drama activities, our students
@@ -266,7 +266,7 @@ export default function Home() {
             <div className="w-full flex items-center justify-center bg-lightBlue h-40 ">
               <button className="bg-purpleMain text-white px-4  py-2 h-fit rounded text-base font-bold flex items-center gap-4 ">
                 <a href="/activities">Explore all activities</a>
-                <FaArrowRight className="text-base" />
+                <FaArrowRight className="text-base sm:text-xs" />
               </button>
             </div>
             <ContactSection />
