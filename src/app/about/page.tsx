@@ -111,7 +111,7 @@ const page = () => {
       <div className="flex justify-center items-center   md:px-5 lg:px-0">
         <div className="flex flex-row flex-wrap gap-11  bg-[#F6EAD4] md:p-10 justify-center py-4 rounded-3xl">
           <img
-            src="/assets/images/profile2.png"
+            src="/assets/images/pic3.jpg"
             alt="img-blur-shadow"
             className="  w-[410] h-[350px]"
           />
