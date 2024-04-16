@@ -43,7 +43,7 @@ export default function CurouselComponent() {
        
         spaceBetween={30}
         loop={true}
-        slidesPerView={'auto'}
+        slidesPerView={3}
         centeredSlides={true}
         autoplay={{
           delay: 2500,
@@ -55,7 +55,7 @@ export default function CurouselComponent() {
             spaceBetween: 20,
           },
           640: {
-            slidesPerView: 'auto',
+            slidesPerView: 3,
             spaceBetween: 30,
           },
          
