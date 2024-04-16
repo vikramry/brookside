@@ -172,8 +172,8 @@ export default function Home() {
           </div>
         </div>
         <div className="h-32 bg-white w-full sm:h-0"></div>
-        <div className="py-16 sm:py-4">
-          <div className="flex justify-center">
+        <div className="py-16 sm:py-4 container">
+          <div className="flex justify-center container">
             <span className="font-playfair text-3xl text-purpleMain sm:text-xl">
               Parent’s Review
             </span>
