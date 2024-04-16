@@ -107,7 +107,7 @@ export default function Home() {
         </div>
         <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em">
           <div className="flex flex-col  items-center">
-            <div className="container px-10 flex sm:flex-col">
+            <div className="container lg:px-10 flex sm:flex-col">
               <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6">
                 <span className="text-5xl font-playfair w-1/2 sm:text-base sm:w-full sm:pl-2">
                   Learning Begins With Us
@@ -188,7 +188,7 @@ export default function Home() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="container  px-10 flex flex-col gap-12 items-center justify-center">
+          <div className="container  lg:px-10 flex flex-col gap-12 items-center justify-center">
             <div className="flex flex-col justify-center items-center">
               <span className="text-purpleMain text-3xl font-bold sm:text-xl">
                 Ages We meet kids where they are
@@ -222,7 +222,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="w-full container px-10 pt-16 flex sm:pt-8 sm:flex-col">
+            <div className="w-full container lg:px-10 pt-16 flex sm:pt-8 sm:flex-col">
               <div className=" w-1/3 flex flex-col gap-16 sm:gap-4 sm:w-full sm:pl-16">
                 <div className="flex flex-col gap-8 sm:gap-4">
                   <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
