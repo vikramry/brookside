@@ -13,19 +13,19 @@ const ContactSection = () => {
     return (
         <div className='bg-white py-24 flex justify-center gap-16 flex-wrap md:items-stretch items-center px-5 md:px-0'>
             <div className='bg-[#F6EFDD] rounded-2xl max-w-[360px] flex justify-start items-center flex-col p-6 gap-4'>
-                <h5 className='font-bold text-xl'>Brookside Global School</h5>
+                <h5 className='font-bold text-xl '>Brookside Global School</h5>
                 <div className='flex flex-col justify-start items-start w-full gap-3'>
 
                     <div className='flex justify-between items-center gap-4'>
                         <IoLocationSharp className='text-[#F3A20C] w-[50px] h-[60px]' />
-                        <p className='text-base font-normal'>Plot No 9, Situated at Silpa Valley,
+                        <p className='text-base font-normal sm:text-base'>Plot No 9, Situated at Silpa Valley,
                             Near My Home Mangala, Kondapur,
                             Telangana 500084</p>
                     </div>
                     <div className='flex justify-between items-center gap-4'>
                         <FaPhoneAlt className='text-[#F3A20C] w-[18px] h-[23px]' />
                         <div className='flex flex-col justify-start items-start'>
-                            <p className='text-lg font-bold'><Link href={`tel:040 4917 1111`}>040 4917 1111</Link></p>
+                            <p className='text-lg font-bold sm:text-xl'><Link href={`tel:040 4917 1111`}>040 4917 1111</Link></p>
                             <p className='text-base'>9:00 AM to 5:00 PM IST</p>
                         </div>
                     </div>
@@ -38,8 +38,8 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap'>
-                <div className='flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F]'>
+            <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap sm:p-10 sm:gap-8'>
+                <div className='flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl'>
                     <Link href={'https://instagram.com'} target='_blank'>
                         <p className='flex justify-start items-center gap-2'>
                             <IoLogoInstagram />

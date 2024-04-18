@@ -30,13 +30,18 @@ export default function CurouselComponent() {
       desc: "Enrolling here was the best decision. My child thrives in the innovative environment, excelling academically and personally. The focus on modern trends ensures future readiness. ",
       userName: "Nastya Samantha",
     },
+    {
+      img: logo,
+      desc: "This school is exceptional. It offers top-notch education and holistic development. My child gains essential skills and values, and I'm confident about their future here. ",
+      userName: "Marco Ciampi",
+    },
    
   ];
   return (
-    <>
+    <div className="container">
       <Swiper
        
-        spaceBetween={10}
+        spaceBetween={30}
         loop={true}
         slidesPerView={3}
         centeredSlides={true}
@@ -51,7 +56,7 @@ export default function CurouselComponent() {
           },
           640: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 30,
           },
          
         }}
@@ -61,7 +66,7 @@ export default function CurouselComponent() {
         navigation={true}
         // navigation
         modules={[Pagination,  Navigation,Autoplay]}
-        className="mySwiper !py-8"
+        className="container mySwiper !py-8 sm:!p-8 sm:!w-5/6"
       >
         {cardData.map((item, index) => {
           return (
@@ -71,6 +76,6 @@ export default function CurouselComponent() {
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 }
