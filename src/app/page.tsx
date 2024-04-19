@@ -204,17 +204,17 @@ export default function Home() {
               <Card2
                 img={b1}
                 grade="IK1-IK3"
-                desc="We focus on helping children discover and explore their surroundings, while also develop their language skills and foster a scientific mindset. We also aim to equip children with new-age skills that prepares them for the future. To promote... "
+                desc="Our primary focus is on guiding children to explore and understand their environment while nurturing their language skills and fostering a scientific mindset. We're dedicated to equipping them with contemporary skills essential for the future. Encouraging interaction, we prioritize activities that fuel creativity and imagination, especially through art and music. As the leading primary school in Kondapur, we excel in cultivating artistic talents and empowering children to express themselves freely "
               />
               <Card2
                 img={b2}
                 grade="Grade 1-2"
-                desc="We place great emphasis on promoting interaction among students, cultivating their creativity, and enhancing their imagination through engaging art and music activities. To ensure effective learning, we provide age-appropriate learning materials... "
+                desc="We highly prioritize fostering student interaction, nurturing creativity, and stimulating imagination through dynamic art and music activities. To optimize learning outcomes, we supply age-appropriate educational materials and tools tailored to each student's unique pace, ensuring that all learners can advance at their own speed with the necessary support for success. "
               />
               <Card2
                 img={b3}
                 grade="Grade 3-5"
-                desc="We focus on developing students' vocabulary, attention span, reading, and writing skills through innovative and engaging teaching methods. By encouraging active participation and providing personalized feedback, we ensure that every... "
+                desc="Our primary aim is to enhance students' vocabulary, attention span, reading, and writing abilities using innovative and captivating teaching techniques. Through fostering active involvement and delivering personalized feedback, we guarantee that each student is aided in realizing their maximum capabilities. Our curriculum primes students for primary school academics by stressing critical thinking, problem-solving, and adept communication. We endeavor to cultivate a nurturing and encouraging atmosphere that instills curiosity, confidence, and a zest for learning in our students. "
               />
             </div>
           </div>
