@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.brooksideschool.in
+
+# Sitemaps
+Sitemap: https://www.brooksideschool.in/sitemap.xml
