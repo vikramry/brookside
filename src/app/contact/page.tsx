@@ -1,4 +1,5 @@
 "use client"
+import type { Metadata } from "next";
 import ContactCards from "@/components/contactPaceCards"
 import * as Yup from "yup";
 import { Field, Form, Formik, FormikProps } from "formik";
@@ -6,6 +7,11 @@ import { useState } from "react";
 import { contactMail } from "@/action";
 import { ClipLoader } from "react-spinners";
 import toast, { Toaster } from 'react-hot-toast';
+
+export const metadata: Metadata = {
+    title: "Conatct Us | Admissions Open for AY 2024 - 2025",
+    description: "Reach out to us for personalized assistance and discover how we can support your child's educational journey. Contact us rightaway on 040 4917 1111",
+  };
 
 const page = () => {
     const [loading, setLoading] = useState(false)

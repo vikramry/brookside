@@ -1,6 +1,12 @@
+import type { Metadata } from "next";
 import AboutGlance from "@/components/AboutGlance";
 import ContactSection from "@/components/AcademicsComponents/ContactSection";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us | Brookside Global School",
+  description: "Discover our commitment to excellence in education at the Best Primary School in Hyderabad - Brookside Global School. Learn about our nurturing environment, dedicated faculty, and innovative programs designed to empower students for future.",
+};
 
 const page = () => {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import ContactSection from "@/components/AcademicsComponents/ContactSection"
 import ActivityCard from "@/components/activityCard"
+
+
+export const metadata: Metadata = {
+    title: "Discover the Activities We Keep in Practice | Brookside Global School",
+    description: "We encourage our children to involve in a variety of activities such as Art, Language Lab, Steam Corner, Dance, Drama, Library and much more. Take a step forward and contact us now.",
+  };
 
 const data = [
     {

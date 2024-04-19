@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import Banner from '@/components/AcademicsComponents/Banner'
 import ContactSection from '@/components/AcademicsComponents/ContactSection'
 import Curriculum from '@/components/AcademicsComponents/Curriculum'
 import MainContent from '@/components/AcademicsComponents/MainContent'
 import ActivityCard from '@/components/activityCard'
 import React from 'react'
+
+export const metadata: Metadata = {
+    title: "Academics at Brookside | Best Primary School in Hyderabad",
+    description: "Let your child learn beyond the classroom at the best primary school in Hyderabad. Know more about what we aim at and our academics. Enroll Today!",
+  };
+
 const data=[
     {
         content:'Confidence is an important factor in academic settings and can impact the student’s ability to learn and succeed. Students are engaged in classroom discussions where they are more likely to apply their skills and ask questions, which helps build confidence by providing them with constructive feedback. It builds positive reinforcement in students by developing a positive self-image and mindset necessary for success.',
