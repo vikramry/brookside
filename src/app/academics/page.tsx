@@ -9,6 +9,8 @@ import React from 'react'
 export const metadata: Metadata = {
     title: "Academics at Brookside | Best Primary School in Hyderabad",
     description: "Let your child learn beyond the classroom at the best primary school in Hyderabad. Know more about what we aim at and our academics. Enroll Today!",
+    keywords:"Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad",
+
   };
 
 const data=[

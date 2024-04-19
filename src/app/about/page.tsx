@@ -6,6 +6,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "About Us | Brookside Global School",
   description: "Discover our commitment to excellence in education at the Best Primary School in Hyderabad - Brookside Global School. Learn about our nurturing environment, dedicated faculty, and innovative programs designed to empower students for future.",
+  keywords:"Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad"
 };
 
 const page = () => {
