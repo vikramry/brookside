@@ -84,7 +84,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 ">
               <div className="flex gap-4 sm:gap-0">
                 <span className="font-playfair text-7xl font-bold sm:text-xl">
-                  We are the &nbsp;
+                  We are the 
                 </span>
                 <span className="flex flex-col ">
                   <span className="font-playfair text-7xl font-bold text-orMain sm:text-xl">
