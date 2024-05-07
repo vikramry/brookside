@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import { AdmissionMail } from '@/action';
 import toast, { Toaster } from 'react-hot-toast';
 import { ClipLoader } from 'react-spinners';
+import axios from 'axios';
 
 interface FormValues {
   grade: string;
@@ -55,12 +56,28 @@ const AdmissionEnquiryForm: React.FC = () => {
             formData.set("mobileNumber", values.mobileNumber);
             formData.set("city", values.city);
 
-
+            const serviceId = "service_ec0qqvd";
+                    const templateId = "template_8b8vkcv";
+                    const publicKey = "hFnSve2iMMNl4kGz3";
+                    
+                    const emaildata={
+                        service_id: serviceId,
+                        template_id: templateId,
+                        user_id: publicKey,
+                        template_params: {
+                          grade:values.grade,
+                          childName:values.childName,
+                          parentName:values.parentName,
+                          email:values.email,
+                          mobileNumber:values.mobileNumber,
+                          city:values.city,
+                        }
+                    }
+                    const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", emaildata);
+                    console.log(res.data)
 
             const response = await AdmissionMail(formData);
-            if (response.error) {
-              throw new Error(response.error);
-            } else {
+            if (res) {
               toast.success("Successfully submited!")
               resetForm({
                 values: {
@@ -76,7 +93,7 @@ const AdmissionEnquiryForm: React.FC = () => {
             }
           } catch (error) {
             console.log(error, "error");
-            toast.error("Something went wrong,please try again")
+            // toast.error("Something went wrong,please try again")
           } finally {
             setLoading(false);
 
