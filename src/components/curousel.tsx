@@ -17,23 +17,28 @@ export default function CurouselComponent() {
   const cardData = [
     {
       img: logo,
-      desc: "Enrolling here was the best decision. My child thrives in the innovative environment, excelling academically and personally. The focus on modern trends ensures future readiness. ",
-      userName: "Jasmine Smith",
+      desc: "This school is an absolute delight for our little one in Playgroup! 🌈✨ The vibrant classrooms, filled with colors and laughter, create an ideal learning haven. The caring and dedicated staff make every day an exciting adventure for our child, fostering both growth and joy. From interactive play to creative activities, this school strikes the perfect balance between fun and education. This isn't just a school; it's a magical place where our child is blossoming with happiness and knowledge. Grateful for the wonderful start they've provided! 🍎📚🎉",
+      userName: "Bharath Velamuri",
     },
     {
       img: logo,
-      desc: "This school is exceptional. It offers top-notch education and holistic development. My child gains essential skills and values, and I'm confident about their future here. ",
-      userName: "Marco Ciampi",
+      desc: "My daughter is in Playgroup. She absolutely loves the school and the staff. Her teachers are a great encouragement and the academic program is great.Not a single day she cribs to attend the school, she is always in a joyous mood to go to school.Thanks to Rena madam for creating such a lively, lovely and beautiful environment for young kids.",
+      userName: "Ram Kittu",
     },
     {
       img: logo,
-      desc: "Enrolling here was the best decision. My child thrives in the innovative environment, excelling academically and personally. The focus on modern trends ensures future readiness. ",
-      userName: "Nastya Samantha",
+      desc: "My Twins are Studying in Brook field Kondapur … And this the best decision i have made … Wonderful infrastructure and Best faculty … Shaping the students and making them ready to face the world holistically.",
+      userName: "Mani Kumar",
     },
     {
       img: logo,
-      desc: "This school is exceptional. It offers top-notch education and holistic development. My child gains essential skills and values, and I'm confident about their future here. ",
-      userName: "Marco Ciampi",
+      desc: "One of the top schools in the neighbourhood is Brookfield school kondapur. We are happy for our 2 kids because it develops a sense of fun, care and helps us realise our confidence in them. All of the classes are engaging since the teachers help kids properly understand each subject. The sports facilities are fantastic.",
+      userName: "Rachana N",
+    },
+    {
+      img: logo,
+      desc: "My child is studying Grade2. Education system and teaching staff are excellent. My child communication skills are pretty much improved. Thanks a ton to brookfield kondapur.",
+      userName: "Sukanya Chenare",
     },
    
   ];
