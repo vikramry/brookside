@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Discover the Activities We Keep in Practice | Brookside Global School",
   description:
     "We encourage our children to involve in a variety of activities such as Art, Language Lab, Steam Corner, Dance, Drama, Library and much more. Take a step forward and contact us now.",
-    keywords:"Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad"
+    keywords:"Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'"
 
 };
 
@@ -21,7 +21,7 @@ const data = [
   },
   {
     content:
-      "Our Art and Craft corner where creativity knows no bounds is a place where students can explore their imagination and develop their artistic skills in a fun and engaging way.",
+      "Our language lab in pre-primary and primary schools is a dynamic space where young learners engage in interactive activities to develop language skills. Through interactive games, children explore vocabulary, pronunciation, and grammar fostering a love for language from an early age.",
     heading: "Language Lab",
     imgURL: "/assets/images/starimg.png",
     isReverse: true,

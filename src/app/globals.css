@@ -30,6 +30,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  
 }
 
 .activeLink {
@@ -67,6 +68,7 @@ body {
   body {
     background-color: white !important;
     color: black !important;
+    background: white;
     /* text color */
   }
 }
