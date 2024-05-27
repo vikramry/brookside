@@ -27,17 +27,17 @@ export default function CurouselComponent() {
     },
     {
       img: logo,
-      desc: "My Twins are Studying in Brook field Kondapur … And this the best decision i have made … Wonderful infrastructure and Best faculty … Shaping the students and making them ready to face the world holistically.",
+      desc: "My Twins are Studying in Brookside Kondapur … And this the best decision i have made … Wonderful infrastructure and Best faculty … Shaping the students and making them ready to face the world holistically.",
       userName: "Mani Kumar",
     },
     {
       img: logo,
-      desc: "One of the top schools in the neighbourhood is Brookfield school kondapur. We are happy for our 2 kids because it develops a sense of fun, care and helps us realise our confidence in them. All of the classes are engaging since the teachers help kids properly understand each subject. The sports facilities are fantastic.",
+      desc: "One of the top schools in the neighbourhood is Brookside school kondapur. We are happy for our 2 kids because it develops a sense of fun, care and helps us realise our confidence in them. All of the classes are engaging since the teachers help kids properly understand each subject. The sports facilities are fantastic.",
       userName: "Rachana N",
     },
     {
       img: logo,
-      desc: "My child is studying Grade2. Education system and teaching staff are excellent. My child communication skills are pretty much improved. Thanks a ton to brookfield kondapur.",
+      desc: "My child is studying Grade2. Education system and teaching staff are excellent. My child communication skills are pretty much improved. Thanks a ton to brookside kondapur.",
       userName: "Sukanya Chenare",
     },
    
