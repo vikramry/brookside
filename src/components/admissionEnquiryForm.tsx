@@ -109,9 +109,16 @@ const AdmissionEnquiryForm: React.FC = () => {
             <div className="mb-4 sm:mb-2">
               <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md sm:p-1" placeholder="Select Grade">
                 <option value="" disabled>Select Grade</option>
+                <option value="Daycare">Daycare</option>
+                <option value="Play group">Play group</option>
+                <option value="IK-1">IK-1</option>
+                <option value="IK-2">IK-2</option>
+                <option value="IK-3">IK-3</option>
                 <option value="Grade 1">Grade 1</option>
                 <option value="Grade 2">Grade 2</option>
                 <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
                 {/* Add more grade options as needed */}
               </Field>
               <ErrorMessage name="grade" component="div" className='text-xs text-red-600' />
