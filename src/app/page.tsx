@@ -60,7 +60,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between ">
+    <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full">
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
@@ -105,7 +105,7 @@ export default function Home() {
             <div className="w-1/2"></div>
           </div>
         </div>
-        <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em">
+        <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em pl-5">
           <div className="flex flex-col items-center">
             <div className="container flex sm:flex-col">
               <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6">
