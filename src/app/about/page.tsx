@@ -1,6 +1,13 @@
+import type { Metadata } from "next";
 import AboutGlance from "@/components/AboutGlance";
 import ContactSection from "@/components/AcademicsComponents/ContactSection";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "About Us | Brookside Global School ",
+  description: "Discover our commitment to excellence in education at the Best Primary School in Hyderabad - Brookside Global School. Learn about our nurturing environment, dedicated faculty, and innovative programs designed to empower students for future.",
+  keywords:"Best Primary School in Kondapur - Hyderabad,  Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'"
+};
 
 const page = () => {
   return (
@@ -111,22 +118,26 @@ const page = () => {
       <div className="flex justify-center items-center   md:px-5 lg:px-0">
         <div className="flex flex-row flex-wrap gap-11  bg-[#F6EAD4] md:p-10 justify-center py-4 rounded-3xl">
           <img
-            src="/assets/images/profile2.png"
+            src="/assets/images/pic3.png"
             alt="img-blur-shadow"
             className="  w-[410] h-[350px]"
           />
           <div className="flex flex-col justify-between w-[70%]">
           <div className="flex flex-col gap-3">
             <p className="items-center">
-            Mrs. Bhargavi is a dedicated advocate for child development and education. She actively participated in various school volunteering activities. Her passion for education is evident in her academic achievements, having received the prestigious Pratibha award from the Honorable Chief Minister during her intermediate studies
+            Mrs. Bhargavi Vetsa is an educational leader, highly passionate about exploring innovations in the educational system and bringing a supportive learning experience for student success. She is a strong believer that traditional education is not sufficient for our current generation of students to create their own exciting future.
             </p>
             <p className="items-center">
-            She holds a commerce degree from an Indian university and an affiliated degree from a Californian university, demonstrating her commitment to higher education. She firmly believes in the inspiring words of Nelson Mandela, who said, “Education is the most powerful weapon which you can use to change the world.” Her dedication to education and child development is truly admirable and can inspire others to make a difference in the world.            </p>
+            She encourages co-curricular activities, including arts and sports; the best international programs and standards should be part of their daily learning. She has graduated with a commerce degree. She was part of several educational programs where the focus was on creative thinking, self-learning, and academic excellence
+              </p>
+              <p className="items-center">
+              She has strong understanding in Leadership and Management, Parent and Community Relations. Her vision is to enhance the quality of education through innovative methodologies.
+              </p>
               </div>
             <div className="flex flex-row justify-end ">
               <div className="flex flex-col">
                 <h6 className="font-bold">Bhargavi</h6>
-                <h6 className="font-light">Academic Director, Kondapur</h6>
+                <h6 className="font-light">Director, Kondapur</h6>
               </div>
             </div>
           </div>

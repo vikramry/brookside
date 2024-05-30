@@ -5,6 +5,7 @@ import * as Yup from 'yup';
 import { AdmissionMail } from '@/action';
 import toast, { Toaster } from 'react-hot-toast';
 import { ClipLoader } from 'react-spinners';
+import axios from 'axios';
 
 interface FormValues {
   grade: string;
@@ -20,7 +21,10 @@ const validationSchema = Yup.object().shape({
   childName: Yup.string().required('Child Name is required'),
   parentName: Yup.string().required('Parent Name is required'),
   email: Yup.string().email('Invalid email').required('Email is required'),
-  mobileNumber: Yup.string().required('Mobile Number is required'),
+  mobileNumber: Yup.string().required('Mobile Number is required').matches(/^[0-9]/)
+  .required("Please enter your phone number")
+  .min(10, "Please enter your valid number")
+  .max(10, "Please enter your valid number"),
   city: Yup.string().required('City is required'),
 });
 
@@ -55,12 +59,28 @@ const AdmissionEnquiryForm: React.FC = () => {
             formData.set("mobileNumber", values.mobileNumber);
             formData.set("city", values.city);
 
-
+            const serviceId = "service_ec0qqvd";
+                    const templateId = "template_8b8vkcv";
+                    const publicKey = "hFnSve2iMMNl4kGz3";
+                    
+                    const emaildata={
+                        service_id: serviceId,
+                        template_id: templateId,
+                        user_id: publicKey,
+                        template_params: {
+                          grade:values.grade,
+                          childName:values.childName,
+                          parentName:values.parentName,
+                          email:values.email,
+                          mobileNumber:values.mobileNumber,
+                          city:values.city,
+                        }
+                    }
+                    const res = await axios.post("https://api.emailjs.com/api/v1.0/email/send", emaildata);
+                    console.log(res.data)
 
             const response = await AdmissionMail(formData);
-            if (response.error) {
-              throw new Error(response.error);
-            } else {
+            if (res) {
               toast.success("Successfully submited!")
               resetForm({
                 values: {
@@ -76,7 +96,7 @@ const AdmissionEnquiryForm: React.FC = () => {
             }
           } catch (error) {
             console.log(error, "error");
-            toast.error("Something went wrong,please try again")
+            // toast.error("Something went wrong,please try again")
           } finally {
             setLoading(false);
 
@@ -89,9 +109,16 @@ const AdmissionEnquiryForm: React.FC = () => {
             <div className="mb-4 sm:mb-2">
               <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md sm:p-1" placeholder="Select Grade">
                 <option value="" disabled>Select Grade</option>
+                <option value="Daycare">Daycare</option>
+                <option value="Play group">Play group</option>
+                <option value="IK-1">IK-1</option>
+                <option value="IK-2">IK-2</option>
+                <option value="IK-3">IK-3</option>
                 <option value="Grade 1">Grade 1</option>
                 <option value="Grade 2">Grade 2</option>
                 <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
                 {/* Add more grade options as needed */}
               </Field>
               <ErrorMessage name="grade" component="div" className='text-xs text-red-600' />

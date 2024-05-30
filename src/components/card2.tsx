@@ -13,7 +13,7 @@ export default function Card2({ img, desc,grade }: CardProps) {
             <Image className=" mt-2  mr-2 h-auto sm:mt-0" src={img} alt="Avatar of Jonathan Reinink"  />
             <h3 className='text-purpleMain font-playfair text-3xl font-bold sm:text-xl'>{grade}</h3>
             <p className="text-gray-700 text-sm sm:text-xs">{desc}</p>
-            <a className='text-orMain underline sm:text-xs' href='/'>Read more...</a>
+            {/* <a className='text-orMain underline sm:text-xs' href='/'>Read more...</a> */}
         </div>
     )
 }

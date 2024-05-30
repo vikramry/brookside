@@ -25,6 +25,13 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import ContactSection from "@/components/AcademicsComponents/ContactSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Primary School in Kondapur, Hyderabad",
+  description: "Welcome to Brookside Global School, where young minds bloom! We are the Best Primary School in Kondapur, Hyderabad. Join us on an exciting educational journey tailored to inspire and empower our students for a lifetime of success.",
+  keywords:"Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'"
+};
 
 export default function Home() {
   const data = [
@@ -73,11 +80,11 @@ export default function Home() {
             height: "70vh",
           }}
         >
-          <div className="container">
+          <div className="">
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 ">
               <div className="flex gap-4 sm:gap-0">
                 <span className="font-playfair text-7xl font-bold sm:text-xl">
-                  We are the &nbsp;
+                  We are the 
                 </span>
                 <span className="flex flex-col ">
                   <span className="font-playfair text-7xl font-bold text-orMain sm:text-xl">
@@ -105,9 +112,9 @@ export default function Home() {
             <div className="w-1/2"></div>
           </div>
         </div>
-        <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em pl-5">
-          <div className="flex flex-col items-center">
-            <div className="container flex sm:flex-col">
+        <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em">
+          <div className="flex flex-col  items-center">
+            <div className="container lg:px-10 flex sm:flex-col">
               <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6">
                 <span className="text-5xl font-playfair w-1/2 sm:text-base sm:w-full sm:pl-2">
                   Learning Begins With Us
@@ -172,8 +179,8 @@ export default function Home() {
           </div>
         </div>
         <div className="h-32 bg-white w-full sm:h-0"></div>
-        <div className="py-16 sm:py-4">
-          <div className="flex justify-center">
+        <div className="py-16 sm:py-4 container">
+          <div className="flex justify-center container">
             <span className="font-playfair text-3xl text-purpleMain sm:text-xl">
               Parent’s Review
             </span>
@@ -188,7 +195,7 @@ export default function Home() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="container  flex flex-col gap-12 items-center justify-center">
+          <div className="container  lg:px-10 flex flex-col gap-12 items-center justify-center">
             <div className="flex flex-col justify-center items-center">
               <span className="text-purpleMain text-3xl font-bold sm:text-xl">
                 Ages We meet kids where they are
@@ -198,17 +205,17 @@ export default function Home() {
               <Card2
                 img={b1}
                 grade="IK1-IK3"
-                desc="We focus on helping children discover and explore their surroundings, while also develop their language skills and foster a scientific mindset. We also aim to equip children with new-age skills that prepares them for the future. To promote... "
+                desc="Our primary focus is on guiding children to explore and understand their environment while nurturing their language skills and fostering a scientific mindset. We're dedicated to equipping them with contemporary skills essential for the future. Encouraging interaction, we prioritize activities that fuel creativity and imagination, especially through art and music. As the leading primary school in Kondapur, we excel in cultivating artistic talents and empowering children to express themselves freely "
               />
               <Card2
                 img={b2}
                 grade="Grade 1-2"
-                desc="We place great emphasis on promoting interaction among students, cultivating their creativity, and enhancing their imagination through engaging art and music activities. To ensure effective learning, we provide age-appropriate learning materials... "
+                desc="We highly prioritize fostering student interaction, nurturing creativity, and stimulating imagination through dynamic art and music activities. To optimize learning outcomes, we supply age-appropriate educational materials and tools tailored to each student's unique pace, ensuring that all learners can advance at their own speed with the necessary support for success. "
               />
               <Card2
                 img={b3}
                 grade="Grade 3-5"
-                desc="We focus on developing students' vocabulary, attention span, reading, and writing skills through innovative and engaging teaching methods. By encouraging active participation and providing personalized feedback, we ensure that every... "
+                desc="Our primary aim is to enhance students' vocabulary, attention span, reading, and writing abilities using innovative and captivating teaching techniques. Through fostering active involvement and delivering personalized feedback, we guarantee that each student is aided in realizing their maximum capabilities. Our curriculum primes students for primary school academics by stressing critical thinking, problem-solving, and adept communication. We endeavor to cultivate a nurturing and encouraging atmosphere that instills curiosity, confidence, and a zest for learning in our students. "
               />
             </div>
           </div>
@@ -222,7 +229,7 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="w-full container pt-16 flex sm:pt-8 sm:flex-col">
+            <div className="w-full container lg:px-10 pt-16 flex sm:pt-8 sm:flex-col">
               <div className=" w-1/3 flex flex-col gap-16 sm:gap-4 sm:w-full sm:pl-16">
                 <div className="flex flex-col gap-8 sm:gap-4">
                   <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
