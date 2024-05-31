@@ -75,7 +75,7 @@ export default function CurouselComponent() {
       >
         {cardData.map((item, index) => {
           return (
-            <SwiperSlide key={index} className="flex justify-center">
+            <SwiperSlide key={index} className="flex justify-center sm:ml-20">
               <Card img={item.img} desc={item.desc} userName={item.userName} />
             </SwiperSlide>
           );

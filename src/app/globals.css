@@ -94,19 +94,22 @@ body {
  }
 
  @media (max-width: 576px) {
+  .swiper-slide {
+    
+    width: 25em !important;
+  }
   .desktopbg{
     background-image: url('/assets/images/agesbgmobile.png');
     object-fit:contain !important;
     background-repeat: no-repeat !important;
-    background-size: 112% !important;
+    background-size: cover !important;
   }
   .para{
     display: -webkit-box;
     max-width: 400px;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: scroll;
   }
   .radiuscls{
     border-radius: 30px;

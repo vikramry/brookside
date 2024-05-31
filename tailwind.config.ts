@@ -41,6 +41,7 @@ const config: Config = {
       width:{
         "36em":"36em",
         "25em":"25em",
+        "available":"-webkit-fill-available"
       },
       fontSize:{
         "9em":"9em"

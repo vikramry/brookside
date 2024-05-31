@@ -16,7 +16,7 @@ const ContactUS = () => {
       .email("Invalid email")
       .required("Please enter your email"),
     phone: Yup.string()
-      .matches(/^[0-9]/)
+      .matches(/^[6-9][0-9]{9}$/)
       .required("Please enter your phone number")
       .min(10, "Please enter your valid number")
       .max(10, "Please enter your valid number"),

@@ -44,7 +44,7 @@ const ContactSection = () => {
                     <Image src='/assets/images/contactmobile3.png' alt="contactImage2" width={150} className='w-5/6' height={158} />
                     
                 </div>
-            <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap sm:p-10 sm:gap-8'>
+            {/* <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap sm:p-10 sm:gap-8'>
                 <div className='flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl'>
                     <Link href={'https://instagram.com'} target='_blank'>
                         <p className='flex justify-start items-center gap-2'>
@@ -76,7 +76,7 @@ const ContactSection = () => {
                     <Image src='/assets/images/contact2.png' alt="contactImage2" width={158} height={158} />
                     <Image src='/assets/images/contact3.png' alt="contactImage3" width={158} height={158} />
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

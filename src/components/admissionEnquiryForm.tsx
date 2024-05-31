@@ -21,7 +21,7 @@ const validationSchema = Yup.object().shape({
   childName: Yup.string().required('Child Name is required'),
   parentName: Yup.string().required('Parent Name is required'),
   email: Yup.string().email('Invalid email').required('Email is required'),
-  mobileNumber: Yup.string().required('Mobile Number is required').matches(/^[0-9]/)
+  mobileNumber: Yup.string().required('Mobile Number is required').matches(/^[6-9][0-9]{9}$/)
   .required("Please enter your phone number")
   .min(10, "Please enter your valid number")
   .max(10, "Please enter your valid number"),
