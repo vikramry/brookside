@@ -30,7 +30,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Primary School in Kondapur, Hyderabad",
   description: "Welcome to Brookside Global School, where young minds bloom! We are the Best Primary School in Kondapur, Hyderabad. Join us on an exciting educational journey tailored to inspire and empower our students for a lifetime of success.",
-  keywords:"Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'"
+  keywords: "Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'"
 };
 
 export default function Home() {
@@ -67,14 +67,15 @@ export default function Home() {
     },
   ];
   return (
-    <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full">
+    <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full ">
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
-          className="w-full flex items-center sm:!h-auto sm:!p-4"
+          className="w-full flex items-center sm:!h-auto sm:!p-4 sm:!hidden"
           style={{
             backgroundImage: `url('/assets/images/schoolbnr.png')`,
             padding: "40px",
+
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             height: "70vh",
@@ -84,7 +85,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 ">
               <div className="flex gap-4 sm:gap-0">
                 <span className="font-playfair text-7xl font-bold sm:text-xl">
-                  We are the 
+                  We are the
                 </span>
                 <span className="flex flex-col ">
                   <span className="font-playfair text-7xl font-bold text-orMain sm:text-xl">
@@ -112,10 +113,51 @@ export default function Home() {
             <div className="w-1/2"></div>
           </div>
         </div>
-        <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em">
+
+
+        <div className="md:hidden"
+          style={{
+            backgroundImage: `url('/assets/images/mobilebg.png')`,
+            padding: "40px",
+            backgroundSize: "100%",
+            backgroundRepeat: "no-repeat",
+            height: "70vh",
+          }}
+        >
+          <div className="w-full flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 ">
+            <div className="flex gap-4 sm:gap-2">
+              <span className="font-playfair text-7xl font-bold sm:text-4xl">
+                We are the
+              </span>
+              <span className="flex flex-col ">
+                <span className="font-playfair text-7xl font-bold text-orMain sm:text-4xl ">
+                   future
+                </span>
+                {/* <img  className="w-fit h-3" src={curve.src} alt="curve" /> */}
+              </span>
+            </div>
+            <span className="text-2xl w-4/5 sm:text-sm sm:w-5/6">
+              We strike to make leaders of tomorrow, Equipping them with the
+              skills and knowledge to make them future ready.
+            </span>
+            <div className="flex gap-4 sm:gap-6 sm:mt-2">
+              <button className="bg-orMain text-white px-4 py-2 rounded text-xs font-bold sm:w-22 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
+                <a href="/about">LEARN MORE</a>
+              </button>
+              <a href="/gallery">
+                <button className="bg-transparent hover:bg-dGrey text-dGrey font-semibold hover:text-white py-2 px-4 border border-dGrey hover:border-transparent rounded flex items-center gap-2 sm:px-2 sm:py-2 sm:mt-2 sm:w-22">
+                  <FaCirclePlay className="hover:text-white hover:fill-white" />
+                  <span>Watch Video</span>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div className="w-1/2"></div>
+        </div>
+        <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em ">
           <div className="flex flex-col  items-center">
             <div className="container lg:px-10 flex sm:flex-col">
-              <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6">
+              <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6 sm:hidden">
                 <span className="text-5xl font-playfair w-1/2 sm:text-base sm:w-full sm:pl-2">
                   Learning Begins With Us
                 </span>
@@ -147,21 +189,55 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <div className="w-1/2 flex justify-center items-center sm:w-full sm:p-4">
-                <div className="w-2/3 shadow-xl sm:w-full">
+              
+              <div className="w-1/2 flex justify-center items-center sm:w-full sm:p-8">
+                <div className="w-2/3 shadow-xl sm:w-full sm:shadow-none ">
                   <AdmissionEnquiryForm />
                 </div>
               </div>
+              <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6 md:hidden">
+                <span className="text-5xl font-playfair w-1/2 sm:text-5xl sm:w-full sm:p-4">
+                  Learning Begins With Us
+                </span>
+                <span className="text-base text-purpleMain sm:text-sm sm:px-5 sm:text-justify">
+                  Our objective is to equip  students with the necessary skills
+                  to confront the continuously evolving global challenges,
+                  instilling them the confidence to take risks and make
+                  independent decisions, and above all, fostering values that
+                  contribute to the development of thoughtful and engaged
+                  individuals. We are the best schools in hyderabad with low
+                  fees to  cultivate the innate potential of our students and
+                  enable them to excel in their chosen paths. The school is
+                  knows for its academic excellence and holistic approach in
+                  education focuses to be on top 10 best schools in hyderabad.
+                </span>
+                {data.map((item, index) => (
+                  <div key={index} className="flex gap-4 items-center sm:gap-3 sm:mt-2">
+                    <Image
+                      className="w-auto sm:pl-6 sm:w-10 "
+                      src={item.image}
+                      alt="goldshield"
+                    />
+                    <span
+                      className={`text-base sm:text-xs  ${item.color == "gold" ? "text-orMain" : "text-purpleMain"
+                        }`}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
+            
             <div></div>
-            <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-8 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24 sm:top-0 sm:w-full sm:p-4 sm:text-base sm:gap-0">
+            <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-8 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24 sm:top-4 sm:gap-0 sm:w-5/6 sm:text-2xl sm:rounded-lg sm:p-4">
 
               <div className="flex items-center justify-center">
 
-                <div className="w-3/5 flex flex-col items-baseline gap-8 sm:gap-4 sm:w-5/6">
+                <div className="w-3/5 flex flex-col items-baseline gap-8 sm:gap-3 sm:w-5/6">
                   <div className="flex flex-col">
                     <span
-                      className="text-6xl w-fit font-bold text-orMain relative sm:text-3xl sm:!left-75em" style={{ left: "-1em" }}
+                      className="text-6xl w-fit font-bold text-orMain relative sm:text-6xl sm:!left 0em sm:p-0 sm:absolute" style={{ left: "-1em" }}
 
                     >
                       “
@@ -188,20 +264,15 @@ export default function Home() {
           <CurouselComponent />
         </div>
         <div
-          className="w-full py-40 flex items-center justify-center sm:py-20"
-          style={{
-            backgroundImage: `url('/assets/images/pagedecor.png')`,
-            backgroundSize: "100%",
-            backgroundRepeat: "no-repeat",
-          }}
-        >
+          className="w-full py-40 flex items-center justify-center sm:py-20 desktopbg">
+          
           <div className="container  lg:px-10 flex flex-col gap-12 items-center justify-center">
             <div className="flex flex-col justify-center items-center">
               <span className="text-purpleMain text-3xl font-bold sm:text-xl">
                 Ages We meet kids where they are
               </span>
             </div>
-            <div className="flex gap-12 w-full sm:gap-6 sm:flex-col">
+            <div className="flex gap-12 w-full sm:gap-6 sm:flex-col sm:items-center">
               <Card2
                 img={b1}
                 grade="IK1-IK3"
@@ -220,32 +291,34 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex justify-center py-20 sm:py-0">
+        <div className="flex justify-center py-20 sm:py-20">
           <div className=" w-full flex items-center flex-col justify-center">
-            <div className="flex gap-2 items-baseline ">
-              <span className="text-orMain text-7xl font-bold sm:text-2xl">ILC’s -</span>
-              <span className="text-purpleMain text-4xl font-bold sm:text-xl">
+            <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full">
+              <span className="text-orMain text-7xl font-bold sm:text-3xl">ILC’s -</span>
+              <span className="text-purpleMain text-4xl font-bold sm:text-3xl">
                 Innovative Learning Centres
               </span>
             </div>
-
-            <div className="w-full container lg:px-10 pt-16 flex sm:pt-8 sm:flex-col">
-              <div className=" w-1/3 flex flex-col gap-16 sm:gap-4 sm:w-full sm:pl-16">
+            <div className="w-3/4 sm:p-3 md:!hidden">
+                <img src={allMix.src} alt="allmix" />
+              </div>
+            <div className="w-full container lg:px-10 pt-16 flex sm:pt-8 sm:flex-col sm:mb-20">
+              <div className=" w-1/3 flex flex-col gap-16 sm:gap-4 sm:w-full sm:pl-10">
                 <div className="flex flex-col gap-8 sm:gap-4">
-                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
+                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                     Art & Craft Corner
                   </span>
-                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-xs">
+                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-base">
                     Our Art and Craft Corner where creativity knows no bounds is
                     a place where students can explore their imagination and
                     develop their artistic skills in a fun and engaging way.
                   </span>
                 </div>
                 <div className="flex flex-col gap-8 sm:gap-4">
-                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
+                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                     Role Play Area
                   </span>
-                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-xs">
+                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-base">
                     Our Role Play area provides a dynamic and immersive learning
                     experience for our students. By assuming different roles and
                     scenarios, our students develop important social and
@@ -254,10 +327,10 @@ export default function Home() {
                   </span>
                 </div>
                 <div className="flex flex-col gap-8 sm:gap-4">
-                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-base">
+                  <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                     Dance & Drama Studio
                   </span>
-                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-xs">
+                  <span className="text-base w-3/5 sm:w-5/6 sm:text-justify sm:text-base">
                     Our Dance and Drama studio provides a vibrant and creative
                     space for our students to explore the world of performing
                     arts. Through dance and drama activities, our students
@@ -266,7 +339,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="w-2/3 sm:p-4 sm:ml-12">
+              <div className="w-2/3 sm:p-4 sm:ml-12 sm:!hidden">
                 <img src={allMix.src} alt="allmix" />
               </div>
             </div>
@@ -277,7 +350,7 @@ export default function Home() {
               </button>
             </div>
             <ContactSection />
-            
+
           </div>
         </div>
       </div>

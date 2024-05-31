@@ -45,6 +45,11 @@ body {
   height: 100%;
 }
 
+.formbg{
+  background-color: #eae9e9 !important;
+  color: #6C6C6C !important;
+  border: 1px  #6C6C6C !important;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;
@@ -81,3 +86,29 @@ body {
     color: black !important;
   }
 }
+ .desktopbg{
+  background-image: url('/assets/images/pagedecor.png');
+  background-repeat: no-repeat;
+  background-size: "100%";
+          
+ }
+
+ @media (max-width: 576px) {
+  .desktopbg{
+    background-image: url('/assets/images/agesbgmobile.png');
+    object-fit:contain !important;
+    background-repeat: no-repeat !important;
+    background-size: 112% !important;
+  }
+  .para{
+    display: -webkit-box;
+    max-width: 400px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .radiuscls{
+    border-radius: 30px;
+  }
+ }

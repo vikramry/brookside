@@ -42,8 +42,8 @@ const initialValues: FormValues = {
 const AdmissionEnquiryForm: React.FC = () => {
   const [loading, setLoading] = useState(false)
   return (
-    <div className="bg-white p-8 shadow-md rounded-xl flex flex-col items-center sm:p-4">
-      <h2 className="text-4xl font-bold mb-4 text-orMain font-playfair sm:text-xl sm:mb-2">Admission Enquiry</h2>
+    <div className="bg-white p-8 shadow-md rounded-xl flex flex-col items-center sm:p-3   ">
+      <h2 className="text-4xl font-bold mb-4 text-orMain font-playfair sm:text-xl sm:mb-2 sm:items-center">Admission Enquiry</h2>
       <Formik
         initialValues={initialValues}
         validationSchema={validationSchema}
@@ -105,9 +105,9 @@ const AdmissionEnquiryForm: React.FC = () => {
         }}
       >
         {({ isSubmitting }) => (
-          <Form className=' w-full sm:text-xs'>
-            <div className="mb-4 sm:mb-2">
-              <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md sm:p-1" placeholder="Select Grade">
+          <Form className=' w-full sm:text-xs sm:w-4/5'>
+            <div className="mb-4 sm:mb-2 ">
+              <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md sm:p-2 formbg" placeholder="Select Grade">
                 <option value="" disabled>Select Grade</option>
                 <option value="Daycare">Daycare</option>
                 <option value="Play group">Play group</option>
@@ -125,31 +125,31 @@ const AdmissionEnquiryForm: React.FC = () => {
             </div>
 
             <div className="mb-4">
-              <Field type="text" name="childName" placeholder="Child Name" className="border w-full border-black p-2 rounded-md sm:p-1" />
+              <Field type="text" name="childName" placeholder="Child Name" className="border w-full border-black p-2 rounded-md sm:p-2 formbg" />
               <ErrorMessage name="childName" component="div" className='text-xs text-red-600'/>
             </div>
 
             <div className="mb-4">
-              <Field type="text" name="parentName" placeholder="Parent Name" className="border w-full border-black p-2 rounded-md sm:p-1" />
+              <Field type="text" name="parentName" placeholder="Parent Name" className="border w-full border-black p-2 rounded-md sm:p-2 formbg" />
               <ErrorMessage name="parentName" component="div" className='text-xs text-red-600' />
             </div>
 
             <div className="mb-4">
-              <Field type="email" name="email" placeholder="Email Address" className="border w-full border-black p-2 rounded-md sm:p-1" />
+              <Field type="email" name="email" placeholder="Email Address" className="border w-full border-black p-2 rounded-md sm:p-2 formbg" />
               <ErrorMessage name="email" component="div" className='text-xs text-red-600'/>
             </div>
 
             <div className="mb-4">
-              <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border w-full border-black p-2 rounded-md sm:p-1" />
+              <Field type="tel" name="mobileNumber" placeholder="Mobile Number" className="border w-full border-black p-2 rounded-md sm:p-2 formbg" />
               <ErrorMessage name="mobileNumber" component="div" className='text-xs text-red-600' />
             </div>
 
             <div className="mb-4">
-              <Field type="text" name="city" placeholder="City" className="border w-full border-black p-2 rounded-md sm:p-1" />
+              <Field type="text" name="city" placeholder="City" className="border w-full border-black p-2 rounded-md sm:p-2 formbg" />
               <ErrorMessage name="city" component="div" className='text-xs text-red-600' />
             </div>
 
-            <button className='bg-orMain text-white px-4 py-2 rounded text-xl w-full font-bold sm:px-2 sm:py-0 sm:w-5/6 sm:ml-4' type="submit" disabled={isSubmitting}>
+            <button className='bg-orMain text-white px-4 py-2 rounded text-xl w-full font-bold sm:p-1 sm:w-full sm:text-sm ' type="submit" disabled={isSubmitting}>
               {loading ? (
                 <div
                   style={{
