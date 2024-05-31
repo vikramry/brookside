@@ -272,7 +272,7 @@ export default function Home() {
                 Ages We meet kids where they are
               </span>
             </div>
-            <div className="flex gap-12 w-full sm:gap-6 sm:flex-col sm:items-center">
+            <div className=" flex gap-12 w-full sm:gap-6 sm:flex-col sm:items-center">
               <Card2
                 img={b1}
                 grade="IK1-IK3"
@@ -293,8 +293,8 @@ export default function Home() {
         </div>
         <div className="flex justify-center py-20 sm:py-20">
           <div className=" w-full flex items-center flex-col justify-center">
-            <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full">
-              <span className="text-orMain text-7xl font-bold sm:text-3xl">ILC’s -</span>
+            <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full sm:flex-col sm:items-center">
+              <span className="text-orMain text-7xl font-bold sm:text-5xl">ILC’s -</span>
               <span className="text-purpleMain text-4xl font-bold sm:text-3xl">
                 Innovative Learning Centres
               </span>
