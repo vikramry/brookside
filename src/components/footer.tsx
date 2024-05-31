@@ -41,14 +41,14 @@ const Footer = () => {
   return (
     <>
       <div className="max-w-full max-h-fit bg-[#e4e4e4] shadow-2xl">
-        <div className="flex flex-row justify-between flex-wrap px-20 sm:px-10 py-16 gap-10">
+        <div className="flex flex-row justify-between flex-wrap px-20 sm:px-20 py-16 gap-10 ">
           <div>
             <img
               src={logo.src}
               alt="img-blur-shadow"
               className="w-[251px] h-[64px]"
             />
-            <div className="mt-4 flex justify-start pl-12 items-center gap-8 ">
+            <div className="mt-4 flex justify-start pl-12 items-center gap-8 sm:!hidden">
               <Link
                 target="_blank"
                 href={"https://www.instagram.com/Brookside_school.kondapur"}
@@ -79,16 +79,16 @@ const Footer = () => {
               </Link>
             </div>
             <div className="mt-[30px]">
-              <p className="text-[13px] sm:text-base">
+              <p className="text-[13px] sm:text-base sm:text-center">
                 Copyright © Brookside Global School 2024 | All Rights Reserved
               </p>
             </div>
           </div>
           <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
           <div className="flex flex-row flex-wrap gap-10 md:gap-40 justify-center ">
-            <div className=" rounded-2xl p-10  flex justify-center items-center gap-16 flex-wrap sm:px-10 sm:py-5 sm:gap-8 md:hidden">
+            <div className=" rounded-2xl p-10  flex justify-center items-center gap-16 flex-wrap sm:px-4 sm:py-5 sm:gap-8 md:hidden">
               <div className="flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl">
-                <div className="flex gap-4 justify-start">
+                <div className="flex gap-4 justify-start sm:items-center">
                   <Link
                     href={"https://www.instagram.com/Brookside_school.kondapur"}
                     target="_blank"
@@ -150,8 +150,8 @@ const Footer = () => {
             <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
 
             <div>
-              <p>Quick Links</p>
-              <ul className="flex flex-col m-[5px] font-light">
+              <p className="font-bold">Quick Links</p>
+              <ul className="flex flex-col m-[5px] font-light sm:font-normal">
                 <li>
                   <Link href="/">Home</Link>
                 </li>
@@ -164,8 +164,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p>Useful Links</p>
-              <ul className="flex flex-col gap-1 m-[5px] font-light">
+              <p className="font-bold">Useful Links</p>
+              <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal">
                 <li>
                   <Link href="/academics">Academics</Link>
                 </li>
