@@ -48,7 +48,7 @@ const Footer = () => {
               alt="img-blur-shadow"
               className="w-[251px] h-[64px]"
             />
-            <div className="mt-4 flex justify-start pl-12 items-center gap-8">
+            <div className="mt-4 flex justify-start pl-12 items-center gap-8 ">
               <Link
                 target="_blank"
                 href={"https://www.instagram.com/Brookside_school.kondapur"}
@@ -84,9 +84,9 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <hr className="h-1 w-available bg-[#F3A20C]" />
+          <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
           <div className="flex flex-row flex-wrap gap-10 md:gap-40 justify-center ">
-            <div className=" rounded-2xl p-10  flex justify-center items-center gap-16 flex-wrap sm:px-10 sm:py-5 sm:gap-8">
+            <div className=" rounded-2xl p-10  flex justify-center items-center gap-16 flex-wrap sm:px-10 sm:py-5 sm:gap-8 md:hidden">
               <div className="flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl">
                 <div className="flex gap-4 justify-start">
                   <Link
@@ -147,7 +147,7 @@ const Footer = () => {
                 />
               </div>
             </div>
-            <hr className="h-1 w-available bg-[#F3A20C]" />
+            <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
 
             <div>
               <p>Quick Links</p>
