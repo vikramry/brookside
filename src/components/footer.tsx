@@ -196,7 +196,7 @@ const Footer = () => {
               )}
             </div>
             <div>
-            <a href="https://wa.me/+919032188850" target="_blank" className="cursor-pointer fixed right-3 bottom-20">
+            <a href="https://wa.me/+919032188851" target="_blank" className="cursor-pointer fixed right-3 bottom-20">
                 <Image src={wtsappImg} alt="wtsapp" className="w-12 h-auto " />
                 </a>
             </div>
