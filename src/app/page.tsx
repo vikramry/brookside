@@ -4,6 +4,7 @@ import Image from "next/image";
 import b1 from "../../public/assets/images/b1.png";
 import b2 from "../../public/assets/images/b2.png";
 import b3 from "../../public/assets/images/b3.png";
+import b4 from "../../public/assets/images/b4.png";
 import curve from "../../public/assets/images/curve.png";
 import { FaCirclePlay } from "react-icons/fa6";
 import goldShield from "../../public/assets/images/goldShield.png";
@@ -427,7 +428,7 @@ export default function Home() {
                 desc="Brookside Global School focuses on enhancing primary grade students' vocabulary, attention span, reading, and writing abilities using innovative and captivating teaching techniques. Our curriculum emphasises critical thinking, problem-solving, and skillful communication to prepare students for academics in primary school. We work hard to create a safe, supportive environment that inspires curiosity, self-assurance, and a love of learning in each of our students. As one of the best Primary schools in Kondapur, Hyderabad we focus on child safety first.   "
               />
               <Card2
-                img={b3}
+                img={b4}
                 grade="Day Care Center"
                 desc="At Brookside global we offer a day care center in kondapur, Hyderabad. Our day care center program focus on providing child safety with a fun learning experience. The main aim of our day care center is to promote social and cognitive development of children. We provide day cay center service for Pre-primary, 1st and 2nd grade students in kondapur, hyderabad. 
                 Our students enjoy the daycare learning experience. We offer a wide range of activities at our day care center such as, art and craft ,outdoor playing, fun learning experience and every child gets personal attention at our day care center. 
