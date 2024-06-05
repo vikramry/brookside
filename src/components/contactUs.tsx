@@ -225,11 +225,17 @@ const ContactUS = () => {
             </div>
             <div className="mapouter">
               <div className="gmap_canvas">
-                <iframe
+                {/* <iframe
                   className="rounded-2xl md:w-[460px] md:h-[535px]  h-[500px]"
                   id="gmap_canvas"
                   src="https://maps.google.com/maps?q=The%20Brookfield%20International%20school%20kondapur&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   scrolling="no"
+                ></iframe> */}
+                <iframe
+                id="gmap_canvas"
+                className="rounded-2xl md:w-[460px] md:h-[535px]  h-[500px]"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15222.692863469643!2d78.3482469!3d17.4753481!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb936b94580db3%3A0xb496b40ef0dabe2b!2sBrookside%20Global%20School%2C%20Kondapur!5e0!3m2!1sen!2sin!4v1717567628966!5m2!1sen!2sin"  
+                scrolling="no"
                 ></iframe>
               </div>
             </div>

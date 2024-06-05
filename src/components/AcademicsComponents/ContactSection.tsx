@@ -26,6 +26,8 @@ const ContactSection = () => {
                         <FaPhoneAlt className='text-[#F3A20C] w-[18px] h-[23px]' />
                         <div className='flex flex-col justify-start items-start'>
                             <p className='text-lg font-bold sm:text-xl'><Link href={`tel:040 4917 1111`}>040 4917 1111</Link></p>
+                            <p className='text-lg font-bold sm:text-xl'><Link href={`tel:9032188850`}>9032188850</Link></p>
+                            <p className='text-lg font-bold sm:text-xl'><Link href={`tel:9032188851`}>9032188851</Link></p>
                             <p className='text-base'>9:00 AM to 5:00 PM IST</p>
                         </div>
                     </div>
