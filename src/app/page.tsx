@@ -354,19 +354,19 @@ export default function Home() {
           </div>
         </div>
         {/* why choose brookside */}
-        <div className="bg-lightBlue w-full flex items-center justify-center  mt-32 ">
+        <div className="bg-lightBlue w-full flex items-center justify-center  mt-32 sm:pb-6">
           <div className="flex flex-col  items-center">
             <div className="container lg:px-10 flex sm:flex-col">
-            <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-8">
+            <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-4">
                 <div className="w-/3 shadow-xl sm:w-full sm:shadow-none ">
                   
                 </div>
               </div>
-              <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6 sm:hidden">
-                <h2 className=" text-5xl font-playfair w-full sm:text-base sm:w-full sm:pl-2">
+              <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-3 sm:px-3">
+                <h2 className=" text-5xl font-playfair w-full sm:text-xl sm:w-full sm:pl-2">
                 Why choose Brookside Global Primary School for your kid?
                 </h2>
-                <span className="text-base text-purpleMain sm:text-xs sm:px-2 sm:py-2 text-justify">
+                <span className="text-base text-purpleMain sm:text-sm sm:px-2 sm:py-4 text-justify">
                   Our goal is to give kids the necessary skills to confront the
                   continuously evolving global challenges, instil the confidence
                   to take risks and make independent decisions, and above all,
@@ -379,14 +379,14 @@ export default function Home() {
                   schools in Kondapur, Hyderabad.
                 </span>
                 {whyChooseData.map((item, index) => (
-                  <div key={index} className="flex gap-4 items-center sm:gap-0">
+                  <div key={index} className="flex gap-4 items-center sm:gap-3">
                     <Image
                       className="w-auto sm:pl-4"
                       src={item.image}
                       alt="goldshield"
                     />
                     <span
-                      className={`text-base sm:text-xs  ${
+                      className={`text-base sm:text-sm  ${
                         item.color == "gold" ? "text-orMain" : "text-purpleMain"
                       }`}
                     >
@@ -453,17 +453,17 @@ export default function Home() {
 <div className="bg-lightBlue w-full flex items-center justify-center  ">
           <div className="flex flex-col  items-center">
             <div className="container lg:px-10 flex sm:flex-col">
-            <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-8">
+            <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-4">
                 <div className="w-/3 shadow-xl sm:w-full sm:shadow-none ">
                   
                 </div>
               </div>
-              <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6 sm:hidden">
-                <h2 className=" text-5xl font-playfair w-full sm:text-base sm:w-full sm:pl-2">
+              <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-0 sm:w-full sm:py-3 sm:px-3 ">
+                <h2 className=" text-5xl font-playfair w-full sm:text-xl sm:w-full sm:pl-2">
                 We also provide Transportation facilities
 
                 </h2>
-                <span className="text-base text-purpleMain sm:text-xs sm:px-2 sm:py-2 text-justify">
+                <span className="text-base text-purpleMain sm:text-sm sm:px-2 sm:py-2 text-justify">
                 Brookside Global School offers transportation facilities to ensure our students safety and security. We include modern safety features in our transportation because the safety and wellbeing of every child during the trip is our top priority. We make sure that transportation facilities are available to every student; the transportation service at Brookside covers a larger area; and we ensure that students from various areas can easily access the school.
                 </span>
           
@@ -480,7 +480,7 @@ export default function Home() {
         <div className="flex justify-center py-20 sm:py-20">
           <div className=" w-full flex items-center flex-col justify-center">
             <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full sm:flex-col sm:items-center">
-              <h2 className="text-purpleMain text-4xl font-bold sm:text-3xl"><span className="text-orMain text-7xl font-bold sm:text-5xl">ILC’s </span>innovative learning centres</h2>
+              <h2 className="text-purpleMain text-4xl font-bold sm:text-3xl sm:contents"><span className="text-orMain text-7xl font-bold sm:text-5xl">ILC’s </span>innovative learning centres</h2>
                
                
             </div>
