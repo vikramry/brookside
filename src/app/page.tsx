@@ -27,6 +27,7 @@ import { FaYoutube } from "react-icons/fa";
 import ContactSection from "@/components/AcademicsComponents/ContactSection";
 import type { Metadata } from "next";
 import mainBanner from '../../public/assets/images/mainBanner.png'
+import whyChooseImg from '../../public/assets/images/WhyChoseus.png'
 
 export const metadata: Metadata = {
   title: "Best Primary School in Kondapur, Hyderabad",
@@ -354,8 +355,8 @@ export default function Home() {
           <div className="flex flex-col  items-center">
             <div className="container lg:px-10 flex sm:flex-col">
             <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-4">
-                <div className="w-/3 shadow-xl sm:w-full sm:shadow-none ">
-                  
+                <div className="w-full sm:w-full sm:shadow-none ">
+                  <Image src={whyChooseImg} alt="why choose" className="w-auto"/>
                 </div>
               </div>
               <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-3 sm:px-3">
