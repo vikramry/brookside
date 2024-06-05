@@ -26,8 +26,7 @@ const ContactSection = () => {
                         <FaPhoneAlt className='text-[#F3A20C] w-[18px] h-[23px]' />
                         <div className='flex flex-col justify-start items-start'>
                             <p className='text-lg font-bold sm:text-xl'><Link href={`tel:040 4917 1111`}>040 4917 1111</Link></p>
-                            <p className='text-lg font-bold sm:text-xl'><Link href={`tel:9032188850`}>9032188850</Link></p>
-                            <p className='text-lg font-bold sm:text-xl'><Link href={`tel:9032188851`}>9032188851</Link></p>
+                            <p className='text-lg font-bold sm:text-xl'><Link href={`tel:9032188850`}>9032188850</Link> / <Link href={`tel:9032188851`}>9032188851</Link></p>
                             <p className='text-base'>9:00 AM to 5:00 PM IST</p>
                         </div>
                     </div>
@@ -40,7 +39,7 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center items-center gap-5 flex-wrap md:!hidden sm:gap-6 sm:bg-[#F6EFDD] sm:py-8 sm:rounded-lg'>
+            <div className='flex justify-center items-center gap-5 flex-wrap  sm:gap-6 sm:bg-[#F6EFDD] sm:py-8 sm:rounded-lg'>
                     <Image src='/assets/images/contact1.png' alt="contactImage1" width={150} height={158} />
                     <Image src='/assets/images/contact3.png' alt="contactImage3" width={150} height={158} />
                     <Image src='/assets/images/contactmobile3.png' alt="contactImage2" width={150} className='w-5/6' height={158} />

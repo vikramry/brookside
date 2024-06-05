@@ -40,7 +40,7 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="max-w-full max-h-fit bg-[#e4e4e4] shadow-2xl">
+      <div className="max-w-full max-h-fit bg-[#e4e4e4] ">
         <div className="flex flex-row justify-between flex-wrap px-20 sm:px-20 py-16 gap-10 ">
           <div>
             <img
