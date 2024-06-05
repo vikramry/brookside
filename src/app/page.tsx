@@ -155,7 +155,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full ">
+    <main className="font-playfair flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full ">
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
