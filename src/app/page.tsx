@@ -26,6 +26,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import ContactSection from "@/components/AcademicsComponents/ContactSection";
 import type { Metadata } from "next";
+import mainBanner from '../../public/assets/images/mainBanner.png'
 
 export const metadata: Metadata = {
   title: "Best Primary School in Kondapur, Hyderabad",
@@ -160,33 +161,26 @@ export default function Home() {
         <div
           className="w-full flex items-center sm:!h-auto sm:!p-4 sm:!hidden"
           style={{
-            backgroundImage: `url('/assets/images/schoolbnr.png')`,
+            // backgroundImage: `url('/assets/images/schoolbnr.png')`,
             padding: "40px",
+            background:'#2f2a4e',
 
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             height: "70vh",
           }}
         >
-          <div className="">
+          <div className=" flex justify-between items-center">
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 ">
               <div className="flex gap-4 sm:gap-0">
-                {/* <span className="font-playfair text-7xl font-bold sm:text-xl">
-                  We are the
-                </span>
-                <span className="flex flex-col ">
-                  <span className="font-playfair text-7xl font-bold text-orMain sm:text-xl">
-                    future
-                  </span>
-                  {/* <img  className="w-fit h-3" src={curve.src} alt="curve" /> 
-                </span> */}
-                <h1 className="text-4xl sm:text-xl">
-                  Discover the{" "}
-                  <span style={{ color: "#f3a20c" }}>top primary school</span>{" "}
+               
+                <h1 className="text-6xl sm:text-xl text-white " style={{lineHeight:'4.5rem'}}>
+                  Discover the<br/>
+                  <span  className='bg-orMain text-black  '>Top Primary School</span><br/>
                   in Kondapur, Hyderabad!
                 </h1>
               </div>
-              <span className="text-md w-full sm:text-xs sm:w-full">
+              <span className="text-md w-full sm:text-xs sm:w-full text-white">
                 At Brookside, we believe that every child is unique and full of
                 ability. Our dedicated and passionate teachers build a nurturing
                 and holistic environment in which curiosity thrives and learning
@@ -195,18 +189,20 @@ export default function Home() {
                 modern educational practices.
               </span>
               <div className="flex gap-4 sm:gap-2">
-                <button className="bg-orMain text-white px-4 py-2 rounded text-xs font-bold sm:w-16 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
+                <button className="bg-orMain text-black px-4 py-2 rounded text-xs font-bold sm:w-16 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
                   <a href="/about">LEARN MORE</a>
                 </button>
-                <a href="/gallery">
+                {/* <a href="/gallery">
                   <button className="bg-transparent hover:bg-dGrey text-dGrey font-semibold hover:text-white py-2 px-4 border border-dGrey hover:border-transparent rounded flex items-center gap-2 sm:px-2 sm:py-2 sm:mt-2">
                     <FaCirclePlay className="hover:text-white hover:fill-white" />
                     <span>Video</span>
                   </button>
-                </a>
+                </a> */}
               </div>
             </div>
-            <div className="w-1/2"></div>
+            <div className="w-1/2 flex justify-end">
+                <Image src={mainBanner} alt="mainBanner" className="w-auto h-[30rem]"/> 
+            </div>
           </div>
         </div>
 
