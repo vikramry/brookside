@@ -33,6 +33,7 @@ body {
   
 }
 
+
 .activeLink {
   color: #000; /* Change color as desired */
   padding-bottom: 4px; /* Add padding as desired */
@@ -43,6 +44,10 @@ body {
 .swiper {
   width: 100%;
   height: 100%;
+}
+
+.quotadesk{
+  left: -1em;
 }
 
 .formbg{
@@ -113,5 +118,8 @@ body {
   }
   .radiuscls{
     border-radius: 30px;
+  }
+  .quotation{
+    left: 0em !important;
   }
  }
