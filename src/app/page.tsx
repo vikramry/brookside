@@ -179,7 +179,7 @@ export default function Home() {
                 <h1 className="text-6xl sm:text-4xl text-white sm:!leading-[3rem] font-playfair" style={{lineHeight:'4.5rem'}}>
                   Discover the<br/>
                   <span  className='bg-orMain text-black sm:text-4xl font-playfair'>Top Primary School</span><br/>
-                  in Kondapur, Hyderabad!
+                 <span className="flex justify-center sm:flex-col"> <span>in Kondapur,</span> <span> Hyderabad!</span></span>
                 </h1>
               </div>
               <span className="text-md w-full sm:text-xs sm:w-full text-white font-roboto sm:hidden">
@@ -468,7 +468,8 @@ export default function Home() {
         <div className="flex justify-center py-20 sm:py-10">
           <div className=" w-full flex items-center flex-col justify-center">
             <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full sm:flex-col sm:items-center">
-              <h2 className="text-purpleMain font-playfair text-4xl font-bold sm:text-3xl sm:contents"><span className="text-orMain text-7xl  font-bold sm:text-5xl">ILC’s </span>innovative learning centres</h2>
+              <h2 className="text-purpleMain font-playfair text-4xl font-bold sm:text-3xl sm:contents"><span className="text-orMain text-7xl  font-bold sm:text-4xl">ILC’s </span>
+              innovative learning centres</h2>
                
                
             </div>
