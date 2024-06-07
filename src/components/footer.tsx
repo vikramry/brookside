@@ -149,7 +149,7 @@ const Footer = () => {
             </div>
             <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
             <div className="sm:flex sm:flex-col">
-              <p className="font-bold">Quick Links</p>
+              <p className="font-bold ">Quick Links</p>
               <ul className="flex flex-col m-[5px] font-light font-roboto sm:font-normal">
                 <li>
                   <Link href="/">Home</Link>
@@ -163,8 +163,8 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="font-bold">Useful Links</p>
-              <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0">
+              <p className="font-bold sm:pl-6">Useful Links</p>
+              <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0 sm:pl-6">
                 <li>
                   <Link href="/academics">Academics</Link>
                 </li>
