@@ -176,13 +176,13 @@ export default function Home() {
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 sm:w-5/6 ">
               <div className="flex gap-4 sm:gap-0">
                
-                <h1 className="text-6xl sm:text-xl text-white sm:!leading-10 font-playfair" style={{lineHeight:'4.5rem'}}>
+                <h1 className="text-6xl sm:text-4xl text-white sm:!leading-[3rem] font-playfair" style={{lineHeight:'4.5rem'}}>
                   Discover the<br/>
-                  <span  className='bg-orMain text-black sm:text-xl font-playfair'>Top Primary School</span><br/>
+                  <span  className='bg-orMain text-black sm:text-4xl font-playfair'>Top Primary School</span><br/>
                   in Kondapur, Hyderabad!
                 </h1>
               </div>
-              <span className="text-md w-full sm:text-xs sm:w-full text-white font-roboto">
+              <span className="text-md w-full sm:text-xs sm:w-full text-white font-roboto sm:hidden">
                 At Brookside, we believe that every child is unique and full of
                 ability. Our dedicated and passionate teachers build a nurturing
                 and holistic environment in which curiosity thrives and learning
@@ -203,7 +203,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-1/2 flex justify-end sm:w-full sm:justify-center">
-                <Image src={mainBanner} alt="mainBanner" className="w-auto h-[30rem] sm:w-5/6"/> 
+                <Image src={mainBanner} alt="mainBanner" className="w-auto h-[30rem] sm:w-5/6 sm:h-auto"/> 
             </div>
           </div>
         </div>
@@ -465,7 +465,7 @@ export default function Home() {
         </div>
 
 
-        <div className="flex justify-center py-20 sm:py-20">
+        <div className="flex justify-center py-20 sm:py-10">
           <div className=" w-full flex items-center flex-col justify-center">
             <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full sm:flex-col sm:items-center">
               <h2 className="text-purpleMain font-playfair text-4xl font-bold sm:text-3xl sm:contents"><span className="text-orMain text-7xl  font-bold sm:text-5xl">ILC’s </span>innovative learning centres</h2>
