@@ -9,7 +9,7 @@ const Curriculum = () => {
                 <div className='flex lg:justify-between justify-center items-center lg:flex-row flex-col-reverse' >
                     <div className='w-full flex flex-col gap-5 text-base'>
                         <p>
-                            Brookfield has designed the 5C curriculum, a comprehensive educational approach that aims to create a social learning environment promoting curiosity and knowledge development. This curriculum is inspired by teachings from professional educators and various learning practices, offering a holistic approach to student development.
+                            Brookside has designed the 5C curriculum, a comprehensive educational approach that aims to create a social learning environment promoting curiosity and knowledge development. This curriculum is inspired by teachings from professional educators and various learning practices, offering a holistic approach to student development.
                         </p>
                         <p>
                             The primary goal of this curriculum is to cultivate leadership skills in children by providing guidance and mentorship at every stage of their academic journey. The curriculum also seeks to establish a participatory environment that encourages self-esteem, independence, leadership, innovation, problem-solving, and responsibility. These are vital skills for building a bright future, and the curriculum caters to individual learning styles while engaging and stimulating curious minds.

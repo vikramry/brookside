@@ -228,7 +228,7 @@ const ContactUS = () => {
                 {/* <iframe
                   className="rounded-2xl md:w-[460px] md:h-[535px]  h-[500px]"
                   id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=The%20Brookfield%20International%20school%20kondapur&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  src="https://maps.google.com/maps?q=The%20Brookside%20International%20school%20kondapur&t=&z=13&ie=UTF8&iwloc=&output=embed"
                   scrolling="no"
                 ></iframe> */}
                 <iframe

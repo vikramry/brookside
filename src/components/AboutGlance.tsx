@@ -3,7 +3,7 @@ import React from 'react'
 const AboutGlance = () => {
     return (
         <div className='flex flex-col justify-center items-center w-full gap-20 py-16 bg-white'>
-            <h1 className='text-[#F3A20C] font-bold md:text-5xl text-2xl '>Brookfield at a Glance</h1>
+            <h1 className='text-[#F3A20C] font-bold md:text-5xl text-2xl '>Brookside at a Glance</h1>
             <div className='flex justify-center items-start flex-col gap-20'>
                 <div className='flex justify-start items-center gap-10'>
                     <span className='md:text-3xl text-[16px] '>Current Admissions</span>
