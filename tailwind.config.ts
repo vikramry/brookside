@@ -31,7 +31,9 @@ const config: Config = {
 
       },
       fontFamily: {
-        'playfair': ['Playfair Display', 'serif'],
+        'playfair': ['"Playfair Display"', 'serif'],
+        'roboto': ['"Roboto"', 'sans-serif'],
+
       },
       borderRadius: {
         'none': '0',
