@@ -149,7 +149,7 @@ export default function Home() {
     },
     {
       image: goldShield,
-      title: "Exciting Summer Camps at Kondapu",
+      title: "Exciting Summer Camps at Kondapur",
       color: "grey",
     },
 
@@ -402,7 +402,7 @@ export default function Home() {
 
         {/* parents review */}
         <div className="h-32 bg-white w-full sm:h-0"></div>
-        <div className="py-16 sm:py-4 container">
+        <div className="py-16 sm:py-4 w-full">
           <div className="flex justify-center container">
             <span className="font-playfair text-3xl text-purpleMain sm:text-xl">
               Parent’s Review
