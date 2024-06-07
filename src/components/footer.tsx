@@ -148,40 +148,38 @@ const Footer = () => {
               </div>
             </div>
             <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
-            <div className="sm:flex sm:flex-row sm:gap-5">
-              <div>
-                <p className="font-bold">Quick Links</p>
-                <ul className="flex flex-col m-[5px] font-light font-roboto sm:font-normal">
-                  <li>
-                    <Link href="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link href="/about">About</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact</Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p className="font-bold sm:pl-8">Useful Links</p>
-                <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0 sm:pl-8">
-                  <li>
-                    <Link href="/academics">Academics</Link>
-                  </li>
-                  <li>
-                    <Link href="/activities">Activities</Link>
-                  </li>
-                  {/* <li>
+            <div className="sm:flex sm:flex-col">
+              <p className="font-bold">Quick Links</p>
+              <ul className="flex flex-col m-[5px] font-light font-roboto sm:font-normal">
+                <li>
+                  <Link href="/">Home</Link>
+                </li>
+                <li>
+                  <Link href="/about">About</Link>
+                </li>
+                <li>
+                  <Link href="/contact">Contact</Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <p className="font-bold">Useful Links</p>
+              <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0">
+                <li>
+                  <Link href="/academics">Academics</Link>
+                </li>
+                <li>
+                  <Link href="/activities">Activities</Link>
+                </li>
+                {/* <li>
                                     <Link href="/Blog">
                                         Blog
                                     </Link>
                                 </li> */}
-                  <li>
-                    <Link href="/gallery">Gallery</Link>
-                  </li>
-                </ul>
-              </div>
+                <li>
+                  <Link href="/gallery">Gallery</Link>
+                </li>
+              </ul>
             </div>
             <div>
               {isVisible && (
@@ -197,9 +195,9 @@ const Footer = () => {
               )}
             </div>
             <div>
-              <a href="https://wa.me/+919032188851" target="_blank" className="cursor-pointer fixed right-3 bottom-20">
+            <a href="https://wa.me/+919032188851" target="_blank" className="cursor-pointer fixed right-3 bottom-20">
                 <Image src={wtsappImg} alt="wtsapp" className="w-12 h-auto " />
-              </a>
+                </a>
             </div>
           </div>
         </div>
