@@ -43,7 +43,7 @@ export default function CurouselComponent() {
    
   ];
   return (
-    <div className="w-full">
+    <div className="w-full font-roboto">
       <Swiper
        
         spaceBetween={30}

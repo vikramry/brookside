@@ -157,7 +157,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="font-playfair flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full ">
+    <main className=" flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between lg:w-full ">
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
@@ -176,13 +176,13 @@ export default function Home() {
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 sm:w-5/6 ">
               <div className="flex gap-4 sm:gap-0">
                
-                <h1 className="text-6xl sm:text-xl text-white sm:!leading-10" style={{lineHeight:'4.5rem'}}>
+                <h1 className="text-6xl sm:text-xl text-white sm:!leading-10 font-playfair" style={{lineHeight:'4.5rem'}}>
                   Discover the<br/>
-                  <span  className='bg-orMain text-black sm:text-xl '>Top Primary School</span><br/>
+                  <span  className='bg-orMain text-black sm:text-xl font-playfair'>Top Primary School</span><br/>
                   in Kondapur, Hyderabad!
                 </h1>
               </div>
-              <span className="text-md w-full sm:text-xs sm:w-full text-white">
+              <span className="text-md w-full sm:text-xs sm:w-full text-white font-roboto">
                 At Brookside, we believe that every child is unique and full of
                 ability. Our dedicated and passionate teachers build a nurturing
                 and holistic environment in which curiosity thrives and learning
@@ -191,7 +191,7 @@ export default function Home() {
                 modern educational practices.
               </span>
               <div className="flex gap-4 sm:gap-2">
-                <button className="bg-orMain text-black px-4 py-2 rounded text-xs font-bold sm:w-18 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
+                <button className="bg-orMain text-black font-roboto px-4 py-2 rounded text-xs font-bold sm:w-18 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
                   <a href="/about">LEARN MORE</a>
                 </button>
                 {/* <a href="/gallery">
@@ -230,12 +230,12 @@ export default function Home() {
                 {/* <img  className="w-fit h-3" src={curve.src} alt="curve" /> */}
               </span>
             </div>
-            <span className="text-2xl w-4/5 sm:text-sm sm:w-5/6">
+            <span className="text-2xl w-4/5 sm:text-sm sm:w-5/6 font-roboto">
               We strike to make leaders of tomorrow, Equipping them with the
               skills and knowledge to make them future ready.
             </span>
             <div className="flex gap-4 sm:gap-6 sm:mt-2">
-              <button className="bg-orMain text-white px-4 py-2 rounded text-xs font-bold sm:w-22 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
+              <button className="bg-orMain text-white px-4 py-2 rounded text-xs font-roboto font-bold sm:w-22 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
                 <a href="/about">LEARN MORE</a>
               </button>
               <a href="/gallery">
@@ -255,7 +255,7 @@ export default function Home() {
                 <h2 className=" text-5xl font-playfair w-full sm:text-base sm:w-full sm:pl-2">
                   Your child's success story starts here!!!
                 </h2>
-                <span className="text-base text-purpleMain sm:text-xs sm:px-2 sm:py-2 text-justify">
+                <span className="text-base text-purpleMain sm:text-xs sm:px-2 sm:py-2 text-justify font-roboto">
                   Our goal is to give kids the necessary skills to confront the
                   continuously evolving global challenges, instil the confidence
                   to take risks and make independent decisions, and above all,
@@ -294,7 +294,7 @@ export default function Home() {
                 <span className="text-5xl font-playfair w-1/2 sm:text-5xl sm:w-full sm:p-4">
                 Your child's success story starts here!!!
                 </span>
-                <span className="text-base text-purpleMain sm:text-sm sm:px-5 sm:text-justify">
+                <span className="text-base text-purpleMain sm:text-sm sm:px-5 sm:text-justify font-roboto">
                 Our goal is to give kids the necessary skills to confront the continuously evolving global challenges, instil the confidence to take risks and make independent decisions, and above all, foster values that contribute to developing thoughtful and engaged individuals. We are the best, affordable Pre-Primary and primary schools in Kondapur, Hyderabad, helping students fulfil their natural abilities and succeed in their chosen fields. We are also known for academic excellence and holistic approach to education focusing on the top 10 best primary schools in Kondapur, Hyderabad.
                 </span>
                 {data.map((item, index) => (
@@ -323,7 +323,7 @@ export default function Home() {
             <div className="bg-[#E5F6D4] w-4/5 flex justify-center p-8 font-playfair text-3xl flex-col items-baseline gap-8 relative top-24 sm:top-4 sm:gap-0 sm:w-5/6 sm:text-2xl sm:rounded-lg sm:p-4">
               <div className="flex items-center justify-center">
                 <div className="w-3/5 flex flex-col items-baseline gap-8 sm:gap-3 sm:w-5/6">
-                  <div className="flex flex-col">
+                  <div className="flex flex-col font-roboto">
                     <span
                       className=" quotation quotadesk text-6xl w-fit font-bold text-orMain relative sm:text-6xl sm:p-0 sm:absolute"
                     >
@@ -354,7 +354,7 @@ export default function Home() {
                 <h2 className=" text-5xl font-playfair w-full sm:text-xl sm:w-full sm:pl-2">
                 Why choose Brookside Global Primary School for your kid?
                 </h2>
-                <span className="text-base text-purpleMain sm:text-sm sm:px-2 sm:py-4 text-justify">
+                <span className="text-base font-roboto text-purpleMain sm:text-sm sm:px-2 sm:py-4 text-justify">
                   Our goal is to give kids the necessary skills to confront the
                   continuously evolving global challenges, instil the confidence
                   to take risks and make independent decisions, and above all,
@@ -406,11 +406,11 @@ export default function Home() {
         <div className="w-full py-40 flex items-center justify-center sm:py-20 desktopbg">
           <div className="container  lg:px-10 flex flex-col gap-12 items-center justify-center sm:gap-0">
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-purpleMain text-3xl font-bold sm:text-xl">
+              <h2 className="text-purpleMain text-3xl font-playfair font-bold sm:text-xl">
                 Ages we meet kids where they are
               </h2>
             </div>
-            <div className=" flex gap-12 w-full sm:gap-6 sm:flex-col sm:items-center">
+            <div className=" flex gap-12 w-full font-roboto sm:gap-6 sm:flex-col sm:items-center">
               <Card2
                 img={b1}
                 grade="IK1-IK3"
@@ -451,7 +451,7 @@ export default function Home() {
                 We also provide Transportation facilities
 
                 </h2>
-                <span className="text-base text-purpleMain sm:text-sm sm:px-2 sm:py-2 text-justify">
+                <span className="text-base font-roboto text-purpleMain sm:text-sm sm:px-2 sm:py-2 text-justify">
                 Brookside Global School offers transportation facilities to ensure our students safety and security. We include modern safety features in our transportation because the safety and wellbeing of every child during the trip is our top priority. We make sure that transportation facilities are available to every student; the transportation service at Brookside covers a larger area; and we ensure that students from various areas can easily access the school.
                 </span>
           
@@ -468,7 +468,7 @@ export default function Home() {
         <div className="flex justify-center py-20 sm:py-20">
           <div className=" w-full flex items-center flex-col justify-center">
             <div className="flex gap-2 items-baseline sm:gap-5 sm:w-full sm:flex-col sm:items-center">
-              <h2 className="text-purpleMain text-4xl font-bold sm:text-3xl sm:contents"><span className="text-orMain text-7xl font-bold sm:text-5xl">ILC’s </span>innovative learning centres</h2>
+              <h2 className="text-purpleMain font-playfair text-4xl font-bold sm:text-3xl sm:contents"><span className="text-orMain text-7xl  font-bold sm:text-5xl">ILC’s </span>innovative learning centres</h2>
                
                
             </div>
@@ -481,7 +481,7 @@ export default function Home() {
                   <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                     Art & Craft Corner
                   </span>
-                  <span className="text-base w-full sm:w-5/6 sm:text-justify sm:text-base">
+                  <span className="text-base w-full font-roboto sm:w-5/6 sm:text-justify sm:text-base">
                   Our Art and Craft Corner where creativity knows no bounds is a place where students can explore their imagination and develop their artistic skills in a fun and engaging way. Different Art and craft activities for primary schoolers provide a sense of achievement and build confidence. Students can also enroll for summer camps at kondapur, Hyderabad for more exciting activities.
                   </span>
                 </div>
@@ -489,7 +489,7 @@ export default function Home() {
                   <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                     Role Play Area
                   </span>
-                  <span className="text-base w-full sm:w-5/6 sm:text-justify sm:text-base">
+                  <span className="text-base w-full font-roboto sm:w-5/6 sm:text-justify sm:text-base">
                   Our Role Play area provides a dynamic and immersive learning experience for our students. By assuming different roles and scenarios, our students develop important social and emotional skills such as empathy, communication, problem-solving and teamwork. We welcome every student to enroll in our primary school kondapur, Hyderabad. It's going to be every exciting and fun learning.
                   </span>
                 </div>
@@ -497,7 +497,7 @@ export default function Home() {
                   <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                     Dance & Drama Studio
                   </span>
-                  <span className="text-base w-full sm:w-5/6 sm:text-justify sm:text-base">
+                  <span className="text-base w-full font-roboto sm:w-5/6 sm:text-justify sm:text-base">
                   Our Dance and Drama studio provides a vibrant and creative space for our students to explore the world of performing arts. Through dance and drama activities, our students develop self-expression, confidence, teamwork and creativity. Come and enjoy a perfect blend of study and fun with the many summer camp programmes offered by Brookside global School in Kondapur, Hyderabad.
 
                   </span>
@@ -508,7 +508,7 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full flex items-center justify-center bg-lightBlue h-40 ">
-              <button className="bg-purpleMain text-white px-4  py-2 h-fit rounded text-base font-bold flex items-center gap-4 ">
+              <button className="bg-purpleMain text-white px-4  py-2 h-fit rounded text-base font-bold flex items-center gap-4 font-playfair ">
                 <a href="/activities">Explore all activities</a>
                 <FaArrowRight className="text-base sm:text-xs" />
               </button>

@@ -86,14 +86,14 @@ const Footer = () => {
           </div>
           <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
           <div className="flex flex-row flex-wrap gap-10 md:gap-40 justify-center ">
-            <div className=" rounded-2xl p-10  flex justify-center items-center gap-16 flex-wrap sm:px-4 sm:py-5 sm:gap-8 md:hidden">
+            <div className=" rounded-2xl p-10  flex justify-center items-center gap-16 flex-wrap sm:px-1 sm:py-5 sm:gap-6 md:hidden">
               <div className="flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl">
-                <div className="flex gap-4 justify-start sm:items-center">
+                <div className="flex gap-4 justify-start sm:items-center ">
                   <Link
                     href={"https://www.instagram.com/Brookside_school.kondapur"}
                     target="_blank"
                   >
-                    <p className="flex justify-start items-center gap-2">
+                    <p className="flex justify-start items-center gap-2 sm:pl-2">
                       <FaInstagram />
                       <span>Instagram</span>
                     </p>
@@ -102,15 +102,15 @@ const Footer = () => {
                     href={"https://www.facebook.com/brooksideglobalschool"}
                     target="_blank"
                   >
-                    <p className="flex justify-start items-center gap-2">
+                    <p className="flex justify-start items-center gap-2 sm:pl-4">
                       <FaFacebookSquare />
                       <span>Facebook</span>
                     </p>
                   </Link>
                 </div>
-                <div className="flex gap-8 justify-start">
+                <div className="flex gap-8 justify-start ">
                   <Link href={"https://x.com/BrooksideS3384"} target="_blank">
-                    <p className="flex justify-start items-center gap-2">
+                    <p className="flex justify-start items-center gap-2 ">
                       <FaXTwitter />
                       <span>Twitter(X)</span>
                     </p>
@@ -119,7 +119,7 @@ const Footer = () => {
                     href={"https://www.youtube.com/@BrooksideGlobalSchool"}
                     target="_blank"
                   >
-                    <p className="flex justify-start items-center gap-2 -ml-2">
+                    <p className="flex justify-start items-center gap-2 ">
                       <FaYoutube />
                       <span>Youtube</span>
                     </p>
@@ -148,39 +148,40 @@ const Footer = () => {
               </div>
             </div>
             <hr className="h-1 w-available bg-[#F3A20C] md:hidden" />
-
-            <div>
-              <p className="font-bold">Quick Links</p>
-              <ul className="flex flex-col m-[5px] font-light sm:font-normal">
-                <li>
-                  <Link href="/">Home</Link>
-                </li>
-                <li>
-                  <Link href="/about">About</Link>
-                </li>
-                <li>
-                  <Link href="/contact">Contact</Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-bold">Useful Links</p>
-              <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal">
-                <li>
-                  <Link href="/academics">Academics</Link>
-                </li>
-                <li>
-                  <Link href="/activities">Activities</Link>
-                </li>
-                {/* <li>
+            <div className="sm:flex sm:flex-row sm:gap-5">
+              <div>
+                <p className="font-bold">Quick Links</p>
+                <ul className="flex flex-col m-[5px] font-light font-roboto sm:font-normal">
+                  <li>
+                    <Link href="/">Home</Link>
+                  </li>
+                  <li>
+                    <Link href="/about">About</Link>
+                  </li>
+                  <li>
+                    <Link href="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <p className="font-bold sm:pl-8">Useful Links</p>
+                <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0 sm:pl-8">
+                  <li>
+                    <Link href="/academics">Academics</Link>
+                  </li>
+                  <li>
+                    <Link href="/activities">Activities</Link>
+                  </li>
+                  {/* <li>
                                     <Link href="/Blog">
                                         Blog
                                     </Link>
                                 </li> */}
-                <li>
-                  <Link href="/gallery">Gallery</Link>
-                </li>
-              </ul>
+                  <li>
+                    <Link href="/gallery">Gallery</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div>
               {isVisible && (
@@ -196,9 +197,9 @@ const Footer = () => {
               )}
             </div>
             <div>
-            <a href="https://wa.me/+919032188851" target="_blank" className="cursor-pointer fixed right-3 bottom-20">
+              <a href="https://wa.me/+919032188851" target="_blank" className="cursor-pointer fixed right-3 bottom-20">
                 <Image src={wtsappImg} alt="wtsapp" className="w-12 h-auto " />
-                </a>
+              </a>
             </div>
           </div>
         </div>

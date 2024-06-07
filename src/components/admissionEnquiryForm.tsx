@@ -105,9 +105,9 @@ const AdmissionEnquiryForm: React.FC = () => {
         }}
       >
         {({ isSubmitting }) => (
-          <Form className=' w-full sm:text-xs sm:w-4/5'>
+          <Form className=' w-full sm:text-xs sm:w-4/5 font-roboto'>
             <div className="mb-4 sm:mb-2 ">
-              <Field as="select" name="grade" className="border border-black p-2 w-full rounded-md sm:p-2 formbg" placeholder="Select Grade">
+              <Field as="select" name="grade" className="border border-black  p-2 w-full rounded-md sm:p-2 formbg" placeholder="Select Grade">
                 <option value="" disabled>Select Grade</option>
                 <option value="Daycare">Daycare</option>
                 <option value="Play group">Play group</option>
