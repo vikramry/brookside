@@ -4,6 +4,7 @@ import Image from "next/image";
 import b1 from "../../public/assets/images/b1.png";
 import b2 from "../../public/assets/images/b2.png";
 import b3 from "../../public/assets/images/b3.png";
+import b4 from "../../public/assets/images/b4.png";
 import curve from "../../public/assets/images/curve.png";
 import { FaCirclePlay } from "react-icons/fa6";
 import goldShield from "../../public/assets/images/goldShield.png";
@@ -160,7 +161,7 @@ export default function Home() {
       <div className="w-full bg-white">
         {/* /assets/images/mainbg1.jpg */}
         <div
-          className="w-full flex items-center sm:!h-auto sm:!p-4 sm:!hidden"
+          className="w-full flex items-center sm:!h-auto sm:!p-4"
           style={{
             // backgroundImage: `url('/assets/images/schoolbnr.png')`,
             padding: "40px",
@@ -171,13 +172,13 @@ export default function Home() {
             height: "70vh",
           }}
         >
-          <div className=" flex justify-between items-center">
-            <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 ">
+          <div className=" flex justify-between items-center sm:flex-col sm:justify-center">
+            <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 sm:w-5/6 ">
               <div className="flex gap-4 sm:gap-0">
                
-                <h1 className="text-6xl sm:text-xl text-white " style={{lineHeight:'4.5rem'}}>
+                <h1 className="text-6xl sm:text-xl text-white sm:!leading-10" style={{lineHeight:'4.5rem'}}>
                   Discover the<br/>
-                  <span  className='bg-orMain text-black  '>Top Primary School</span><br/>
+                  <span  className='bg-orMain text-black sm:text-xl '>Top Primary School</span><br/>
                   in Kondapur, Hyderabad!
                 </h1>
               </div>
@@ -190,7 +191,7 @@ export default function Home() {
                 modern educational practices.
               </span>
               <div className="flex gap-4 sm:gap-2">
-                <button className="bg-orMain text-black px-4 py-2 rounded text-xs font-bold sm:w-16 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
+                <button className="bg-orMain text-black px-4 py-2 rounded text-xs font-bold sm:w-18 sm:h-10 sm:mt-2 sm:px-2 sm:py-0">
                   <a href="/about">LEARN MORE</a>
                 </button>
                 {/* <a href="/gallery">
@@ -201,14 +202,14 @@ export default function Home() {
                 </a> */}
               </div>
             </div>
-            <div className="w-1/2 flex justify-end">
-                <Image src={mainBanner} alt="mainBanner" className="w-auto h-[30rem]"/> 
+            <div className="w-1/2 flex justify-end sm:w-full sm:justify-center">
+                <Image src={mainBanner} alt="mainBanner" className="w-auto h-[30rem] sm:w-5/6"/> 
             </div>
           </div>
         </div>
 
         <div
-          className="md:hidden"
+          className="md:hidden sm:hidden"
           style={{
             backgroundImage: `url('/assets/images/mobilebg.png')`,
             padding: "40px",
@@ -291,19 +292,10 @@ export default function Home() {
               </div>
               <div className="w-1/2 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-6 md:hidden">
                 <span className="text-5xl font-playfair w-1/2 sm:text-5xl sm:w-full sm:p-4">
-                  Learning Begins With Us
+                Your child's success story starts here!!!
                 </span>
                 <span className="text-base text-purpleMain sm:text-sm sm:px-5 sm:text-justify">
-                  Our objective is to equip  students with the necessary skills
-                  to confront the continuously evolving global challenges,
-                  instilling them the confidence to take risks and make
-                  independent decisions, and above all, fostering values that
-                  contribute to the development of thoughtful and engaged
-                  individuals. We are the best schools in hyderabad with low
-                  fees to  cultivate the innate potential of our students and
-                  enable them to excel in their chosen paths. The school is
-                  knows for its academic excellence and holistic approach in
-                  education focuses to be on top 10 best schools in hyderabad.
+                Our goal is to give kids the necessary skills to confront the continuously evolving global challenges, instil the confidence to take risks and make independent decisions, and above all, foster values that contribute to developing thoughtful and engaged individuals. We are the best, affordable Pre-Primary and primary schools in Kondapur, Hyderabad, helping students fulfil their natural abilities and succeed in their chosen fields. We are also known for academic excellence and holistic approach to education focusing on the top 10 best primary schools in Kondapur, Hyderabad.
                 </span>
                 {data.map((item, index) => (
                   <div
@@ -333,8 +325,7 @@ export default function Home() {
                 <div className="w-3/5 flex flex-col items-baseline gap-8 sm:gap-3 sm:w-5/6">
                   <div className="flex flex-col">
                     <span
-                      className="text-6xl w-fit font-bold text-orMain relative sm:text-6xl sm:!left 0em sm:p-0 sm:absolute"
-                      style={{ left: "-1em" }}
+                      className=" quotation quotadesk text-6xl w-fit font-bold text-orMain relative sm:text-6xl sm:p-0 sm:absolute"
                     >
                       “
                     </span>
@@ -354,9 +345,9 @@ export default function Home() {
         <div className="bg-lightBlue w-full flex items-center justify-center  mt-32 sm:pb-6">
           <div className="flex flex-col  items-center">
             <div className="container lg:px-10 flex sm:flex-col">
-            <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-4">
-                <div className="w-full sm:w-full sm:shadow-none ">
-                  <Image src={whyChooseImg} alt="why choose" className="w-auto"/>
+            <div className="w-2/5 flex justify-center items-center sm:w-full sm:pl-10 sm:justify-center">
+                <div className="w-full sm:shadow-none ">
+                  <Image src={whyChooseImg} alt="why choose" className="w-auto sm:w-full"/>
                 </div>
               </div>
               <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-2 sm:w-full sm:py-3 sm:px-3">
@@ -413,7 +404,7 @@ export default function Home() {
 
         {/* ages where we meet */}
         <div className="w-full py-40 flex items-center justify-center sm:py-20 desktopbg">
-          <div className="container  lg:px-10 flex flex-col gap-12 items-center justify-center">
+          <div className="container  lg:px-10 flex flex-col gap-12 items-center justify-center sm:gap-0">
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-purpleMain text-3xl font-bold sm:text-xl">
                 Ages we meet kids where they are
@@ -437,7 +428,7 @@ export default function Home() {
                 desc="Brookside Global School focuses on enhancing primary grade students' vocabulary, attention span, reading, and writing abilities using innovative and captivating teaching techniques. Our curriculum emphasises critical thinking, problem-solving, and skillful communication to prepare students for academics in primary school. We work hard to create a safe, supportive environment that inspires curiosity, self-assurance, and a love of learning in each of our students. As one of the best Primary schools in Kondapur, Hyderabad we focus on child safety first.   "
               />
               <Card2
-                img={b3}
+                img={b4}
                 grade="Day Care Center"
                 desc="At Brookside global we offer a day care center in kondapur, Hyderabad. Our day care center program focus on providing child safety with a fun learning experience. The main aim of our day care center is to promote social and cognitive development of children. We provide day cay center service for Pre-primary, 1st and 2nd grade students in kondapur, hyderabad. 
                 Our students enjoy the daycare learning experience. We offer a wide range of activities at our day care center such as, art and craft ,outdoor playing, fun learning experience and every child gets personal attention at our day care center. 
