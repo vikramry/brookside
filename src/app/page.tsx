@@ -176,10 +176,12 @@ export default function Home() {
             <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 sm:w-5/6 ">
               <div className="flex gap-4 sm:gap-0">
                
-                <h1 className="text-6xl sm:text-4xl text-white sm:!leading-[3rem] font-playfair" style={{lineHeight:'4.5rem'}}>
-                  Discover the<br/>
-                  <span  className='bg-orMain text-black sm:text-4xl font-playfair'>Top Primary School</span><br/>
-                 <span className="flex justify-center sm:flex-col"> <span>in Kondapur,</span> <span> Hyderabad!</span></span>
+                <h1 className="text-5xl sm:text-4xl text-white sm:!leading-[3rem] font-playfair" style={{lineHeight:'4.5rem'}}>
+                We Cover it All, 
+
+<br/>
+                  <span  className='bg-orMain text-black sm:text-4xl font-playfair'>Play Group to Primary Schooling  </span><br/>
+                 <span className="flex  sm:flex-col"> <span>in Kondapur,</span> <span> Hyderabad!</span></span>
                 </h1>
               </div>
               <span className="text-md w-full sm:text-xs sm:w-full text-white font-roboto sm:hidden">
