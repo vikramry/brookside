@@ -211,7 +211,7 @@ export default function Home() {
           </div>
         </div>
         <div>
-        <a href="/about"><Image src={mainmobilebanner} alt="mainBanner" className="w-auto h-[30rem] sm:w-full sm:h-auto"/> </a>
+        <a href="/about"><Image src={mainmobilebanner} alt="mainBanner" className="w-auto h-[30rem] sm:w-full sm:h-auto md:hidden"/> </a>
         </div>
         <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em ">
           <div className="flex flex-col  items-center">
