@@ -34,7 +34,7 @@ export default function RootLayout({
         </div>
       </body>
       <GoogleTagManager gtmId="GTM-TV5M2494" />
-      {/* <GoogleAnalytics gaId="AW-16583727033" /> */}
+      <GoogleAnalytics gaId="AW-16583727033" />
       <GoogleAnalytics gaId="G-1Y1B9DCNKC" />
     </html>
   );
