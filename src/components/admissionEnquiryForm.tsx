@@ -6,6 +6,7 @@ import { AdmissionMail } from '@/action';
 import toast, { Toaster } from 'react-hot-toast';
 import { ClipLoader } from 'react-spinners';
 import axios from 'axios';
+import { usePathname } from 'next/navigation';
 
 interface FormValues {
   grade: string;
@@ -40,7 +41,10 @@ const initialValues: FormValues = {
 
 
 const AdmissionEnquiryForm: React.FC = () => {
+  const params = usePathname()
+  console.log("🚀 ~ params:", params)
   const [visible, setVisible] = useState(false);
+  const [useclass,setClassname]=useState("")
   useEffect(() => {
     let timer:any;
     if (visible) {
@@ -94,6 +98,14 @@ const AdmissionEnquiryForm: React.FC = () => {
             if (res) {
               toast.success("Successfully submited!")
               setVisible(true);
+              if(params==="/best-preschool-in-kondapur"){
+                setClassname("admenqsuccessmsgpreschool")
+              }
+              if(params==="/"){
+                setClassname("admenqsuccessmsg")
+              }
+              console.log("cls",useclass);
+              
               resetForm({
                 values: {
                   grade: '',
@@ -176,7 +188,7 @@ const AdmissionEnquiryForm: React.FC = () => {
                 "Submit"
               )}
             </button>
-            {visible && <span className={`w-full flex py-4 justify-center ${visible?"admenqsuccessmsg":""} `}>form submitted Successfully</span>}
+            {visible && <span className={`w-full flex py-4 justify-center ${visible?useclass:""} `}>form submitted Successfully</span>}
           </Form>
         )}
       </Formik>
