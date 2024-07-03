@@ -22,13 +22,13 @@ import PriorityCard from "@/components/PriorityCard";
 import { FaArrowRight } from "react-icons/fa6";
 import Accordion from "@/components/Accordian";
 
-// export const metadata: Metadata = {
-//   title: "Best Primary School in Kondapur, Hyderabad",
-//   description:
-//     "Welcome to Brookside Global School, where young minds bloom! We are the Best Primary School in Kondapur, Hyderabad. Join us on an exciting educational journey tailored to inspire and empower our students for a lifetime of success.",
-//   keywords:
-//     "Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'",
-// };
+export const metadata: Metadata = {
+  title: "Best Preschool in Kondapur | Brookside Global School",
+  description:
+    "Shape the future of your Toddler at the Best Preschool in Kondapur, Hyderabad. Fill out the form to reach us today.",
+  keywords:
+    "Best PreSchool in Kondapur - Hyderabad, Best preSchool in Hyderabad, Best Pre Primary Schools in Hyderabad'",
+};
 
 export default function BestPreSchoool() {
     const [openIndex, setOpenIndex] = useState(null);
