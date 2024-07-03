@@ -30,6 +30,7 @@ import type { Metadata } from "next";
 import mainBanner from '../../public/assets/images/mainBanner.png'
 import whyChooseImg from '../../public/assets/images/WhyChoseus.png'
 import mainmobilebanner from '../../public/assets/images/mainmobilebanner.png'
+import busImg from '../../public/assets/images/BusImage.png'
 
 export const metadata: Metadata = {
   title: "Best Primary School in Kondapur, Hyderabad",
@@ -164,17 +165,17 @@ export default function Home() {
         <div
           className="w-full flex items-center sm:!h-auto sm:!p-4 sm:!hidden"
           style={{
-            // backgroundImage: `url('/assets/images/schoolbnr.png')`,
+             backgroundImage: `url('/assets/images/mainBannerwithImg.png')`,
             padding: "40px",
-            background:'#2f2a4e',
-
+            // background:'#2f2a4e',
+            objectFit:"cover",
             backgroundSize: "100%",
             backgroundRepeat: "no-repeat",
             height: "70vh",
           }}
         >
           <div className=" flex justify-between items-center sm:flex-col sm:justify-center">
-            <div className="w-1/2 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 sm:w-5/6 ">
+            <div className="w-3/4 flex flex-col gap-8 h-4/5 pl-12 sm:gap-0 sm:pl-0 sm:w-5/6 ">
               <div className="flex gap-4 sm:gap-0">
                
                 <h1 className="text-5xl sm:text-4xl text-white sm:!leading-[3rem] font-playfair" style={{lineHeight:'4.5rem'}}>
@@ -185,7 +186,7 @@ export default function Home() {
                  <span className="flex  sm:flex-col"> <span>in Kondapur,</span> <span> Hyderabad!</span></span>
                 </h1>
               </div>
-              <span className="text-md w-full sm:text-xs sm:w-full text-white font-roboto sm:hidden">
+              <span className="text-md  sm:text-xs sm:w-full text-white font-roboto sm:hidden w-2/3">
                 At Brookside, we believe that every child is unique and full of
                 ability. Our dedicated and passionate teachers build a nurturing
                 and holistic environment in which curiosity thrives and learning
@@ -205,9 +206,9 @@ export default function Home() {
                 </a> */}
               </div>
             </div>
-            <div className="w-1/2 flex justify-end sm:w-full sm:justify-center">
+            {/* <div className="w-1/2 flex justify-end sm:w-full sm:justify-center">
                 <Image src={mainBanner} alt="mainBanner" className="w-auto h-[30rem] sm:w-5/6 sm:h-auto"/> 
-            </div>
+            </div> */}
           </div>
         </div>
         <div>
@@ -405,21 +406,22 @@ export default function Home() {
 {/* transport facility */}
 <div className="bg-lightBlue w-full flex items-center justify-center  ">
           <div className="flex flex-col  items-center">
-            <div className="container lg:px-10 flex sm:flex-col">
-            <div className="w-2/5 flex justify-center items-center sm:w-full sm:p-4">
-                <div className="w-/3 shadow-xl sm:w-full sm:shadow-none ">
-                  
-                </div>
-              </div>
-              <div className="w-3/5 flex flex-col gap-4 py-12 sm:gap-0 sm:w-full sm:py-3 sm:px-3 ">
+            <div className="container flex sm:flex-col">
+            
+              <div className="w-1/2  flex flex-col gap-4 py-12  sm:gap-0 sm:w-full sm:py-3 sm:px-3 ">
                 <h2 className=" text-5xl font-playfair w-full sm:text-xl sm:w-full sm:pl-2">
                 We also provide Transportation facilities
 
                 </h2>
-                <span className="text-base font-roboto text-purpleMain sm:text-sm sm:px-2 sm:py-2 text-justify">
+                <span className="text-base font-roboto text-purpleMain sm:text-sm sm:px-2 sm:py-2 pr-20 ">
                 Brookside Global School offers transportation facilities to ensure our students safety and security. We include modern safety features in our transportation because the safety and wellbeing of every child during the trip is our top priority. We make sure that transportation facilities are available to every student; the transportation service at Brookside covers a larger area; and we ensure that students from various areas can easily access the school.
                 </span>
           
+              </div>
+              <div className="w-1/2 flex justify-center items-center sm:w-full sm:p-4">
+                <div className="sm:w-full sm:shadow-none relative bottom-20">
+                  <Image src={busImg} alt="bus" style={{minWidth:"50em"}}/>
+                </div>
               </div>
 
               

@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { GoogleTagManager } from '@next/third-parties/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

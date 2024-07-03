@@ -14,6 +14,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "mainbg": "url('/assets/images/mainbg.png')",
+        "orbg":"url('/assets/images/orbg.png')",
       },
       colors: {
         'headerText':'#4E545F',
@@ -43,7 +44,9 @@ const config: Config = {
       width:{
         "36em":"36em",
         "25em":"25em",
-        "available":"-webkit-fill-available"
+        "22em":"22em",
+        "available":"-webkit-fill-available",
+        "50em":"50em"
       },
       fontSize:{
         "9em":"9em"
