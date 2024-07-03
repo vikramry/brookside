@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { AdmissionMail } from '@/action';
@@ -40,6 +40,17 @@ const initialValues: FormValues = {
 
 
 const AdmissionEnquiryForm: React.FC = () => {
+  const [visible, setVisible] = useState(false);
+  useEffect(() => {
+    let timer:any;
+    if (visible) {
+      timer = setTimeout(() => {
+        setVisible(false);
+      }, 60000); // 60000 milliseconds = 1 minute
+    }
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount or when visible changes
+  }, [visible]);
+
   const [loading, setLoading] = useState(false)
   return (
     <div className="bg-white p-8 shadow-md rounded-xl flex flex-col items-center sm:p-3   ">
@@ -82,6 +93,7 @@ const AdmissionEnquiryForm: React.FC = () => {
             const response = await AdmissionMail(formData);
             if (res) {
               toast.success("Successfully submited!")
+              setVisible(true);
               resetForm({
                 values: {
                   grade: '',
@@ -164,6 +176,7 @@ const AdmissionEnquiryForm: React.FC = () => {
                 "Submit"
               )}
             </button>
+            {visible && <span className={`w-full flex py-4 justify-center ${visible?"admenqsuccessmsg":""} `}>form submitted Successfully</span>}
           </Form>
         )}
       </Formik>

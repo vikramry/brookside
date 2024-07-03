@@ -77,6 +77,7 @@ const ContactUS = () => {
                     const response = await contactMail(formData);
                     if (res) {
                       toast.success("Successfully submited!");
+                      
                       resetForm({
                         values: {
                           name: "",
