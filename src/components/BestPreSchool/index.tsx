@@ -143,20 +143,20 @@ export default function BestPreSchoool() {
         </div>
       </div>
       {/* Admission process for preschool */}
-      <div className="w-full py-10 flex items-center justify-center sm:py-20 bg-white ">
+      <div className="w-full py-10 flex items-center justify-center sm:py-20 bg-white font-playfair">
         <div className="container  lg:px-10 flex gap-10 flex-col  items-center justify-center">
           <div className="flex flex-col w-full  items-center gap-6">
-            <span className=" text-5xl font-bold">
+            <span className=" text-5xl font-bold text-center sm:px-3 sm:text-4xl">
               Admission process for preschool
             </span>
-            <span className="text-base w-1/2 text-center  ">
+            <span className="text-base w-1/2 text-center sm:w-full sm:px-5">
               We have a hassle-free admission process for Our Brookside Global
               School.Check out the below steps for the preschool at Kondapur,
               Hyderabad admission.
             </span>
           </div>
-          <div className="flex flex-col items-center gap-8">
-            <div className="flex gap-20 items-center justify-center bg-[#FDF8EE] py-12 w-3/4">
+          <div className="flex flex-col items-center gap-8 ">
+            <div className="flex gap-20 items-center justify-center bg-[#FDF8EE] py-12 w-3/4 sm:flex-col sm:gap-2 sm:py-6 sm:w-5/6 sm:rounded-3xl">
               <div
                 style={{
                   //  backgroundImage: ``,
@@ -174,7 +174,7 @@ export default function BestPreSchoool() {
                   1
                 </span>
               </div>
-              <span className="w-3/5">
+              <span className="w-3/5 sm:w-full sm:text-center sm:px-3">
                 You can raise a query through a call, or you can also fill out
                 the form to reach out to us. Our team will contact you within
                 4-5 business hours.{" "}
@@ -184,7 +184,7 @@ export default function BestPreSchoool() {
                 to reach out to us.
               </span>
             </div>
-            <div className="flex gap-20 items-center justify-center bg-[#FDF8EE] py-12 w-3/4">
+            <div className="flex gap-20 items-center justify-center bg-[#FDF8EE] py-12 w-3/4 sm:flex-col  sm:gap-2 sm:py-6 sm:w-5/6 sm:rounded-3xl">
               <div
                 style={{
                   //  backgroundImage: ``,
@@ -202,7 +202,7 @@ export default function BestPreSchoool() {
                   2
                 </span>
               </div>
-              <span className="w-3/5">
+              <span className="w-3/5 sm:w-full sm:text-center sm:px-3">
                 Parents can also visit our school directly. You can contact our
                 staff to get more information.{" "}
                 <a href="/" className="font-bold underline">
@@ -211,7 +211,7 @@ export default function BestPreSchoool() {
                 to reach out to us by location.
               </span>
             </div>
-            <div className="flex gap-20 items-center justify-center bg-[#FDF8EE] py-12 w-3/4">
+            <div className="flex gap-20 items-center justify-center bg-[#FDF8EE] py-12 w-3/4 sm:flex-col sm:gap-2 sm:py-6 sm:w-5/6 sm:rounded-3xl">
               <div
                 style={{
                   //  backgroundImage: ``,
@@ -229,7 +229,7 @@ export default function BestPreSchoool() {
                   3
                 </span>
               </div>
-              <span className="w-3/5">
+              <span className="w-3/5 sm:w-full sm:text-center sm:px-3">
                 Fill out the admission form and discuss the fee structure,
                 curriculum, and extra facilities provided for students with our
                 management staff.
@@ -239,13 +239,13 @@ export default function BestPreSchoool() {
         </div>
       </div>
       {/* top priority */}
-      <div className="w-full py-10 flex items-center justify-center sm:py-20 bg-[#E5F6D4] ">
+      <div className="w-full py-10 flex items-center justify-center sm:py-20 bg-[#E5F6D4] font-playfair ">
         <div className="container  lg:px-10 flex gap-10 flex-col  items-center justify-center">
           <div className="flex flex-col w-full  items-center gap-6">
-            <span className=" text-5xl font-bold">
+            <span className=" text-5xl font-bold sm:text-4xl sm:px-3 sm:text-center">
               Our Top Priority Is Your Child's Safety
             </span>
-            <div className="flex flex-wrap gap-x-16">
+            <div className="flex flex-wrap gap-x-16 ">
               <PriorityCard img={cctvImg} text="CCTV Monitoring" />
               <PriorityCard img={FirstAid} text="First Aid Kits" />
               <PriorityCard
@@ -262,28 +262,31 @@ export default function BestPreSchoool() {
 
       {/* Comprehensive extracurricular activities */}
       <div className="w-full  lg:px-10 pt-16 flex sm:pt-8 flex-col pb-20 bg-lightBlue">
-        <div className="flex gap-2 items-baseline justify-center ">
-          <h2 className="text-purpleMain text-center font-playfair text-4xl font-bold sm:text-3xl sm:contents">
+        <div className="flex gap-2 items-baseline justify-center sm:text-center">
+          <h2 className="text-purpleMain text-center font-playfair text-4xl font-bold sm:text-center sm:text-3xl sm:contents ">
             Comprehensive <br /> Pre-Primary Extracurricular Activities
           </h2>
         </div>
+        <div className="w-1/2 sm:w-full sm:px-5 md:hidden">
+            <img src={allMix.src} alt="allmix" />
+          </div>
         <div className="w-full container lg:px-10 pt-16 flex sm:pt-8 sm:flex-col sm:mb-20">
-          <div className=" w-1/2 flex flex-col gap-16 sm:gap-4 sm:w-full sm:pl-10">
-            <div className="flex flex-col gap-8 sm:gap-4">
+          <div className=" w-1/2 flex flex-col gap-16 sm:gap-4 sm:w-full">
+            <div className="flex flex-col gap-8 sm:gap-4 sm:items-center">
               <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                 Art & Craft Corner
               </span>
-              <span className="text-base w-full font-roboto sm:w-5/6 sm:text-justify sm:text-base">
+              <span className="text-base w-full font-roboto sm:w-5/6 sm:text-center sm:text-base">
                 Our Art and Craft Corner where creativity knows no bounds is a
                 place where students can explore their imagination and develop
                 their artistic skills in a fun and engaging way.
               </span>
             </div>
-            <div className="flex flex-col gap-8 sm:gap-4">
+            <div className="flex flex-col gap-8 sm:gap-4 sm:items-center">
               <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                 Music and Dance
               </span>
-              <span className="text-base w-full font-roboto sm:w-5/6 sm:text-justify sm:text-base">
+              <span className="text-base w-full font-roboto sm:w-5/6 sm:text-center sm:text-base">
                 Our Role Play area provides a dynamic and immersive learning
                 experience for our students. By assuming different roles and
                 scenarios, our students develop important social and emotional
@@ -291,20 +294,20 @@ export default function BestPreSchoool() {
                 teamwork.
               </span>
             </div>
-            <div className="flex flex-col gap-8 sm:gap-4">
+            <div className="flex flex-col gap-8 sm:gap-4 sm:items-center">
               <span className="text-4xl activeLink font-playfair font-bold w-fit sm:text-3xl">
                 Language and Literacy
               </span>
-              <span className="text-base w-full font-roboto sm:w-5/6 sm:text-justify sm:text-base">
+              <span className="text-base w-full font-roboto sm:w-5/6 sm:text-center sm:text-base">
                 Our Dance and Drama studio provides a vibrant and creative space
                 for our students to explore the world of performing arts.
                 Through dance and drama activities, our students develop
                 self-expression, confidence, teamwork and creativity.
               </span>
             </div>
-            <button className="bg-purpleMain w-fit text-white px-4  py-2 h-fit rounded text-base font-bold flex items-center gap-4 font-playfair ">
+            <button className="bg-purpleMain w-fit text-white px-4  py-2 h-fit rounded text-base font-bold flex items-center gap-4 font-playfair sm:ml-24 sm:my-3 sm:p-5 ">
               <a href="/activities">Explore all activities</a>
-              <FaArrowRight className="text-base sm:text-xs" />
+              <FaArrowRight className="text-base sm:text-2xl" />
             </button>
           </div>
           <div className="w-1/2 sm:p-4 sm:ml-12 sm:!hidden">
@@ -314,14 +317,14 @@ export default function BestPreSchoool() {
       </div>
 
       {/* Parental Involvement */}
-      <div className="w-full py-10 flex items-center justify-center flex-col sm:py-20 bg-[#E5F6D4] ">
-      <span className="text-5xl text-purpleMain font-bold">
+      <div className="w-full py-10 flex items-center justify-center flex-col sm:py-20 bg-[#E5F6D4] font-playfair sm:text-center">
+      <span className="text-5xl text-purpleMain font-bold sm:text-4xl">
               Parental Involvement
             </span>
-        <div className="container   flex gap-10 items-center justify-center">
-          <div className="flex flex-col w-2/3 items-center gap-8">
+        <div className="container flex gap-10 items-center justify-center sm:flex-col-reverse sm:gap-0">
+          <div className="flex flex-col w-2/3 items-center gap-8 sm:gap-4 sm:w-full">
            
-            <span className=" text-justify w-3/5 text-sm">
+            <span className=" text-justify w-3/5 text-sm sm:w-full sm:p-5 sm:text-base sm:text-center">
               Being the best preschool at Kondapur, Hyderabad our aim is to
               Maintain regular communication with children and parents as well.
               We conduct parent-teacher conferences, digital platforms and
@@ -332,7 +335,7 @@ export default function BestPreSchoool() {
               activities conducted by Brookside Global School.
             </span>
           </div>
-          <div className="w-1/3">
+          <div className="w-1/3 sm:pt-10 sm:w-full sm:pl-5">
             <Image src={parentalInvolvement} alt="parental Involvement" />
           </div>
         </div>
