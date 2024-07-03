@@ -314,12 +314,13 @@ export default function BestPreSchoool() {
       </div>
 
       {/* Parental Involvement */}
-      <div className="w-full py-10 flex items-center justify-center sm:py-20 bg-[#E5F6D4] ">
-        <div className="container   flex gap-10 items-center justify-center">
-          <div className="flex flex-col w-2/3 items-center gap-8">
-            <span className="text-5xl text-purpleMain font-bold">
+      <div className="w-full py-10 flex items-center justify-center flex-col sm:py-20 bg-[#E5F6D4] ">
+      <span className="text-5xl text-purpleMain font-bold">
               Parental Involvement
             </span>
+        <div className="container   flex gap-10 items-center justify-center">
+          <div className="flex flex-col w-2/3 items-center gap-8">
+           
             <span className=" text-justify w-3/5 text-sm">
               Being the best preschool at Kondapur, Hyderabad our aim is to
               Maintain regular communication with children and parents as well.
