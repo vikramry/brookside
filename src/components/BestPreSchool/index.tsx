@@ -245,7 +245,7 @@ export default function BestPreSchoool() {
             <span className=" text-5xl font-bold sm:text-4xl sm:px-3 sm:text-center">
               Our Top Priority Is Your Child's Safety
             </span>
-            <div className="flex flex-wrap gap-x-16 ">
+            <div className="flex flex-wrap gap-x-16 justify-center ">
               <PriorityCard img={cctvImg} text="CCTV Monitoring" />
               <PriorityCard img={FirstAid} text="First Aid Kits" />
               <PriorityCard
