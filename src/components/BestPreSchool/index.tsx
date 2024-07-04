@@ -123,7 +123,7 @@ export default function BestPreSchoool() {
               Innovative Pre-Primary Curriculum
             </h2>
           </div>
-          <div className=" flex gap-12 w-full font-roboto sm:gap-6 sm:flex-col sm:items-center">
+          <div className=" flex gap-12 w-full font-roboto justify-center sm:gap-6 sm:flex-col sm:items-center">
             <Card2
               img={ipre1}
               grade="Best international practices"
