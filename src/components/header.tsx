@@ -27,10 +27,10 @@ const Header = () => {
       id: 4,
       link: "activities",
     },
-    // {
-    //   id: 5,
-    //   link: "Blog",
-    // },
+    {
+      id: 5,
+      link: "blog",
+    },
     {
       id: 6,
       link: "gallery",
