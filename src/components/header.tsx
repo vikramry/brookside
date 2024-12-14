@@ -29,7 +29,7 @@ const Header = () => {
     },
     {
       id: 5,
-      link: "blog",
+      link: "blogs",
     },
     {
       id: 6,
