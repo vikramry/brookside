@@ -8,7 +8,7 @@ import React from 'react'
 
 export const metadata: Metadata = {
     title: "Academics at Brookside | Best Primary School in Kondapur, Hyderabad",
-    description: "Discover our commitment to excellence in education at the Best Primary School in Hyderabad - Brookside Global School. Learn about our nurturing environment, dedicated faculty, and innovative programs designed to empower students for future.",
+    description: "Explore the academic excellence at Brookside Global School, where a well-rounded curriculum, innovative teaching, and holistic development shape young minds for success.",
     keywords:"Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'",
 
   };

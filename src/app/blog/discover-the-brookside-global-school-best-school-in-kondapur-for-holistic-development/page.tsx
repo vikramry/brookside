@@ -1,5 +1,9 @@
 import React from "react";
-
+export const metadata = {
+  title: 'Discover the Brookside Global School: The Best School in Kondapur for Holistic Development',
+  description: 'Discover Brookside Global School, the top choice in Kondapur for holistic development, academic excellence, and innovative learning experiences.',
+  keywords:"Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad,holistic development ,experiential learning,quality of a good teacher"
+}
 function Blog1() {
   return (
     <div className="container mx-auto my-10 px-4">

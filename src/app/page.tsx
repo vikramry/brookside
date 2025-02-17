@@ -402,9 +402,9 @@ export default function Home() {
                 innovative learning centres
               </h2>
             </div>
-            <div className="w-full md:w-3/4 mt-8">
+            {/* <div className="w-full md:w-3/4 mt-8">
               <img src={allMix.src} alt="allmix" className="w-full h-auto" />
-            </div>
+            </div> */}
             <div className="w-full container px-4 lg:px-10 pt-16 flex flex-col lg:flex-row">
               <div className="w-full lg:w-1/3 flex flex-col gap-8 mb-8 lg:mb-0">
                 <div className="flex flex-col gap-4">

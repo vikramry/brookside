@@ -1,6 +1,10 @@
 import React from "react";
 import blogsdata from "./blogs.json";
-
+export const metadata = {
+  title: 'Insightful Blogs | Brookside Global',
+  description: 'Discover engaging blogs from Brookside Global School, covering education, student growth, school events, and insights into holistic learning experiences.',
+  keywords:"Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad, Best Play Group in Kondapur, Best Kindergarten in Kondapur, Best School in kondapur"
+}
 function BlogPage() {
   return (
     <div className="container mx-auto my-10 px-4">
@@ -19,7 +23,7 @@ function BlogPage() {
                 {blog.description}
               </p>
               <a
-                href="/blog1"
+                href={blog.link}
                 className="inline-block bg-blue-600 text-white text-sm px-4 py-2 rounded-md hover:bg-blue-700 transition duration-200"
               >
                 Read More
