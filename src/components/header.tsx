@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { usePathname } from "next/navigation";
 import logo from "../../public/assets/images/logo.png";
 import Image from "next/image";
+import { title } from "process";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -14,31 +15,44 @@ const Header = () => {
     {
       id: 1,
       link: "home",
+      title:"Home"
     },
     {
       id: 2,
-      link: "about",
+      link: "/about",
+      title:"About"
+
     },
     {
       id: 3,
-      link: "academics",
+      link: "/academics",
+      title:"Academics"
+
     },
     {
       id: 4,
-      link: "activities",
+      link: "/activities",
+      title:"Activities"
+
     },
     {
       id: 5,
-      link: "blog",
+      link: "/blog",
+      title:"Blog"
+
     },
     {
       id: 6,
       link: "gallery",
+      title:"Gallery"
+
     },
 
     {
       id: 7,
       link: "contact",
+      title:"Contact"
+
     },
   ];
 
@@ -58,7 +72,7 @@ const Header = () => {
       </div>
 
       <ul className="hidden md:flex">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, title }) => (
           <li
             key={id}
             className={`nav-links mx-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-black duration-200 link-underline  ${pathname == `/${link.toLowerCase()}` ? "activeLink" : ""
@@ -68,7 +82,7 @@ const Header = () => {
 
             }
           >
-            <Link href={link == "home" ? "/" : link}>{link}</Link>
+            <Link href={link == "home" ? "/" : link}>{title}</Link>
           </li>
         ))}
       </ul>
@@ -82,14 +96,14 @@ const Header = () => {
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500 ">
-          {links.map(({ id, link }) => (
+          {links.map(({ id, link, title }) => (
             <li
               key={id}
               className={`px-4 cursor-pointer capitalize py-6 text-4xl ${pathname == `/${link.toLowerCase()}` ? "activeLink" : ""
                 }`}
             >
               <Link onClick={() => setNav(!nav)} href={link === "home" ? "/" : link}>
-                {link}
+                {title}
               </Link>
             </li>
           ))}
