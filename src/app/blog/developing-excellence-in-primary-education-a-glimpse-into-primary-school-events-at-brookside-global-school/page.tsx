@@ -10,7 +10,7 @@ function Blog1() {
     <div className="container mx-auto my-10 px-4">
       <article className="bg-white shadow-md rounded-lg overflow-hidden">
         {/* Header Section */}
-        <header className="bg-blue-600 text-white py-8 px-6">
+        <header className=" text-white py-8 px-6" style={{backgroundColor:"#f19020"}}>
           <h1 className="text-3xl font-bold mb-2">
           Developing Excellence in Primary Education: A Glimpse into Primary School Events at Brookside Global School
           </h1>

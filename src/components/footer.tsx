@@ -60,7 +60,7 @@ const Footer = () => {
           </div>
           <div className="mt-[30px]">
             <p className="text-[13px] sm:text-base sm:text-center">
-              Copyright © Brookside Global School 2024 | All Rights Reserved
+              Copyright © Brookside Global School 2025 | All Rights Reserved
             </p>
           </div>
         </div>
