@@ -1,4 +1,6 @@
 import React from "react";
+import LatestBlogs from "@/components/LatestBlogs";
+
 
 export const metadata = {
   title: 'School Events at Brookside Global School | Best Pre & Primary School in Kondapur',
@@ -7,7 +9,10 @@ export const metadata = {
 }
 function Blog1() {
   return (
+    <>
     <div className="container mx-auto my-10 px-4">
+    <div className="grid grid-cols-12 gap-6">
+    <div className="col-span-9 p-4">
       <article className="bg-white shadow-md rounded-lg overflow-hidden">
         {/* Header Section */}
         <header className=" text-white py-8 px-6" style={{backgroundColor:"#f19020"}}>
@@ -123,6 +128,11 @@ The event underscores the value of collaboration, as students work together to s
         </footer> */}
       </article>
     </div>
+   
+    <LatestBlogs/>
+    </div>
+    </div>
+    </>
   );
 }
 

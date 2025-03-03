@@ -1,5 +1,6 @@
 import React from "react";
 import blogsdata from "./blogs.json";
+import LatestBlogs from "@/components/LatestBlogs";
 export const metadata = {
   title: "Insightful Blogs | Brookside Global",
   description:
@@ -40,8 +41,9 @@ function BlogPage() {
             ))}
           </div>
         </div>
+        <LatestBlogs/>
         {/* latest Blogs */}
-        <div className="col-span-3 p-4 ">
+        {/* <div className="col-span-3 p-4 ">
           <div className="border p-2">
             <h2 className="font-semibold text-xl">Our Latest Blogs</h2>
           </div>
@@ -68,7 +70,7 @@ function BlogPage() {
                 </div>
               ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
