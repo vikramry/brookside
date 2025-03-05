@@ -164,7 +164,7 @@ export default function Home() {
 
   return (
     <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between">
-    <PopUpBanner />
+    {/* <PopUpBanner /> */}
     
     <div className="w-full bg-white">
       {/* Main Banner for larger screens */}
@@ -368,10 +368,10 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 w-full font-roboto">
-              <Card2 img={b1} grade="IK1-IK3" desc="..." />
-              <Card2 img={b2} grade="Grade 1-2" desc="..." />
-              <Card2 img={b3} grade="Grade 3-5" desc="..." />
-              <Card2 img={b4} grade="Day Care Center" desc="..." />
+              <Card2 img={b1} grade="IK1-IK3" desc="" />
+              <Card2 img={b2} grade="Grade 1-2" desc="" />
+              <Card2 img={b3} grade="Grade 3-5" desc="" />
+              <Card2 img={b4} grade="Day Care Center" desc="" />
             </div>
           </div>
         </div>
