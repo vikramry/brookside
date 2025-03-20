@@ -43,14 +43,14 @@ const Header = () => {
     },
     {
       id: 6,
-      link: "gallery",
+      link: "/gallery",
       title:"Gallery"
 
     },
 
     {
       id: 7,
-      link: "contact",
+      link: "/contact",
       title:"Contact"
 
     },
