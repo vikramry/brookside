@@ -1,10 +1,10 @@
 import Header from "@/components/header";
 import React from "react";
 import Image from "next/image";
-import b1 from "../../public/assets/images/b1.png";
-import b2 from "../../public/assets/images/b2.png";
-import b3 from "../../public/assets/images/b3.png";
-import b4 from "../../public/assets/images/b4.png";
+import b1 from "../../public/assets/Ages/b1.png";
+import b2 from "../../public/assets/Ages/b2.png";
+import b3 from "../../public/assets/Ages/b3.png";
+import b4 from "../../public/assets/Ages/b4.png";
 import curve from "../../public/assets/images/curve.png";
 import { FaCirclePlay } from "react-icons/fa6";
 import goldShield from "../../public/assets/images/goldShield.png";
@@ -13,7 +13,7 @@ import AdmissionEnquiryForm from "@/components/admissionEnquiryForm";
 import CurouselComponent from "@/components/curousel";
 import decorImg from "../../public/assets/images/pagedecor.png";
 import Card2 from "@/components/card2";
-import allMix from "../../public/assets/images/allMix.png";
+import allMix from "../../public/assets/ILC/allMix.png";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
@@ -224,10 +224,10 @@ export default function Home() {
   <div className="flex flex-col items-center w-full">
     <div className="container px-4 lg:px-10 flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/2 flex flex-col gap-4 py-12 lg:block hidden">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair mb-4">
           Your child's success story starts here!!!
         </h2>
-        <span className="text-sm md:text-base text-purpleMain font-roboto text-justify">
+        <span className="text-sm md:text-base text-purpleMain font-roboto text-justify mb-4">
           Our goal is to give kids the necessary skills to confront the
           continuously evolving global challenges, instil the confidence
           to take risks and make independent decisions, and above all,
@@ -240,7 +240,7 @@ export default function Home() {
           schools in Kondapur, Hyderabad.
         </span>
         {data.map((item, index) => (
-          <div key={index} className="flex gap-4 items-center">
+          <div key={index} className="flex gap-4 items-center mt-4">
             <Image
               className="w-auto"
               src={item.image}
@@ -267,13 +267,13 @@ export default function Home() {
         <span className="text-3xl md:text-4xl lg:text-5xl font-playfair">
           Your child's success story starts here!!!
         </span>
-        <span className="text-sm md:text-base text-purpleMain font-roboto text-justify">
+        <span className="text-sm md:text-base text-purpleMain font-roboto text-justify mb-4">
           Our goal is to give kids the necessary skills to confront the continuously evolving global challenges, instil the confidence to take risks and make independent decisions, and above all, foster values that contribute to developing thoughtful and engaged individuals. We are the best, affordable Pre-Primary and primary schools in Kondapur, Hyderabad, helping students fulfil their natural abilities and succeed in their chosen fields. We are also known for academic excellence and holistic approach to education focusing on the top 10 best primary schools in Kondapur, Hyderabad.
         </span>
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex gap-4 items-center mt-2"
+            className="flex gap-4 items-center mt-4"
           >
             <Image
               className="w-auto pl-2 w-10"
@@ -394,7 +394,7 @@ export default function Home() {
         </div>
 
         {/* ILC's Innovative Learning Centres Section */}
-        <div className="flex justify-center py-20">
+        <div className="flex justify-center pt-20">
           <div className="w-full flex items-center flex-col justify-center">
             <div className="flex flex-col md:flex-row gap-2 items-baseline md:items-center">
               <h2 className="text-purpleMain font-playfair text-2xl md:text-4xl font-bold">
@@ -437,11 +437,11 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-              <div className="w-full lg:w-2/3 mt-8 lg:mt-0">
+              <div className="w-full lg:w-2/3 mt-8 lg:mt-0" style={{ zIndex:"999" }}>
                 <img src={allMix.src} alt="allmix" className="w-full h-auto" />
               </div>
             </div>
-            <div className="w-full flex items-center justify-center bg-lightBlue h-40 mt-8">
+            <div className="w-full flex items-center justify-left bg-lightBlue h-40 " style={{marginTop:"-120px", paddingLeft:"150px"}}>
               <a href="/activities" className="bg-purpleMain text-white px-4 py-2 rounded text-base font-bold flex items-center gap-4 font-playfair">
                 Explore all activities
                 <FaArrowRight className="text-base" />

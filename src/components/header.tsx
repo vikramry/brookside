@@ -57,7 +57,7 @@ const Header = () => {
   ];
 
   return (
-    <div className=" container-fluid top-0 flex justify-center   w-full  text-black bg-white fixed nav z-10">
+    <div className=" container-fluid top-0 flex justify-center   w-full  text-black bg-white fixed nav z-10" style={{ zIndex:"9999"}}>
       <div className="container flex justify-between items-center h-20 px-4">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
