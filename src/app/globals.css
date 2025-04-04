@@ -74,6 +74,7 @@ body {
 }
 
 
+
 @media (prefers-color-scheme: dark) {
 
   /* apply if browser set to dark mode */
@@ -98,7 +99,17 @@ body {
   background-repeat: no-repeat;
   background-size: "100%";
           
+
  }
+
+ .exploresec{
+  margin-top:-120px;
+  padding-left:150px;
+}
+
+.exploresec a{
+  margin-top: 45px !important; 
+}
 
  @media (max-width: 576px) {
   .swiper-slide {
@@ -123,6 +134,11 @@ body {
   }
   .quotation{
     left: 0em !important;
+  }
+
+  .exploresec{
+    margin-top: -120px;
+    padding-left:10px;
   }
 
  

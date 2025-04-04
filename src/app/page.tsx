@@ -368,7 +368,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 w-full font-roboto">
-              <Card2 img={b1} grade="IK1-IK3" desc="" />
+              <Card2 img={b1} grade="IK1-IK3" desc=""/>
               <Card2 img={b2} grade="Grade 1-2" desc="" />
               <Card2 img={b3} grade="Grade 3-5" desc="" />
               <Card2 img={b4} grade="Day Care Center" desc="" />
@@ -441,7 +441,7 @@ export default function Home() {
                 <img src={allMix.src} alt="allmix" className="w-full h-auto" />
               </div>
             </div>
-            <div className="w-full flex items-center justify-left bg-lightBlue h-40 " style={{marginTop:"-120px", paddingLeft:"150px"}}>
+            <div className="w-full flex items-center justify-left bg-lightBlue h-40 exploresec">
               <a href="/activities" className="bg-purpleMain text-white px-4 py-2 rounded text-base font-bold flex items-center gap-4 font-playfair">
                 Explore all activities
                 <FaArrowRight className="text-base" />
