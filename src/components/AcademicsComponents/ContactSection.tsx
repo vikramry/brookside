@@ -47,25 +47,25 @@ const ContactSection = () => {
                 </div> */}
             <div className='bg-[#F6EFDD] rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap sm:p-10 sm:gap-8'>
                 <div className='flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl'>
-                    <Link href={'https://instagram.com'} target='_blank'>
+                    <Link href={'https://www.instagram.com/Brookside_school.kondapur'} target='_blank'>
                         <p className='flex justify-start items-center gap-2'>
                             <IoLogoInstagram />
                             <span>Instagram</span>
                         </p>
                     </Link>
-                    <Link href={'https://facebook.com'} target='_blank'>
+                    <Link href={'https://www.facebook.com/brooksideglobalschool'} target='_blank'>
                         <p className='flex justify-start items-center gap-2'>
                             <AiOutlineFacebook />
                             <span>Facebook</span>
                         </p>
                     </Link>
-                    <Link href={'https://x.com'} target='_blank'>
+                    <Link href={'https://x.com/BrooksideS3384'} target='_blank'>
                         <p className='flex justify-start items-center gap-2'>
                             <FaXTwitter />
                             <span>Twitter(X)</span>
                         </p>
                     </Link>
-                    <Link href={'https://youtube.com'} target='_blank'>
+                    <Link href={'https://www.youtube.com/@BrooksideGlobalSchool'} target='_blank'>
                         <p className='flex justify-start items-center gap-2 -ml-2'>
                             <FaYoutube />
                             <span>Youtube</span>
