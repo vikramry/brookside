@@ -27,9 +27,8 @@ export default function RootLayout({
       <body className="flex justify-center items-center ">
         <Header />
         <div className="flex min-h-screen flex-col w-full max-w-screen-2xl justify-center">
-          <div className="mt-20">
-
-            {children}
+          <div className="mt-24">
+             {children}
           </div>
           <Footer />
         </div>

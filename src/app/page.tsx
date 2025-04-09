@@ -27,13 +27,11 @@ import { FaTwitter } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import ContactSection from "@/components/AcademicsComponents/ContactSection";
 import type { Metadata } from "next";
-import mainBanner from '../../public/assets/images/mainBanner.png'
-import whyChooseImg from '../../public/assets/images/WhyChoseus.png'
-import mainmobilebanner from '../../public/assets/images/mainmobilebanner.png'
-import busImg from '../../public/assets/images/BusImage.png'
+import mainBanner from "../../public/assets/images/mainBanner.png";
+import whyChooseImg from "../../public/assets/images/WhyChoseus.png";
+import mainmobilebanner from "../../public/assets/images/mainmobilebanner.png";
+import busImg from "../../public/assets/images/BusImage.png";
 import PopUpBanner from "@/components/pop-up-banner";
-
-
 
 export const metadata: Metadata = {
   title: "Best Primary School in Kondapur, Hyderabad",
@@ -44,7 +42,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  
   const data = [
     {
       image: goldShield,
@@ -77,21 +74,20 @@ export default function Home() {
       color: "gold",
     },
   ];
-//   Art and Craft Zone
-// Language lab experience
-// STEAM (Science, Technology, Engineering, Arts and Mathematics) corner 
-// Dance and Drama studio
-// Day care center
-// Role Play area 
-// Play Area 
-// Transportation facility
-// AV Room
-// Comprehensive curriculum
-// Experienced and caring faculty
-// Library
-// Affordable fee structure
-// Exciting Summer Camps at Kondapu
-
+  //   Art and Craft Zone
+  // Language lab experience
+  // STEAM (Science, Technology, Engineering, Arts and Mathematics) corner
+  // Dance and Drama studio
+  // Day care center
+  // Role Play area
+  // Play Area
+  // Transportation facility
+  // AV Room
+  // Comprehensive curriculum
+  // Experienced and caring faculty
+  // Library
+  // Affordable fee structure
+  // Exciting Summer Camps at Kondapu
 
   const whyChooseData = [
     {
@@ -106,7 +102,8 @@ export default function Home() {
     },
     {
       image: goldShield,
-      title: "STEAM (Science, Technology, Engineering, Arts and Mathematics) corner",
+      title:
+        "STEAM (Science, Technology, Engineering, Arts and Mathematics) corner",
       color: "grey",
     },
     {
@@ -159,174 +156,90 @@ export default function Home() {
       title: "Exciting Summer Camps at Kondapur",
       color: "grey",
     },
-
-  ]
+  ];
 
   return (
     <main className="flex container-fluid min-h-screen bg-white w-full max-w-full flex-col items-center justify-between">
-    {/* <PopUpBanner /> */}
-    
-    <div className="w-full bg-white">
-      {/* Main Banner for larger screens */}
-      <div
-        className="hidden md:flex items-center justify-start p-4 md:p-8 lg:p-12"
-        style={{
-          backgroundImage: `url('/assets/images/mainBannerwithImg.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          height: "70vh", // Default height
-          minHeight: "300px", // Set a minimum height for mobile visibility
-        }}
-      >
-        <div className="w-full flex">
-          {/* Left Container */}
-          <div className="w-2/5 flex flex-col justify-start ml-4" style={{ marginTop: '20px', marginLeft: '10px', marginRight: '10px' }}>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-playfair leading-tight">
-              We Cover it All,
-              <br />
-              <span className="bg-orMain text-black mt-4 mb-2 px-2 py-1 rounded inline-block">
-                Play Group to Primary Schooling
+      {/* <PopUpBanner /> */}
+
+      <div className="w-full bg-white">
+        {/* Main Banner for larger screens */}
+        <div
+          className="hidden md:flex items-center justify-start p-4 md:p-8 lg:p-12"
+          style={{
+            backgroundImage: `url('/assets/images/mainBannerwithImg.png')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            height: "70vh", // Default height
+            minHeight: "300px", // Set a minimum height for mobile visibility
+          }}
+        >
+          <div className="w-full flex">
+            {/* Left Container */}
+            <div
+              className="w-2/5 flex flex-col justify-start ml-4"
+              style={{
+                marginTop: "20px",
+                marginLeft: "10px",
+                marginRight: "10px",
+              }}
+            >
+              <h1 className="text-3xl md:text-4xl lg:text-5xl text-white font-playfair leading-tight">
+                We Cover it All,
+                <br />
+                <span className="bg-orMain text-black mt-4 mb-2 px-2 py-1 rounded inline-block">
+                  Play Group to Primary Schooling
+                </span>
+                <br />
+                <span className="flex flex-col sm:flex-row mt-2">
+                  <span>in Kondapur, Hyderabad!</span>
+                </span>
+              </h1>
+              <span className="text-sm mt-4 md:text-base text-white font-roboto  hidden md:block">
+                At Brookside, we believe that every child is unique and full of
+                ability. Our dedicated and passionate teachers build a nurturing
+                and holistic environment in which curiosity thrives and learning
+                becomes an exciting adventure. Our primary school is located at
+                Kondapur, Hyderabad. We believe in both traditional values and
+                modern educational practices.
               </span>
-              <br />
-              <span className="flex flex-col sm:flex-row mt-2">
-                <span>in Kondapur, Hyderabad!</span>
-              </span>
-            </h1>
-            <span className="text-sm mt-4 md:text-base text-white font-roboto lg:w-2/3 hidden md:block">
-              At Brookside, we believe that every child is unique and full of ability. 
-              Our dedicated and passionate teachers build a nurturing and holistic 
-              environment in which curiosity thrives and learning becomes an exciting adventure. 
-              Our primary school is located at Kondapur, Hyderabad. We believe in both traditional 
-              values and modern educational practices.
-            </span>
-            <div className="flex gap-4 mt-4">
-              <a href="/about" className="bg-orMain text-black font-roboto px-4 py-2 rounded text-xs font-bold">
-                LEARN MORE
-              </a>
+              <div className="flex gap-4 mt-4">
+                <a
+                  href="/about"
+                  className="bg-orMain text-black font-roboto px-4 py-2 rounded text-xs font-bold"
+                >
+                  LEARN MORE
+                </a>
+              </div>
             </div>
+            {/* Optional Space to Fill Remaining Width */}
+            <div className="w-3/5"></div>{" "}
+            {/* This div takes the remaining space */}
           </div>
-  
-          {/* Optional Space to Fill Remaining Width */}
-          <div className="w-3/5"></div> {/* This div takes the remaining space */}
         </div>
-      </div>
-  
-      {/* Mobile Banner for smaller screens */}
-      <div className="md:hidden">
-        <a href="/about">
-          <Image src={mainmobilebanner} alt="mainBanner" className="w-full h-auto" />
-        </a>
-      </div>
+
+        {/* Mobile Banner for smaller screens */}
+        <div className="md:hidden">
+          <a href="/about">
+            <Image
+              src={mainmobilebanner}
+              alt="mainBanner"
+              className="w-full h-auto"
+            />
+          </a>
+        </div>
 
         {/* Admission Form Section */}
         <div className="bg-lightBlue w-full flex items-center justify-center rounded-b-10em">
-  <div className="flex flex-col items-center w-full">
-    <div className="container px-4 lg:px-10 flex flex-col lg:flex-row">
-      <div className="w-full lg:w-1/2 flex flex-col gap-4 py-12 lg:block hidden">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair mb-4">
-          Your child's success story starts here!!!
-        </h2>
-        <span className="text-sm md:text-base text-purpleMain font-roboto text-justify mb-4">
-          Our goal is to give kids the necessary skills to confront the
-          continuously evolving global challenges, instil the confidence
-          to take risks and make independent decisions, and above all,
-          foster values that contribute to developing thoughtful and
-          engaged individuals. We are the best, affordable Pre-Primary
-          and primary schools in Kondapur, Hyderabad, helping students
-          fulfil their natural abilities and succeed in their chosen
-          fields. We are also known for academic excellence and holistic
-          approach to education focusing on the top 10 best primary
-          schools in Kondapur, Hyderabad.
-        </span>
-        {data.map((item, index) => (
-          <div key={index} className="flex gap-4 items-center mt-4">
-            <Image
-              className="w-auto"
-              src={item.image}
-              alt="goldshield"
-            />
-            <span
-              className={`text-sm md:text-base ${
-                item.color === "gold" ? "text-orMain" : "text-purpleMain"
-              }`}
-            >
-              {item.title}
-            </span>
-          </div>
-        ))}
-      </div>
-
-      <div className="w-full lg:w-1/2 flex justify-center items-center p-8">
-        <div className="w-full lg:w-2/3 shadow-xl">
-          <AdmissionEnquiryForm />
-        </div>
-      </div>
-
-      <div className="w-full lg:w-1/2 flex flex-col gap-4 py-12 lg:hidden">
-        <span className="text-3xl md:text-4xl lg:text-5xl font-playfair">
-          Your child's success story starts here!!!
-        </span>
-        <span className="text-sm md:text-base text-purpleMain font-roboto text-justify mb-4">
-          Our goal is to give kids the necessary skills to confront the continuously evolving global challenges, instil the confidence to take risks and make independent decisions, and above all, foster values that contribute to developing thoughtful and engaged individuals. We are the best, affordable Pre-Primary and primary schools in Kondapur, Hyderabad, helping students fulfil their natural abilities and succeed in their chosen fields. We are also known for academic excellence and holistic approach to education focusing on the top 10 best primary schools in Kondapur, Hyderabad.
-        </span>
-        {data.map((item, index) => (
-          <div
-            key={index}
-            className="flex gap-4 items-center mt-4"
-          >
-            <Image
-              className="w-auto pl-2 w-10"
-              src={item.image}
-              alt="goldshield"
-            />
-            <span
-              className={`text-sm md:text-base ${
-                item.color === "gold" ? "text-orMain" : "text-purpleMain"
-              }`}
-            >
-              {item.title}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
-
-    {/* Quote Section */}
-    <div className="bg-[#E5F6D4] w-11/12 flex justify-center p-4 md:p-8 font-playfair text-xl md:text-2xl lg:text-3xl flex-col items-baseline gap-4 md:gap-8 relative -mb-24 rounded-lg">
-      <div className="flex items-center justify-center">
-        <div className="w-full md:w-4/5 flex flex-col items-baseline gap-4 md:gap-8">
-          <div className="flex flex-col font-roboto">
-            <span className="quotation quotadesk text-4xl md:text-5xl lg:text-6xl w-fit font-bold text-orMain relative">
-              "
-            </span>
-            <span>
-              We aim at inspiring our students to dream more, learn
-              more, do more, and become more in their respective
-              journeys of life.
-            </span>
-          </div>
-          <span className="text-sm">- Director, Brookside</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<br/>
-
-        {/* Why Choose Brookside Section */}
-        <div className="bg-lightBlue w-full flex items-center justify-center mt-20 md:mt-32 py-12">
-          <div className="container px-4 lg:px-10 flex flex-col lg:flex-row">
-            <div className="w-full lg:w-2/5 flex justify-center items-center mb-8 lg:mb-0">
-              <Image src={whyChooseImg} alt="why choose" className="w-full h-auto"/>
-            </div>
-            <div className="w-full lg:w-3/5 flex flex-col gap-4">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair">
-                Why choose Brookside Global Primary School for your kid?
-              </h2>
-              <span className="text-sm md:text-base font-roboto text-purpleMain">
-                {/* ... (keep existing content) */}
-                Our goal is to give kids the necessary skills to confront the
+          <div className="flex flex-col items-center w-full">
+            <div className="container px-4 lg:px-10 flex flex-col lg:flex-row">
+              <div className="w-full lg:w-1/2 flex flex-col gap-4 py-12 lg:block hidden">
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair mb-4">
+                  Your child's success story starts here!!!
+                </h2>
+                <span className="text-sm md:text-base text-purpleMain font-roboto text-justify mb-4">
+                  Our goal is to give kids the necessary skills to confront the
                   continuously evolving global challenges, instil the confidence
                   to take risks and make independent decisions, and above all,
                   foster values that contribute to developing thoughtful and
@@ -336,11 +249,127 @@ export default function Home() {
                   fields. We are also known for academic excellence and holistic
                   approach to education focusing on the top 10 best primary
                   schools in Kondapur, Hyderabad.
+                </span>
+                {data.map((item, index) => (
+                  <div key={index} className="flex gap-4 items-center mt-4">
+                    <Image
+                      className="w-auto"
+                      src={item.image}
+                      alt="goldshield"
+                    />
+                    <span
+                      className={`text-sm md:text-base ${
+                        item.color === "gold"
+                          ? "text-orMain"
+                          : "text-purpleMain"
+                      }`}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="w-full lg:w-1/2 flex justify-center items-center p-8">
+                <div className="w-full lg:w-2/3 shadow-xl">
+                  <AdmissionEnquiryForm />
+                </div>
+              </div>
+
+              <div className="w-full lg:w-1/2 flex flex-col gap-4 py-12 lg:hidden">
+                <span className="text-3xl md:text-4xl lg:text-5xl font-playfair">
+                  Your child's success story starts here!!!
+                </span>
+                <span className="text-sm md:text-base text-purpleMain font-roboto text-justify mb-4">
+                  Our goal is to give kids the necessary skills to confront the
+                  continuously evolving global challenges, instil the confidence
+                  to take risks and make independent decisions, and above all,
+                  foster values that contribute to developing thoughtful and
+                  engaged individuals. We are the best, affordable Pre-Primary
+                  and primary schools in Kondapur, Hyderabad, helping students
+                  fulfil their natural abilities and succeed in their chosen
+                  fields. We are also known for academic excellence and holistic
+                  approach to education focusing on the top 10 best primary
+                  schools in Kondapur, Hyderabad.
+                </span>
+                {data.map((item, index) => (
+                  <div key={index} className="flex gap-4 items-center mt-4">
+                    <Image
+                      className="w-auto pl-2 w-10"
+                      src={item.image}
+                      alt="goldshield"
+                    />
+                    <span
+                      className={`text-sm md:text-base ${
+                        item.color === "gold"
+                          ? "text-orMain"
+                          : "text-purpleMain"
+                      }`}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Quote Section */}
+            <div className="bg-[#E5F6D4] w-11/12 flex justify-center p-4 md:p-8 font-playfair text-xl md:text-2xl lg:text-3xl flex-col items-baseline gap-4 md:gap-8 relative -mb-24 rounded-lg">
+              <div className="flex items-center justify-center">
+                <div className="w-full md:w-4/5 flex flex-col items-baseline gap-4 md:gap-8">
+                  <div className="flex flex-col font-roboto">
+                    <span className="quotation quotadesk text-4xl md:text-5xl lg:text-6xl w-fit font-bold text-orMain relative">
+                      "
+                    </span>
+                    <span>
+                      We aim at inspiring our students to dream more, learn
+                      more, do more, and become more in their respective
+                      journeys of life.
+                    </span>
+                  </div>
+                  <span className="text-sm">- Director, Brookside</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        {/* Why Choose Brookside Section */}
+        <div className="bg-lightBlue w-full flex items-center justify-center mt-20 md:mt-32 py-12">
+          <div className="container px-4 lg:px-10 flex flex-col lg:flex-row">
+            <div className="w-full lg:w-2/5 flex justify-center items-center mb-8 lg:mb-0">
+              <Image
+                src={whyChooseImg}
+                alt="why choose"
+                className="w-full h-auto"
+              />
+            </div>
+            <div className="w-full lg:w-3/5 flex flex-col gap-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-playfair">
+                Why choose Brookside Global Primary School for your kid?
+              </h2>
+              <span className="text-sm md:text-base font-roboto text-purpleMain">
+                {/* ... (keep existing content) */}
+                Our goal is to give kids the necessary skills to confront the
+                continuously evolving global challenges, instil the confidence
+                to take risks and make independent decisions, and above all,
+                foster values that contribute to developing thoughtful and
+                engaged individuals. We are the best, affordable Pre-Primary and
+                primary schools in Kondapur, Hyderabad, helping students fulfil
+                their natural abilities and succeed in their chosen fields. We
+                are also known for academic excellence and holistic approach to
+                education focusing on the top 10 best primary schools in
+                Kondapur, Hyderabad.
               </span>
               {whyChooseData.map((item, index) => (
                 <div key={index} className="flex gap-4 items-center">
                   <Image className="w-auto" src={item.image} alt="icon" />
-                  <span className={`text-sm md:text-base ${item.color === "gold" ? "text-orMain" : "text-purpleMain"}`}>
+                  <span
+                    className={`text-sm md:text-base ${
+                      item.color === "gold" ? "text-orMain" : "text-purpleMain"
+                    }`}
+                  >
                     {item.title}
                   </span>
                 </div>
@@ -368,7 +397,7 @@ export default function Home() {
               </h2>
             </div>
             <div className="flex flex-col md:flex-row gap-8 md:gap-12 w-full font-roboto">
-              <Card2 img={b1} grade="IK1-IK3" desc=""/>
+              <Card2 img={b1} grade="IK1-IK3" desc="" />
               <Card2 img={b2} grade="Grade 1-2" desc="" />
               <Card2 img={b3} grade="Grade 3-5" desc="" />
               <Card2 img={b4} grade="Day Care Center" desc="" />
@@ -384,7 +413,14 @@ export default function Home() {
                 We also provide Transportation facilities
               </h2>
               <span className="text-sm md:text-base font-roboto text-purpleMain">
-                Brookside Global School offers transportation facilities to ensure our students safety and security. We include modern safety features in our transportation because the safety and wellbeing of every child during the trip is our top priority. We make sure that transportation facilities are available to every student; the transportation service at Brookside covers a larger area; and we ensure that students from various areas can easily access the school.
+                Brookside Global School offers transportation facilities to
+                ensure our students safety and security. We include modern
+                safety features in our transportation because the safety and
+                wellbeing of every child during the trip is our top priority. We
+                make sure that transportation facilities are available to every
+                student; the transportation service at Brookside covers a larger
+                area; and we ensure that students from various areas can easily
+                access the school.
               </span>
             </div>
             <div className="w-full lg:w-1/2 flex justify-center items-center">
@@ -398,7 +434,9 @@ export default function Home() {
           <div className="w-full flex items-center flex-col justify-center">
             <div className="flex flex-col md:flex-row gap-2 items-baseline md:items-center">
               <h2 className="text-purpleMain font-playfair text-2xl md:text-4xl font-bold">
-                <span className="text-orMain text-4xl md:text-7xl font-bold">ILC's </span>
+                <span className="text-orMain text-4xl md:text-7xl font-bold">
+                  ILC's{" "}
+                </span>
                 innovative learning centres
               </h2>
             </div>
@@ -413,7 +451,13 @@ export default function Home() {
                   </span>
                   <span className="text-sm md:text-base font-roboto">
                     {/* ... (keep existing content) */}
-                    Our Art and Craft Corner where creativity knows no bounds is a place where students can explore their imagination and develop their artistic skills in a fun and engaging way. Different Art and craft activities for primary schoolers provide a sense of achievement and build confidence. Students can also enroll for summer camps at kondapur, Hyderabad for more exciting activities.
+                    Our Art and Craft Corner where creativity knows no bounds is
+                    a place where students can explore their imagination and
+                    develop their artistic skills in a fun and engaging way.
+                    Different Art and craft activities for primary schoolers
+                    provide a sense of achievement and build confidence.
+                    Students can also enroll for summer camps at kondapur,
+                    Hyderabad for more exciting activities.
                   </span>
                 </div>
                 <div className="flex flex-col gap-4">
@@ -422,7 +466,13 @@ export default function Home() {
                   </span>
                   <span className="text-sm md:text-base font-roboto">
                     {/* ... (keep existing content) */}
-                    Our Role Play area provides a dynamic and immersive learning experience for our students. By assuming different roles and scenarios, our students develop important social and emotional skills such as empathy, communication, problem-solving and teamwork. We welcome every student to enroll in our primary school kondapur, Hyderabad. It's going to be every exciting and fun learning.
+                    Our Role Play area provides a dynamic and immersive learning
+                    experience for our students. By assuming different roles and
+                    scenarios, our students develop important social and
+                    emotional skills such as empathy, communication,
+                    problem-solving and teamwork. We welcome every student to
+                    enroll in our primary school kondapur, Hyderabad. It's going
+                    to be every exciting and fun learning.
                   </span>
                 </div>
                 <div className="flex flex-col gap-4">
@@ -431,18 +481,28 @@ export default function Home() {
                   </span>
                   <span className="text-sm md:text-base font-roboto">
                     {/* ... (keep existing content) */}
-                    Our Dance and Drama studio provides a vibrant and creative space for our students to explore the world of performing arts. Through dance and drama activities, our students develop self-expression, confidence, teamwork and creativity. Come and enjoy a perfect blend of study and fun with the many summer camp programmes offered by Brookside global School in Kondapur, Hyderabad.
-
-
+                    Our Dance and Drama studio provides a vibrant and creative
+                    space for our students to explore the world of performing
+                    arts. Through dance and drama activities, our students
+                    develop self-expression, confidence, teamwork and
+                    creativity. Come and enjoy a perfect blend of study and fun
+                    with the many summer camp programmes offered by Brookside
+                    global School in Kondapur, Hyderabad.
                   </span>
                 </div>
               </div>
-              <div className="w-full lg:w-2/3 mt-8 lg:mt-0" style={{ zIndex:"999" }}>
+              <div
+                className="w-full lg:w-2/3 mt-8 lg:mt-0"
+                style={{ zIndex: "999" }}
+              >
                 <img src={allMix.src} alt="allmix" className="w-full h-auto" />
               </div>
             </div>
             <div className="w-full flex items-center justify-left bg-lightBlue h-40 exploresec">
-              <a href="/activities" className="bg-purpleMain text-white px-4 py-2 rounded text-base font-bold flex items-center gap-4 font-playfair">
+              <a
+                href="/activities"
+                className="bg-purpleMain text-white px-4 py-2 rounded text-base font-bold flex items-center gap-4 font-playfair"
+              >
                 Explore all activities
                 <FaArrowRight className="text-base" />
               </a>
