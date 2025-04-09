@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import preschoolBannerDesk from "../../../public/assets/images/BS-Preschool-Banner.png";
-import preSchoolBannerMobile from "../../../public/assets/images/preSchoolBannerMobile.png";
+import preSchoolBannerMobile from "../../../public/assets/images/BS-Preschool-Banner-Mobile.png";
 import AdmissionEnquiryForm from "@/components/admissionEnquiryForm";
 import Accordion from "@/components/Accordian";
 import ContactCards from "@/components/contactPaceCards";
