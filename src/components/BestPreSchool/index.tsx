@@ -15,7 +15,7 @@ import FireSafetyProtocol from "../../../public/assets/images/fireSafetyProtocol
 import Paediatrician from "../../../public/assets/images/Paediatrician.png";
 import SafetyandHygiene from "../../../public/assets/images/SafetyandHygiene.png";
 import TrainedStaff from "../../../public/assets/images/TrainedStaff.png";
-import allMix from "../../../public/assets/images/allMix.png";
+import allMix from "../../../public/assets/ILC/allMix.png";
 import parentalInvolvement from "../../../public/assets/images/parentalInvolvement.png";
 
 import PriorityCard from "@/components/PriorityCard";

@@ -41,7 +41,7 @@ const Footer = () => {
   return (
     <>
        <div className="max-w-full max-h-fit bg-[#e4e4e4]">
-      <div className="flex flex-row justify-between flex-wrap px-20 sm:px-20 py-16 gap-10">
+      <div className="flex flex-row justify-between flex-wrap px-20 sm:px-20 py-16 gap-5">
         <div className="flex flex-col items-start sm:items-start">
           <img src={logo.src} alt="img-blur-shadow" className="w-[251px] h-[64px]" />
           <div className="mt-4 flex justify-start items-center gap-8 sm:!hidden">
@@ -68,7 +68,7 @@ const Footer = () => {
         {/* Vertical divider for mobile */}
         <hr className="h-1 w-full bg-[#F3A20C] md:hidden" />
 
-        <div className="flex flex-row flex-wrap gap-10 md:gap-40 justify-center">
+        <div className="flex flex-row flex-wrap gap-5 md:gap-20 justify-center">
           <div className="rounded-2xl p-10 flex justify-center items-center gap-16 flex-wrap sm:px-1 sm:py-5 sm:gap-6 md:hidden">
             <div className="flex flex-col justify-center items-center gap-8 text-sm text-[#2E2B4F] sm:gap-4 sm:text-xl">
               <div className="flex gap-2 justify-start sm:items-center">
@@ -109,7 +109,7 @@ const Footer = () => {
 
           <hr className="h-1 w-full bg-[#F3A20C] md:hidden" />
 
-          <div className="flex flex-col items-center sm:items-start">
+          <div className="flex flex-col items-start sm:items-start">
             <p className="font-bold">Quick Links</p>
             <ul className="flex flex-col m-[5px] font-light font-roboto sm:font-normal">
               <li>
@@ -124,7 +124,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="flex flex-col items-center sm:items-start">
+          <div className="flex flex-col items-start sm:items-start">
             <p className="font-bold sm:pl-6">Useful Links</p>
             <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0 sm:pl-6">
               <li>
@@ -141,6 +141,20 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+
+          <div className="flex flex-col items-start sm:items-start">
+            <p className="font-bold sm:pl-6">Courses</p>
+            <ul className="flex flex-col gap-1 m-[5px] font-light sm:font-normal sm:gap-0 sm:pl-6">
+              <li>
+                <Link href="/best-school-for-play-group-in-kondapur-admissions-open-now">Play Group</Link>
+              </li>
+              <li>
+                <Link href="/best-preschool-in-kondapur">Pre Schooling</Link>
+              </li>
+              
+            </ul>
+          </div>
+          
             <div>
               {isVisible && (
                 <span
