@@ -142,8 +142,8 @@ const AdmissionEnquiryForm: React.FC = () => {
                 <option value="Grade 2">Grade 2</option>
                 <option value="Grade 3">Grade 3</option>
                 <option value="Grade 4">Grade 4</option>
-                <option value="Grade 5">Grade 5</option>
-                {/* Add more grade options as needed */}
+                
+                 {/* Add more grade options as needed */}
               </Field>
               <ErrorMessage name="grade" component="div" className='text-xs text-red-600' />
             </div>
