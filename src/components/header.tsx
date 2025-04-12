@@ -123,13 +123,14 @@ const Header = () => {
           </ul>
         )}
       </div>
-      <div className="w-full p-4 bg-black text-white">
-      <div className="overflow-hidden whitespace-nowrap">
-  <div className="inline-block animate-marquee text-md  text-white text-right">
-    Admissions Open! | Contact Us today! +91 90321 88850 | 90321 88851
+      <div className="w-full p-4 bg-black text-white hidden md:block">
+  <div className="overflow-hidden whitespace-nowrap">
+    <div className="inline-block animate-marquee text-md text-white text-right">
+      Admissions Open! | Contact Us today! +91 90321 88850 | 90321 88851
+    </div>
   </div>
 </div>
-      </div>
+
     </div>
   );
 };
