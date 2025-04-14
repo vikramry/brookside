@@ -6,9 +6,9 @@ import BestPreSchoool from "@/components/BestPreSchool";
 export const metadata: Metadata = {
   title: "Best Primary School in Kondapur, Hyderabad",
   description:
-    "Welcome to Brookside Global School, where young minds bloom! We are the Best Primary School in Kondapur, Hyderabad. Join us on an exciting educational journey tailored to inspire and empower our students for a lifetime of success.",
+    "Shape the future of your Toddler at the Best Preschool in Kondapur, Hyderabad. Fill out the form to reach us today.",
   keywords:
-    "Best Primary School in Kondapur - Hyderabad, Best Primary School in Hyderabad, Best Pre Primary Schools in Hyderabad'",
+    "Best Preschool in Kondapur, Preschools near me, Schools near me, Playschools in Kondapur, Best Kindergarten in Kondapur",
 };
 
 export default function Home() {
