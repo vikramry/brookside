@@ -1,6 +1,6 @@
 import React from "react";
 import LatestBlogs from "@/components/LatestBlogs";
-import BlogadmissionOpen from "../../../../public/assets/images/Blog-Admission-Open.png";
+import SummerActivities from "../../../../public/assets/images/summercamp-blog-banner.jpg";
 
 export const metadata = {
   title:
@@ -17,6 +17,7 @@ function FreshStart() {
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-9 p-4">
             <article className="bg-white shadow-md rounded-lg overflow-hidden">
+              <img src={SummerActivities.src} alt="Best-Summer-Activities-for-Kids-Without-Screen-Time" className="mt-4"/>
               {/* Header Section */}
               <header
                 className=" text-white py-8 px-6"
