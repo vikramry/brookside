@@ -12,7 +12,7 @@ function BlogPage() {
   return (
     <div className="container mx-auto my-10 px-4">
       <div className="grid grid-cols-12 gap-6">
-        <div className="col-span-9 p-4">
+        <div className="col-span-12 md:col-span-9 p-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {blogsdata.sort((a, b) => b.id - a.id) // Sort by id (latest first)
                .map((blog) => (

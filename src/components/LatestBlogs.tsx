@@ -5,7 +5,7 @@ import blogsJsonData from "../app/blog/blogs.json";
 export default function LatestBlogs() {
     return (
  
- <div className="col-span-3 p-4 ">
+ <div className="col-span-12 md:col-span-3 p-4 ">
 <div className="border p-2">
   <h2 className="font-semibold text-xl">Our Latest Blogs</h2>
 </div>
